@@ -3,21 +3,61 @@
   <entry>
     <title>&#39;MATLAB绘图命令&#39;</title>
     <url>/2020/06/05/MATLAB%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>我是Jack</p>
-<p>1111111</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
+    <content><![CDATA[<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hold on;#已经画的线保持，不被清除，再画线时在原图上添加</span><br><span class="line"></span><br><span class="line"><span class="built_in">hold</span> off;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">get(gcf,<span class="string">'doubleBuffer'</span>,<span class="string">'on'</span>);</span><br><span class="line"></span><br><span class="line">drawnow;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">yyaxis left#同一张图，左右使用不同y轴坐标系</span><br><span class="line"></span><br><span class="line">yyaxis right</span><br></pre></td></tr></table></figure>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">线型</th>
+<th align="center">- 实线</th>
+<th align="center">. 点线</th>
+<th align="center">-. 虚点线</th>
+<th align="center">– 波折线</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">点型</td>
+<td align="center">. 圆点</td>
+<td align="center">+ 加号</td>
+<td align="center">* 星号</td>
+<td align="center">x x星号</td>
+<td align="center">o 小圆</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">颜色</td>
+<td align="center">y 黄色</td>
+<td align="center">r 红色</td>
+<td align="center">g 绿色</td>
+<td align="center">b 蓝色</td>
+<td align="center">w 白色</td>
+<td align="center">k 黑色</td>
+<td align="center">m 紫色</td>
+<td align="center">c 青色</td>
+</tr>
+</tbody></table>
+<hr>
 ]]></content>
       <categories>
         <category>学习记录</category>
