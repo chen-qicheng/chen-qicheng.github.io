@@ -3,7 +3,8 @@
   <entry>
     <title>matlab绘图命令</title>
     <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
 
 
 
@@ -59,16 +60,27 @@
 </tbody></table>
 <hr>
 ]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Matlab</tag>
+      </tags>
   </entry>
   <entry>
     <title>物联网(IoT)学习录（连载之：物联网之初见）</title>
     <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-IoT-1/</url>
     <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
 <p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
-<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any，</p>
+<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
 <p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
+<blockquote>
 <p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20200614232849.png" alt="微信截图_20200614232849"></p>
+</blockquote>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
+
+
+
 <h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
 <li><p>互联性（Interconnectivity）</p>
 <p>任何设备都能够通过网络互连互通</p>
@@ -99,8 +111,7 @@
 <p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
 </li>
 </ol>
-<hr>
-<h2 id="评论区：-（填写昵称和邮箱，让我更好联系你！）"><a href="#评论区：-（填写昵称和邮箱，让我更好联系你！）" class="headerlink" title="评论区：            （填写昵称和邮箱，让我更好联系你！）"></a>评论区：            <em>（填写昵称和邮箱，让我更好联系你！）</em></h2>]]></content>
+]]></content>
       <categories>
         <category>学习记录</category>
       </categories>
