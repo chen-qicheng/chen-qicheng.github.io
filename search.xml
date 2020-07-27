@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>线上班会：疫情期间感悟</title>
-    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
-    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
-<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
-<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
-<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
-<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
-]]></content>
-      <categories>
-        <category>生活随笔</category>
-      </categories>
-  </entry>
-  <entry>
     <title>MATLAB——常用绘图命令</title>
     <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
@@ -81,70 +68,142 @@
       </tags>
   </entry>
   <entry>
-    <title>Sword Finger Offer——初刷算法</title>
-    <url>/2020/07/23/Sword-Finger-Offer-NO-1%E5%88%9D%E5%88%B7%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<p>做为一个通信工程专业的人，只做过嵌入式软件，对数据结构都还不够了解。现在拿起剑指offer开始刷算法题，真的感觉不太容易。讲一讲做的两道题，过程还蛮折磨人的。</p>
-<ol>
-<li><strong>数组中重复的数字</strong></li>
-<li><strong>二维数组的查找</strong></li>
-</ol>
+    <title>物联网学习录——应用领域</title>
+    <url>/2020/07/05/%E7%89%A9%E8%81%94%E7%BD%91-IoT-%E5%AD%A6%E4%B9%A0%E5%BD%95%EF%BC%88%E8%BF%9E%E8%BD%BD%E4%B9%8B%EF%BC%9A%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%EF%BC%89/</url>
+    <content><![CDATA[<p>物联网的应用场景是非常多样化的，包括智能家居、智慧城市、智能工厂等等。但仔细研究这些应用场景，就大概能分出三个大类：面向个人、面向社会和面向企业。我们就通过这三个分类来仔细看看物理网的应用领域吧~</p>
 <hr>
-<h2 id="数组中重复的数字"><a href="#数组中重复的数字" class="headerlink" title="数组中重复的数字"></a>数组中重复的数字</h2><blockquote>
-<p>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。</p>
-<p><strong>示例 1：</strong></p>
-<p>输入：[2, 3, 1, 0, 2, 5, 3]<br>输出：2 或 3 </p>
-<p>限制：2 &lt;= n &lt;= 100000</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof</a></p>
-</blockquote>
-<p>看到题目之后，想都没想就立马开始敲代码。看看我的第一段代码：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber0</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;numsSize;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[j])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这几乎是最简单直接，不用动脑的方法了。但它的时间复杂度是有蛮高的，几乎达到了O(n^2)，果然在n=9000的事例中超出时间限制。而且也没有考虑程序的鲁棒性，算是很低级的解法了。</p>
-<p>第二段代码是，学习书上的交换数据元素的方式来解。考虑了空指针、数据元素等负面条件，考虑了程序的鲁棒性，应该是非常好的解法了。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber1</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&lt;<span class="number">0</span> || nums[i]&gt;numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(nums[i] != i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[nums[i]])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> a = nums[i];</span><br><span class="line">            nums[i] = nums[a];</span><br><span class="line">            nums[a] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>第三段程序是，书上有所提示的hash表的方式。没有打乱数组原有的顺序，但是新建hash表回占用部分内存，算是用空间换取时间的求解方式。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber2</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> hash[numsSize];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &lt; <span class="number">0</span> || nums[i] &gt; numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(hash[nums[i]] != <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            hash[nums[i]] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            <span class="keyword">return</span> nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>第四段程序，是参考书上的二分法的方式，既不打乱原有的数组元素，也不用创建新的数组占用空间。但是这个算法好像有问题。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">CountRange</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> *nums, <span class="keyword">int</span> numsSize,<span class="keyword">int</span> start, <span class="keyword">int</span> <span class="built_in">end</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &gt;= start &amp;&amp; nums[i] &lt;= <span class="built_in">end</span>)</span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber3</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> start = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">end</span> = numsSize<span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">end</span> &gt;= start)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> middle = ((<span class="built_in">end</span>-start)&gt;&gt;<span class="number">1</span>)+start;</span><br><span class="line">        <span class="keyword">int</span> count = CountRange(nums, numsSize, start, middle);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">end</span> == start)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(count&gt;<span class="number">1</span>)</span><br><span class="line">                <span class="keyword">return</span> start;</span><br><span class="line">            <span class="keyword">else</span> </span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(count &gt; (middle - start + <span class="number">1</span>))</span><br><span class="line">            <span class="built_in">end</span> = middle;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            start = middle + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输入：[0, 1, 2, 0, 4, 5, 6, 7, 8, 9]</p>
-<p>输出：ERROR</p>
-<p>预期结果：0</p>
-<p>因为在中点的时候start-middle和middle-end的count都是5，程序就看后面半段是否有重复的元素了。尔重复的元素在前面半段就被忽略掉了，所以输出为ERROR。所以这个算法还是有问题，需要改进呀。</p>
+<h2 id="面向个人的物联网"><a href="#面向个人的物联网" class="headerlink" title="面向个人的物联网"></a>面向个人的物联网</h2><p><strong>IOsL(Internet of smart living)——智能家居、智慧生活</strong></p>
+<ul>
+<li>远程控制：远程打开和关闭电器以避免事故和节约能源</li>
+<li>环境感知：显示室外天气状况，如湿度、温度、压力、风速和雨量，为你做个性化配置</li>
+<li>智能家电：比如带屏幕的冰箱，告诉你里面有什么食物即将过期，需要购买什么配料，在手机上同步推送、购买</li>
+<li>安全监控：摄像头和家庭警报系统，使人们在家里生活能感到安全</li>
+<li>安防系统：检测门窗是否打开和是否有违规行为，来防止入侵者</li>
+<li>能源和水使用：对能源和供水消耗监控，给出节约成本和资源的建议</li>
+<li>更多…</li>
+</ul>
+<p><strong>IOsH(Internet of smart health)——智能健康互联网</strong></p>
+<ul>
+<li>患者监测：监测医院和养老院中老人和患者的状况</li>
+<li>药物检测：控制冰柜内储存疫苗、药品和有机元素的条件</li>
+<li>跌倒检测：帮助独立生活的老年人或残疾人</li>
+<li>活动监测：放置在床垫上的无线传感器，检测睡眠期间呼吸和心率等</li>
+</ul>
 <hr>
-<h2 id="二维数组的查找"><a href="#二维数组的查找" class="headerlink" title="二维数组的查找"></a>二维数组的查找</h2><blockquote>
-<p>在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
-<p>示例:</p>
-<p>现有矩阵 matrix 如下：</p>
-<p>[<br>  [1,   4,  7, 11, 15],<br>  [2,   5,  8, 12, 19],<br>  [3,   6,  9, 16, 22],<br>  [10, 13, 14, 17, 24],<br>  [18, 21, 23, 26, 30]<br>]<br>给定 target = 5，返回 true。</p>
-<p>给定 target = 20，返回 false。</p>
-<p>限制：0 &lt;= n &lt;= 1000 ；0 &lt;= m &lt;= 1000</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof</a></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">findNumberIn2DArray</span><span class="params">(<span class="keyword">int</span>** matrix, <span class="keyword">int</span> matrixSize, <span class="keyword">int</span>* matrixColSize, <span class="keyword">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cow = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> col = *matrixColSize - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(matrix == <span class="literal">NULL</span> || matrixSize &lt;= <span class="number">0</span> || *matrixColSize &lt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">while</span>(cow &lt; matrixSize &amp;&amp; col &gt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(matrix[cow][col] &gt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            col--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(matrix[cow][col] &lt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            cow++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这道题的思路是：将一个复杂问题，通过分析一个简单具体的例子，来寻找普遍的规律。这是将矩阵右上角的数字元素与目标数字进行对比，依次删除列和行，直至找到相等的元素或遍历完整个矩阵。就像下面所示的步骤。</p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/01065754-360a04e422b14e489869d9c58867f2a1.jpg" alt="img"></p>
-<p>第一遍的时候，在输入矩阵[]的时候，总是出错。还是边界条件、负面条件没有考虑到，还是要多考虑程序的鲁棒性。</p>
+<h2 id="面向社会的物联网"><a href="#面向社会的物联网" class="headerlink" title="面向社会的物联网"></a>面向社会的物联网</h2><p><strong>IOsC(Internet of smart cities)——智慧城市</strong></p>
+<ul>
+<li>建筑健康：监测建筑物、桥梁和历史古迹的振动和材料</li>
+<li>照明系统：智能路灯和天气自适应的照明系统</li>
+<li>安防系统：数字视频监控、消防管理、公共广播系统</li>
+<li>智能交通：智能马路和智能高速，根据气候条件和意外事件(如事故或交通拥堵)发出警告信息和改道</li>
+<li>智能停车：实时监测城市可用停车位，让司机能够找到最近的停车位</li>
+</ul>
+<ul>
+<li><p>空气污染监测：控制工厂的二氧化碳排放，汽车尾气排放</p>
+</li>
+<li><p>森林火灾检测：监测燃烧气体并提前预知火灾情况，以确定警戒区</p>
+</li>
+<li><p>天气监测：天气条件监测，如湿度、温度、压力、风速和降雨，地震预测</p>
+</li>
+<li><p>水质监测：河流和海洋的水质情况</p>
+</li>
+<li><p>河流洪水：监测河流、大坝和水库在雨天的水位变化</p>
+</li>
+<li><p>保护野生动物：利用GPS跟踪项圈，检测野生动物活动情况</p>
+</li>
+</ul>
+<p><strong>IOsE(internet of smart energy)——智能能源</strong></p>
+<ul>
+<li>智能电网：能源消耗监测和管理</li>
+<li>发电站：监测和分析发电站的电力流动，与消费者的智能电表进行双向通信</li>
+<li>电源控制器：用于确定所需能源的AC-DC电源控制器，以提高能源效率，降低能源浪费</li>
+<li>光伏安装：监控和优化太阳能发电厂的性能。</li>
+</ul>
 <hr>
-<p>初刷算法，深刻感受到以前写代码的粗糙，代码的鲁棒性做的比较差，只考虑到最理想输入的情况。</p>
-<p>想要成为一名优秀的程序员，以后还要多注意代码的鲁棒性！</p>
+<h2 id="面向企业的物联网"><a href="#面向企业的物联网" class="headerlink" title="面向企业的物联网"></a>面向企业的物联网</h2><p><strong>IOsI(Internet of smart industry)——智能工业互联网</strong></p>
+<ul>
+<li>爆炸和危险气体：检测工业环境、化工厂周围和矿山内的气体水平和泄漏情况，监测化工厂内的有毒气体和氧气水平，以确保工人和货物的安全</li>
+<li>维护和维修：通过在设备内部安装监测和发送报告的传感器，可以自动提前对设备故障和服务进行早期预测。</li>
+</ul>
+<p><strong>IOsA(internet of smart agriculture)——智能农业互联网</strong></p>
+<ul>
+<li>温室检测：控制温室环境，最大限度地提高水果和蔬菜的产量及其质量</li>
+<li>堆肥：控制苜蓿、干草、稻草等的湿度和温度水平以防止真菌和其他微生物污染</li>
+<li>动物饲养：在露天牧场中放牧的动物的位置和识别</li>
+<li>后代护理：控制动物农场中后代的生长条件，以确保其生存和健康</li>
+<li>现场监测：更好地控制农业施肥、用电和浇水</li>
+</ul>
+<hr>
 ]]></content>
       <categories>
-        <category>TOOFFER</category>
+        <category>学习记录</category>
       </categories>
       <tags>
-        <tag>数据结构与算法</tag>
+        <tag>物联网</tag>
       </tags>
   </entry>
   <entry>
-    <title>深入,嵌入——*运算符和&amp;运算符、二维数组和指针</title>
+    <title>物联网学习录——架构与使能技术</title>
+    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
+    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
+<p>物联网的使能技术可以分为三类：</p>
+<ol>
+<li>使“物”能够获得信息的技术</li>
+<li>使“物”能够处理信息的技术</li>
+<li>提高安全性和私密性的技术</li>
+</ol>
+<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
+<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
+<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
+<hr>
+<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
+
+<hr>
+<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
+<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
+<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
+<hr>
+<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
+<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
+<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
+<hr>
+<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
+<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
+<ul>
+<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
+</li>
+<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
+</li>
+</ul>
+<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
+<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
+<ul>
+<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
+</li>
+<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
+</li>
+</ul>
+<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
+<ul>
+<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
+<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
+<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
+</ul>
+<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
+<hr>
+<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
+<p>下一节将具体讲解这一部分内容。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>物联网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——*运算符和&amp;运算符、二维数组和指针</title>
     <url>/2020/07/24/%E6%B7%B1%E5%85%A5%E5%B5%8C%E5%85%A5-1-%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C/</url>
     <content><![CDATA[<h3 id="间接运算符和-amp-取址运算符"><a href="#间接运算符和-amp-取址运算符" class="headerlink" title="*间接运算符和&amp;取址运算符"></a>*间接运算符和&amp;取址运算符</h3><p>变量a本质上代表一个存储单元；CPU通过该存储单元的地址访问该存储单元中的数据。所以a本来代表两个值：存储单元的地址和储单元中的数据。即：    </p>
 <ul>
@@ -265,7 +324,7 @@
       </tags>
   </entry>
   <entry>
-    <title>深入,嵌入——struct与union内存对齐</title>
+    <title>深入/嵌入——struct与union内存对齐</title>
     <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-struct%E4%B8%8Eunion%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/</url>
     <content><![CDATA[<h1 id="数据内存对齐"><a href="#数据内存对齐" class="headerlink" title="数据内存对齐"></a>数据内存对齐</h1><h3 id="内存对齐的作用："><a href="#内存对齐的作用：" class="headerlink" title="内存对齐的作用："></a>内存对齐的作用：</h3><ol>
 <li><p>平台原因（移植原因）：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p>
@@ -386,7 +445,7 @@
       </tags>
   </entry>
   <entry>
-    <title>深入,嵌入——大小端问题</title>
+    <title>深入/嵌入——大小端问题</title>
     <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h3 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h3><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中（低对高，高对低）</p>
 <p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中（低对低，高对高）</p>
@@ -431,138 +490,170 @@
       </tags>
   </entry>
   <entry>
-    <title>物联网学习录——架构与使能技术</title>
-    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
-    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
-<p>物联网的使能技术可以分为三类：</p>
-<ol>
-<li>使“物”能够获得信息的技术</li>
-<li>使“物”能够处理信息的技术</li>
-<li>提高安全性和私密性的技术</li>
-</ol>
-<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
-<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
-<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
-<hr>
-<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
-
-<hr>
-<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
-<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
-<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
-<hr>
-<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
-<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
-<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
-<hr>
-<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
-<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
-<ul>
-<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
-</li>
-<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
-</li>
-</ul>
-<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
-<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
-<ul>
-<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
-</li>
-<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
-</li>
-</ul>
-<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
-<ul>
-<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
-<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
-<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
-</ul>
-<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
-<hr>
-<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
-<p>下一节将具体讲解这一部分内容。</p>
+    <title>线上班会：疫情期间感悟</title>
+    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
+    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
+<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
+<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
+<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
+<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
 ]]></content>
       <categories>
-        <category>学习记录</category>
+        <category>生活随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Sword Finger Offer——初刷算法</title>
+    <url>/2020/07/23/Sword-Finger-Offer-NO-1%E5%88%9D%E5%88%B7%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<p>做为一个通信工程专业的人，只做过嵌入式软件，对数据结构都还不够了解。现在拿起剑指offer开始刷算法题，真的感觉不太容易。讲一讲做的两道题，过程还蛮折磨人的。</p>
+<ol>
+<li><strong>数组中重复的数字</strong></li>
+<li><strong>二维数组的查找</strong></li>
+</ol>
+<hr>
+<h2 id="数组中重复的数字"><a href="#数组中重复的数字" class="headerlink" title="数组中重复的数字"></a>数组中重复的数字</h2><blockquote>
+<p>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。</p>
+<p><strong>示例 1：</strong></p>
+<p>输入：[2, 3, 1, 0, 2, 5, 3]<br>输出：2 或 3 </p>
+<p>限制：2 &lt;= n &lt;= 100000</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof</a></p>
+</blockquote>
+<p>看到题目之后，想都没想就立马开始敲代码。看看我的第一段代码：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber0</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;numsSize;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[j])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这几乎是最简单直接，不用动脑的方法了。但它的时间复杂度是有蛮高的，几乎达到了O(n^2)，果然在n=9000的事例中超出时间限制。而且也没有考虑程序的鲁棒性，算是很低级的解法了。</p>
+<p>第二段代码是，学习书上的交换数据元素的方式来解。考虑了空指针、数据元素等负面条件，考虑了程序的鲁棒性，应该是非常好的解法了。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber1</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&lt;<span class="number">0</span> || nums[i]&gt;numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(nums[i] != i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[nums[i]])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> a = nums[i];</span><br><span class="line">            nums[i] = nums[a];</span><br><span class="line">            nums[a] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第三段程序是，书上有所提示的hash表的方式。没有打乱数组原有的顺序，但是新建hash表回占用部分内存，算是用空间换取时间的求解方式。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber2</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> hash[numsSize];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &lt; <span class="number">0</span> || nums[i] &gt; numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(hash[nums[i]] != <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            hash[nums[i]] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            <span class="keyword">return</span> nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第四段程序，是参考书上的二分法的方式，既不打乱原有的数组元素，也不用创建新的数组占用空间。但是这个算法好像有问题。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">CountRange</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> *nums, <span class="keyword">int</span> numsSize,<span class="keyword">int</span> start, <span class="keyword">int</span> <span class="built_in">end</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &gt;= start &amp;&amp; nums[i] &lt;= <span class="built_in">end</span>)</span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber3</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> start = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">end</span> = numsSize<span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">end</span> &gt;= start)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> middle = ((<span class="built_in">end</span>-start)&gt;&gt;<span class="number">1</span>)+start;</span><br><span class="line">        <span class="keyword">int</span> count = CountRange(nums, numsSize, start, middle);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">end</span> == start)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(count&gt;<span class="number">1</span>)</span><br><span class="line">                <span class="keyword">return</span> start;</span><br><span class="line">            <span class="keyword">else</span> </span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(count &gt; (middle - start + <span class="number">1</span>))</span><br><span class="line">            <span class="built_in">end</span> = middle;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            start = middle + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输入：[0, 1, 2, 0, 4, 5, 6, 7, 8, 9]</p>
+<p>输出：ERROR</p>
+<p>预期结果：0</p>
+<p>因为在中点的时候start-middle和middle-end的count都是5，程序就看后面半段是否有重复的元素了。尔重复的元素在前面半段就被忽略掉了，所以输出为ERROR。所以这个算法还是有问题，需要改进呀。</p>
+<hr>
+<h2 id="二维数组的查找"><a href="#二维数组的查找" class="headerlink" title="二维数组的查找"></a>二维数组的查找</h2><blockquote>
+<p>在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
+<p>示例:</p>
+<p>现有矩阵 matrix 如下：</p>
+<p>[<br>  [1,   4,  7, 11, 15],<br>  [2,   5,  8, 12, 19],<br>  [3,   6,  9, 16, 22],<br>  [10, 13, 14, 17, 24],<br>  [18, 21, 23, 26, 30]<br>]<br>给定 target = 5，返回 true。</p>
+<p>给定 target = 20，返回 false。</p>
+<p>限制：0 &lt;= n &lt;= 1000 ；0 &lt;= m &lt;= 1000</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof</a></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">findNumberIn2DArray</span><span class="params">(<span class="keyword">int</span>** matrix, <span class="keyword">int</span> matrixSize, <span class="keyword">int</span>* matrixColSize, <span class="keyword">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cow = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> col = *matrixColSize - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(matrix == <span class="literal">NULL</span> || matrixSize &lt;= <span class="number">0</span> || *matrixColSize &lt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">while</span>(cow &lt; matrixSize &amp;&amp; col &gt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(matrix[cow][col] &gt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            col--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(matrix[cow][col] &lt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            cow++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这道题的思路是：将一个复杂问题，通过分析一个简单具体的例子，来寻找普遍的规律。这是将矩阵右上角的数字元素与目标数字进行对比，依次删除列和行，直至找到相等的元素或遍历完整个矩阵。就像下面所示的步骤。</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/01065754-360a04e422b14e489869d9c58867f2a1.jpg" alt="img"></p>
+<p>第一遍的时候，在输入矩阵[]的时候，总是出错。还是边界条件、负面条件没有考虑到，还是要多考虑程序的鲁棒性。</p>
+<hr>
+<p>初刷算法，深刻感受到以前写代码的粗糙，代码的鲁棒性做的比较差，只考虑到最理想输入的情况。</p>
+<p>想要成为一名优秀的程序员，以后还要多注意代码的鲁棒性！</p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
       </categories>
       <tags>
-        <tag>物联网</tag>
+        <tag>数据结构与算法</tag>
       </tags>
   </entry>
   <entry>
-    <title>物联网学习录——应用领域</title>
-    <url>/2020/07/05/%E7%89%A9%E8%81%94%E7%BD%91-IoT-%E5%AD%A6%E4%B9%A0%E5%BD%95%EF%BC%88%E8%BF%9E%E8%BD%BD%E4%B9%8B%EF%BC%9A%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%EF%BC%89/</url>
-    <content><![CDATA[<p>物联网的应用场景是非常多样化的，包括智能家居、智慧城市、智能工厂等等。但仔细研究这些应用场景，就大概能分出三个大类：面向个人、面向社会和面向企业。我们就通过这三个分类来仔细看看物理网的应用领域吧~</p>
+    <title>深入/嵌入——通信总线、混合三目运算</title>
+    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E9%80%9A%E4%BF%A1%E6%80%BB%E7%BA%BF%E3%80%81%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h3 id="总线的分类："><a href="#总线的分类：" class="headerlink" title="总线的分类："></a>总线的分类：</h3><ol>
+<li><p>总线按功能和规范可分为五大类型：数据总线、地址总线、控制总线、扩展总线及局部总线。</p>
+<p>数据总线、地址总线和控制总线也统称为系统总线，即通常意义上所说的总线。常见的数据总线为ISA、EISA、VESA、PCI等。</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>按照传输数据的方式划分，可以分为串行总线和并行总线。</p>
+<p>串行总线中，二进制数据逐位通过一根数据线发送到目的器件；并行总线的数据线通常超过2根。常见的串行总线有S<a href="http://www.elecfans.com/tags/pi/" target="_blank" rel="noopener">PI</a>、<a href="http://www.elecfans.com/tags/i2c/" target="_blank" rel="noopener">I2C</a>、<a href="http://www.elecfans.com/tags/usb/" target="_blank" rel="noopener">USB</a>及<a href="http://www.elecfans.com/tags/rs/" target="_blank" rel="noopener">RS</a>232等。</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>按照<a href="http://www.elecfans.com/tags/时钟/" target="_blank" rel="noopener">时钟</a>信号是否独立，可以分为同步总线和异步总线。</p>
+<p>同步总线的时钟信号独立于数据，而异步总线的时钟信号是从数据中提取出来的。SPI、I2C是同步串行总线，RS232采用异步串行总线。</p>
+</li>
+</ol>
+<h3 id="常用总线："><a href="#常用总线：" class="headerlink" title="常用总线："></a>常用总线：</h3><table>
+<thead>
+<tr>
+<th>总线接口</th>
+<th>串/并</th>
+<th>同步/异步</th>
+<th>速率</th>
+<th>工作方式</th>
+<th>用线</th>
+<th>总线拓扑结构</th>
+<th>通信距离</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UART</td>
+<td>串</td>
+<td>异步</td>
+<td>慢（波特率）</td>
+<td>全双工</td>
+<td>2线（RX、TX）</td>
+<td>RS485支持总线式、星形、树形</td>
+<td>远（最远1200m）</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>串</td>
+<td>同步</td>
+<td>慢</td>
+<td>半双工</td>
+<td>2线（SDA、SCL）</td>
+<td>总线型（特殊的树形）</td>
+<td>近</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>串</td>
+<td>同步</td>
+<td>快</td>
+<td>全双工</td>
+<td>3线或4线（SCLK、SIMO、SOMI、SS(片选)）</td>
+<td>环形</td>
+<td>远</td>
+</tr>
+<tr>
+<td>USB</td>
+<td>串</td>
+<td>同步</td>
+<td>快</td>
+<td>半双工</td>
+<td>4线（Vbus(5V)、GND、D+、D-(3.3V)）</td>
+<td>星形</td>
+<td>近</td>
+</tr>
+</tbody></table>
+<p>在SOC中常常用作于对外设寄存器配置的总线是：I2C，SPI</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/aidelong/article/details/83146340" target="_blank" rel="noopener">https://blog.csdn.net/aidelong/article/details/83146340</a></li>
+<li><a href="http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html" target="_blank" rel="noopener">http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html</a></li>
+</ul>
 <hr>
-<h2 id="面向个人的物联网"><a href="#面向个人的物联网" class="headerlink" title="面向个人的物联网"></a>面向个人的物联网</h2><p><strong>IOsL(Internet of smart living)——智能家居、智慧生活</strong></p>
-<ul>
-<li>远程控制：远程打开和关闭电器以避免事故和节约能源</li>
-<li>环境感知：显示室外天气状况，如湿度、温度、压力、风速和雨量，为你做个性化配置</li>
-<li>智能家电：比如带屏幕的冰箱，告诉你里面有什么食物即将过期，需要购买什么配料，在手机上同步推送、购买</li>
-<li>安全监控：摄像头和家庭警报系统，使人们在家里生活能感到安全</li>
-<li>安防系统：检测门窗是否打开和是否有违规行为，来防止入侵者</li>
-<li>能源和水使用：对能源和供水消耗监控，给出节约成本和资源的建议</li>
-<li>更多…</li>
-</ul>
-<p><strong>IOsH(Internet of smart health)——智能健康互联网</strong></p>
-<ul>
-<li>患者监测：监测医院和养老院中老人和患者的状况</li>
-<li>药物检测：控制冰柜内储存疫苗、药品和有机元素的条件</li>
-<li>跌倒检测：帮助独立生活的老年人或残疾人</li>
-<li>活动监测：放置在床垫上的无线传感器，检测睡眠期间呼吸和心率等</li>
-</ul>
-<hr>
-<h2 id="面向社会的物联网"><a href="#面向社会的物联网" class="headerlink" title="面向社会的物联网"></a>面向社会的物联网</h2><p><strong>IOsC(Internet of smart cities)——智慧城市</strong></p>
-<ul>
-<li>建筑健康：监测建筑物、桥梁和历史古迹的振动和材料</li>
-<li>照明系统：智能路灯和天气自适应的照明系统</li>
-<li>安防系统：数字视频监控、消防管理、公共广播系统</li>
-<li>智能交通：智能马路和智能高速，根据气候条件和意外事件(如事故或交通拥堵)发出警告信息和改道</li>
-<li>智能停车：实时监测城市可用停车位，让司机能够找到最近的停车位</li>
-</ul>
-<ul>
-<li><p>空气污染监测：控制工厂的二氧化碳排放，汽车尾气排放</p>
-</li>
-<li><p>森林火灾检测：监测燃烧气体并提前预知火灾情况，以确定警戒区</p>
-</li>
-<li><p>天气监测：天气条件监测，如湿度、温度、压力、风速和降雨，地震预测</p>
-</li>
-<li><p>水质监测：河流和海洋的水质情况</p>
-</li>
-<li><p>河流洪水：监测河流、大坝和水库在雨天的水位变化</p>
-</li>
-<li><p>保护野生动物：利用GPS跟踪项圈，检测野生动物活动情况</p>
-</li>
-</ul>
-<p><strong>IOsE(internet of smart energy)——智能能源</strong></p>
-<ul>
-<li>智能电网：能源消耗监测和管理</li>
-<li>发电站：监测和分析发电站的电力流动，与消费者的智能电表进行双向通信</li>
-<li>电源控制器：用于确定所需能源的AC-DC电源控制器，以提高能源效率，降低能源浪费</li>
-<li>光伏安装：监控和优化太阳能发电厂的性能。</li>
-</ul>
-<hr>
-<h2 id="面向企业的物联网"><a href="#面向企业的物联网" class="headerlink" title="面向企业的物联网"></a>面向企业的物联网</h2><p><strong>IOsI(Internet of smart industry)——智能工业互联网</strong></p>
-<ul>
-<li>爆炸和危险气体：检测工业环境、化工厂周围和矿山内的气体水平和泄漏情况，监测化工厂内的有毒气体和氧气水平，以确保工人和货物的安全</li>
-<li>维护和维修：通过在设备内部安装监测和发送报告的传感器，可以自动提前对设备故障和服务进行早期预测。</li>
-</ul>
-<p><strong>IOsA(internet of smart agriculture)——智能农业互联网</strong></p>
-<ul>
-<li>温室检测：控制温室环境，最大限度地提高水果和蔬菜的产量及其质量</li>
-<li>堆肥：控制苜蓿、干草、稻草等的湿度和温度水平以防止真菌和其他微生物污染</li>
-<li>动物饲养：在露天牧场中放牧的动物的位置和识别</li>
-<li>后代护理：控制动物农场中后代的生长条件，以确保其生存和健康</li>
-<li>现场监测：更好地控制农业施肥、用电和浇水</li>
-</ul>
-<hr>
+<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
+<p>表达式的结果为c = 1</p>
 ]]></content>
       <categories>
-        <category>学习记录</category>
+        <category>TOOFFER</category>
       </categories>
       <tags>
-        <tag>物联网</tag>
+        <tag>嵌入式</tag>
       </tags>
   </entry>
   <entry>
