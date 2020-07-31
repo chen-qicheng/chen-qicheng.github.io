@@ -1,6 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>线上班会：疫情期间感悟</title>
+    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
+    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
+<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
+<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
+<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
+<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
+]]></content>
+      <categories>
+        <category>生活随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>物联网学习录——应用领域</title>
+    <url>/2020/07/05/%E7%89%A9%E8%81%94%E7%BD%91-IoT-%E5%AD%A6%E4%B9%A0%E5%BD%95%EF%BC%88%E8%BF%9E%E8%BD%BD%E4%B9%8B%EF%BC%9A%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%EF%BC%89/</url>
+    <content><![CDATA[<p>物联网的应用场景是非常多样化的，包括智能家居、智慧城市、智能工厂等等。但仔细研究这些应用场景，就大概能分出三个大类：面向个人、面向社会和面向企业。我们就通过这三个分类来仔细看看物理网的应用领域吧~</p>
+<hr>
+<h2 id="面向个人的物联网"><a href="#面向个人的物联网" class="headerlink" title="面向个人的物联网"></a>面向个人的物联网</h2><p><strong>IOsL(Internet of smart living)——智能家居、智慧生活</strong></p>
+<ul>
+<li>远程控制：远程打开和关闭电器以避免事故和节约能源</li>
+<li>环境感知：显示室外天气状况，如湿度、温度、压力、风速和雨量，为你做个性化配置</li>
+<li>智能家电：比如带屏幕的冰箱，告诉你里面有什么食物即将过期，需要购买什么配料，在手机上同步推送、购买</li>
+<li>安全监控：摄像头和家庭警报系统，使人们在家里生活能感到安全</li>
+<li>安防系统：检测门窗是否打开和是否有违规行为，来防止入侵者</li>
+<li>能源和水使用：对能源和供水消耗监控，给出节约成本和资源的建议</li>
+<li>更多…</li>
+</ul>
+<p><strong>IOsH(Internet of smart health)——智能健康互联网</strong></p>
+<ul>
+<li>患者监测：监测医院和养老院中老人和患者的状况</li>
+<li>药物检测：控制冰柜内储存疫苗、药品和有机元素的条件</li>
+<li>跌倒检测：帮助独立生活的老年人或残疾人</li>
+<li>活动监测：放置在床垫上的无线传感器，检测睡眠期间呼吸和心率等</li>
+</ul>
+<hr>
+<h2 id="面向社会的物联网"><a href="#面向社会的物联网" class="headerlink" title="面向社会的物联网"></a>面向社会的物联网</h2><p><strong>IOsC(Internet of smart cities)——智慧城市</strong></p>
+<ul>
+<li>建筑健康：监测建筑物、桥梁和历史古迹的振动和材料</li>
+<li>照明系统：智能路灯和天气自适应的照明系统</li>
+<li>安防系统：数字视频监控、消防管理、公共广播系统</li>
+<li>智能交通：智能马路和智能高速，根据气候条件和意外事件(如事故或交通拥堵)发出警告信息和改道</li>
+<li>智能停车：实时监测城市可用停车位，让司机能够找到最近的停车位</li>
+</ul>
+<ul>
+<li><p>空气污染监测：控制工厂的二氧化碳排放，汽车尾气排放</p>
+</li>
+<li><p>森林火灾检测：监测燃烧气体并提前预知火灾情况，以确定警戒区</p>
+</li>
+<li><p>天气监测：天气条件监测，如湿度、温度、压力、风速和降雨，地震预测</p>
+</li>
+<li><p>水质监测：河流和海洋的水质情况</p>
+</li>
+<li><p>河流洪水：监测河流、大坝和水库在雨天的水位变化</p>
+</li>
+<li><p>保护野生动物：利用GPS跟踪项圈，检测野生动物活动情况</p>
+</li>
+</ul>
+<p><strong>IOsE(internet of smart energy)——智能能源</strong></p>
+<ul>
+<li>智能电网：能源消耗监测和管理</li>
+<li>发电站：监测和分析发电站的电力流动，与消费者的智能电表进行双向通信</li>
+<li>电源控制器：用于确定所需能源的AC-DC电源控制器，以提高能源效率，降低能源浪费</li>
+<li>光伏安装：监控和优化太阳能发电厂的性能。</li>
+</ul>
+<hr>
+<h2 id="面向企业的物联网"><a href="#面向企业的物联网" class="headerlink" title="面向企业的物联网"></a>面向企业的物联网</h2><p><strong>IOsI(Internet of smart industry)——智能工业互联网</strong></p>
+<ul>
+<li>爆炸和危险气体：检测工业环境、化工厂周围和矿山内的气体水平和泄漏情况，监测化工厂内的有毒气体和氧气水平，以确保工人和货物的安全</li>
+<li>维护和维修：通过在设备内部安装监测和发送报告的传感器，可以自动提前对设备故障和服务进行早期预测。</li>
+</ul>
+<p><strong>IOsA(internet of smart agriculture)——智能农业互联网</strong></p>
+<ul>
+<li>温室检测：控制温室环境，最大限度地提高水果和蔬菜的产量及其质量</li>
+<li>堆肥：控制苜蓿、干草、稻草等的湿度和温度水平以防止真菌和其他微生物污染</li>
+<li>动物饲养：在露天牧场中放牧的动物的位置和识别</li>
+<li>后代护理：控制动物农场中后代的生长条件，以确保其生存和健康</li>
+<li>现场监测：更好地控制农业施肥、用电和浇水</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>物联网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>物联网学习录——架构与使能技术</title>
     <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
     <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
@@ -124,94 +212,6 @@
       </tags>
   </entry>
   <entry>
-    <title>线上班会：疫情期间感悟</title>
-    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
-    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
-<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
-<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
-<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
-<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
-]]></content>
-      <categories>
-        <category>生活随笔</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>物联网学习录——应用领域</title>
-    <url>/2020/07/05/%E7%89%A9%E8%81%94%E7%BD%91-IoT-%E5%AD%A6%E4%B9%A0%E5%BD%95%EF%BC%88%E8%BF%9E%E8%BD%BD%E4%B9%8B%EF%BC%9A%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F%EF%BC%89/</url>
-    <content><![CDATA[<p>物联网的应用场景是非常多样化的，包括智能家居、智慧城市、智能工厂等等。但仔细研究这些应用场景，就大概能分出三个大类：面向个人、面向社会和面向企业。我们就通过这三个分类来仔细看看物理网的应用领域吧~</p>
-<hr>
-<h2 id="面向个人的物联网"><a href="#面向个人的物联网" class="headerlink" title="面向个人的物联网"></a>面向个人的物联网</h2><p><strong>IOsL(Internet of smart living)——智能家居、智慧生活</strong></p>
-<ul>
-<li>远程控制：远程打开和关闭电器以避免事故和节约能源</li>
-<li>环境感知：显示室外天气状况，如湿度、温度、压力、风速和雨量，为你做个性化配置</li>
-<li>智能家电：比如带屏幕的冰箱，告诉你里面有什么食物即将过期，需要购买什么配料，在手机上同步推送、购买</li>
-<li>安全监控：摄像头和家庭警报系统，使人们在家里生活能感到安全</li>
-<li>安防系统：检测门窗是否打开和是否有违规行为，来防止入侵者</li>
-<li>能源和水使用：对能源和供水消耗监控，给出节约成本和资源的建议</li>
-<li>更多…</li>
-</ul>
-<p><strong>IOsH(Internet of smart health)——智能健康互联网</strong></p>
-<ul>
-<li>患者监测：监测医院和养老院中老人和患者的状况</li>
-<li>药物检测：控制冰柜内储存疫苗、药品和有机元素的条件</li>
-<li>跌倒检测：帮助独立生活的老年人或残疾人</li>
-<li>活动监测：放置在床垫上的无线传感器，检测睡眠期间呼吸和心率等</li>
-</ul>
-<hr>
-<h2 id="面向社会的物联网"><a href="#面向社会的物联网" class="headerlink" title="面向社会的物联网"></a>面向社会的物联网</h2><p><strong>IOsC(Internet of smart cities)——智慧城市</strong></p>
-<ul>
-<li>建筑健康：监测建筑物、桥梁和历史古迹的振动和材料</li>
-<li>照明系统：智能路灯和天气自适应的照明系统</li>
-<li>安防系统：数字视频监控、消防管理、公共广播系统</li>
-<li>智能交通：智能马路和智能高速，根据气候条件和意外事件(如事故或交通拥堵)发出警告信息和改道</li>
-<li>智能停车：实时监测城市可用停车位，让司机能够找到最近的停车位</li>
-</ul>
-<ul>
-<li><p>空气污染监测：控制工厂的二氧化碳排放，汽车尾气排放</p>
-</li>
-<li><p>森林火灾检测：监测燃烧气体并提前预知火灾情况，以确定警戒区</p>
-</li>
-<li><p>天气监测：天气条件监测，如湿度、温度、压力、风速和降雨，地震预测</p>
-</li>
-<li><p>水质监测：河流和海洋的水质情况</p>
-</li>
-<li><p>河流洪水：监测河流、大坝和水库在雨天的水位变化</p>
-</li>
-<li><p>保护野生动物：利用GPS跟踪项圈，检测野生动物活动情况</p>
-</li>
-</ul>
-<p><strong>IOsE(internet of smart energy)——智能能源</strong></p>
-<ul>
-<li>智能电网：能源消耗监测和管理</li>
-<li>发电站：监测和分析发电站的电力流动，与消费者的智能电表进行双向通信</li>
-<li>电源控制器：用于确定所需能源的AC-DC电源控制器，以提高能源效率，降低能源浪费</li>
-<li>光伏安装：监控和优化太阳能发电厂的性能。</li>
-</ul>
-<hr>
-<h2 id="面向企业的物联网"><a href="#面向企业的物联网" class="headerlink" title="面向企业的物联网"></a>面向企业的物联网</h2><p><strong>IOsI(Internet of smart industry)——智能工业互联网</strong></p>
-<ul>
-<li>爆炸和危险气体：检测工业环境、化工厂周围和矿山内的气体水平和泄漏情况，监测化工厂内的有毒气体和氧气水平，以确保工人和货物的安全</li>
-<li>维护和维修：通过在设备内部安装监测和发送报告的传感器，可以自动提前对设备故障和服务进行早期预测。</li>
-</ul>
-<p><strong>IOsA(internet of smart agriculture)——智能农业互联网</strong></p>
-<ul>
-<li>温室检测：控制温室环境，最大限度地提高水果和蔬菜的产量及其质量</li>
-<li>堆肥：控制苜蓿、干草、稻草等的湿度和温度水平以防止真菌和其他微生物污染</li>
-<li>动物饲养：在露天牧场中放牧的动物的位置和识别</li>
-<li>后代护理：控制动物农场中后代的生长条件，以确保其生存和健康</li>
-<li>现场监测：更好地控制农业施肥、用电和浇水</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>物联网</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MATLAB——常用绘图命令</title>
     <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
@@ -276,194 +276,6 @@
       </categories>
       <tags>
         <tag>Matlab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网学习录——物联网之初见</title>
-    <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-IoT-1/</url>
-    <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
-<p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
-<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
-<p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
-<blockquote>
-<p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
-</blockquote>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
-
-
-
-<h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
-<li><p>互联性（Interconnectivity）</p>
-<p>任何设备都能够通过网络互连互通</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>与物相关服务（Things-related services）</p>
-<p>通过虚拟化的信息命令，可以实现相应实体化的物体的变化</p>
-</li>
-</ol>
-<ol start="3">
-<li><p>异构性、兼容性（Heterogeneity）</p>
-<p>不同的硬件平台和网络，可以通过不同的网络与其他设备或服务平台交互</p>
-</li>
-</ol>
-<ol start="4">
-<li><p>动态变化（Dynamic changes）</p>
-<p>随着系统指令的改变，设备的状态会动态变化，例如睡眠和唤醒、连接和/或断开等</p>
-</li>
-</ol>
-<ol start="5">
-<li><p>超大规模（Enormous scale）</p>
-<p>连接的设备至少比手机、电脑等通信设备高一个量级，处理的信息数据也会更多</p>
-</li>
-</ol>
-<ol start="6">
-<li><p>安全（Safety）</p>
-<p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>物联网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入/嵌入——通信总线、混合三目运算</title>
-    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E9%80%9A%E4%BF%A1%E6%80%BB%E7%BA%BF%E3%80%81%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<h3 id="总线的分类："><a href="#总线的分类：" class="headerlink" title="总线的分类："></a>总线的分类：</h3><ol>
-<li><p>总线按功能和规范可分为五大类型：数据总线、地址总线、控制总线、扩展总线及局部总线。</p>
-<p>数据总线、地址总线和控制总线也统称为系统总线，即通常意义上所说的总线。常见的数据总线为ISA、EISA、VESA、PCI等。</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>按照传输数据的方式划分，可以分为串行总线和并行总线。</p>
-<p>串行总线中，二进制数据逐位通过一根数据线发送到目的器件；并行总线的数据线通常超过2根。常见的串行总线有S<a href="http://www.elecfans.com/tags/pi/" target="_blank" rel="noopener">PI</a>、<a href="http://www.elecfans.com/tags/i2c/" target="_blank" rel="noopener">I2C</a>、<a href="http://www.elecfans.com/tags/usb/" target="_blank" rel="noopener">USB</a>及<a href="http://www.elecfans.com/tags/rs/" target="_blank" rel="noopener">RS</a>232等。</p>
-</li>
-</ol>
-<ol start="3">
-<li><p>按照<a href="http://www.elecfans.com/tags/时钟/" target="_blank" rel="noopener">时钟</a>信号是否独立，可以分为同步总线和异步总线。</p>
-<p>同步总线的时钟信号独立于数据，而异步总线的时钟信号是从数据中提取出来的。SPI、I2C是同步串行总线，RS232采用异步串行总线。</p>
-</li>
-</ol>
-<h3 id="常用总线："><a href="#常用总线：" class="headerlink" title="常用总线："></a>常用总线：</h3><table>
-<thead>
-<tr>
-<th>总线接口</th>
-<th>串/并</th>
-<th>同步/异步</th>
-<th>速率</th>
-<th>工作方式</th>
-<th>用线</th>
-<th>总线拓扑结构</th>
-<th>通信距离</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>UART</td>
-<td>串</td>
-<td>异步</td>
-<td>慢（波特率）</td>
-<td>全双工</td>
-<td>2线（RX、TX）</td>
-<td>RS485支持总线式、星形、树形</td>
-<td>远（最远1200m）</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>串</td>
-<td>同步</td>
-<td>慢</td>
-<td>半双工</td>
-<td>2线（SDA、SCL）</td>
-<td>总线型（特殊的树形）</td>
-<td>近</td>
-</tr>
-<tr>
-<td>SPI</td>
-<td>串</td>
-<td>同步</td>
-<td>快</td>
-<td>全双工</td>
-<td>3线或4线（SCLK、SIMO、SOMI、SS(片选)）</td>
-<td>环形</td>
-<td>远</td>
-</tr>
-<tr>
-<td>USB</td>
-<td>串</td>
-<td>同步</td>
-<td>快</td>
-<td>半双工</td>
-<td>4线（Vbus(5V)、GND、D+、D-(3.3V)）</td>
-<td>星形</td>
-<td>近</td>
-</tr>
-</tbody></table>
-<p>在SOC中常常用作于对外设寄存器配置的总线是：I2C，SPI</p>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/aidelong/article/details/83146340" target="_blank" rel="noopener">https://blog.csdn.net/aidelong/article/details/83146340</a></li>
-<li><a href="http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html" target="_blank" rel="noopener">http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html</a></li>
-</ul>
-<hr>
-<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
-<p>表达式的结果为c = 1</p>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入/嵌入——大小端问题</title>
-    <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h2><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中<strong>（低对高，高对低）</strong></p>
-<p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中<strong>（低对低，高对高）</strong></p>
-<blockquote>
-<p>实例：</p>
-<p>A=0x12345678存入地址1000H~1003H中</p>
-<p>小端模式：1000H=78,1001H=56,1002H=34,1003H=12</p>
-<p>大端模式：1000H=12,1001H=34,1002H=56,1003H=78</p>
-</blockquote>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/b2de9c82d158ccbf4ea6fbf1c413933bb0354137.jpeg" alt="大小端数据储存示意" style="zoom:50%;" />
-
-<h2 id="区分大小端"><a href="#区分大小端" class="headerlink" title="区分大小端"></a>区分大小端</h2><ol>
-<li><h3 id="利用指针来区分大小端"><a href="#利用指针来区分大小端" class="headerlink" title="利用指针来区分大小端"></a>利用指针来区分大小端</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">1</span>;  <span class="comment">//定义为1是为了方便 如果你喜欢你可以随意，</span></span><br><span class="line">	            <span class="comment">//只要你能搞清楚 例如：0x11223344;</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">char</span> *p = (<span class="keyword">char</span> *)&amp;a;<span class="comment">//在这里将整形a的地址转化为char*；</span></span><br><span class="line">	                     <span class="comment">//方便后面取一个字节内容</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span>(*p == <span class="number">1</span>)<span class="comment">//在这里解引用了p的一个字节的内容与1进行比较；</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20160426194551009" alt="利用指针来区分大小端" style="zoom: 67%;" />
-
-<ol start="2">
-<li><h3 id="Linux操作系统的源码中大小端的判断"><a href="#Linux操作系统的源码中大小端的判断" class="headerlink" title="Linux操作系统的源码中大小端的判断"></a>Linux操作系统的源码中大小端的判断</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">union</span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> mylong;</span><br><span class="line">&#125;endian_test = &#123;&#123;<span class="string">'l'</span>,<span class="string">'?'</span>,<span class="string">'?'</span>,<span class="string">'b'</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<p>   这是利用了联合体union的存放顺序是所有成员都从低地址开始存放的特性。由于联合体的各个成员共用内存，并同时只有一个成员获得该块地址的读取使用权。如果结果‘l’为小端模式，结果是‘b’为大端模式。</p>
-<ol start="3">
-<li><h3 id="利用联合体来检测大小端"><a href="#利用联合体来检测大小端" class="headerlink" title="利用联合体来检测大小端"></a>利用联合体来检测大小端</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 利用联合体来检测大小端 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">union</span> t</span><br><span class="line">	&#123;</span><br><span class="line">         <span class="keyword">int</span> i;</span><br><span class="line">         <span class="keyword">char</span> c;</span><br><span class="line">	&#125; t1;</span><br><span class="line">     t1.i = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">if</span>(t1.c == <span class="number">1</span>)</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	 <span class="keyword">else</span></span><br><span class="line">	     <span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Judge_duan();<span class="comment">//在这里我们封装成一个函数，可以有参数和返回值也可以不需要</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="大小端的转换"><a href="#大小端的转换" class="headerlink" title="大小端的转换"></a>大小端的转换</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">endian_convert</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(t); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        result &lt;&lt;= <span class="number">8</span>;</span><br><span class="line">        result |= (t &amp; <span class="number">0xff</span>);</span><br><span class="line">        t &gt;&gt;= <span class="number">8</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>参考：<a href="https://blog.csdn.net/bitboss/article/details/51247869" target="_blank" rel="noopener">https://blog.csdn.net/bitboss/article/details/51247869</a></p>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
       </tags>
   </entry>
   <entry>
@@ -598,32 +410,441 @@
       </tags>
   </entry>
   <entry>
-    <title>Sword Finger Offer——05替换空格</title>
-    <url>/2020/07/29/Sword-Finger-Offer-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</url>
-    <content><![CDATA[<blockquote>
-<p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 </p>
+    <title>物联网学习录——物联网之初见</title>
+    <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-IoT-1/</url>
+    <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
+<p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
+<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
+<p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
 <blockquote>
-<p>示例 1：</p>
-<p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p>
+<p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
 </blockquote>
-<p>限制：0 &lt;= s 的长度 &lt;= 10000</p>
-</blockquote>
-<h3 id="方法一：创造新的字符串，在新的字符串上面进行替换。"><a href="#方法一：创造新的字符串，在新的字符串上面进行替换。" class="headerlink" title="方法一：创造新的字符串，在新的字符串上面进行替换。"></a>方法一：创造新的字符串，在新的字符串上面进行替换。</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span>* s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *A = <span class="built_in">calloc</span>(<span class="built_in">strlen</span>(s)*<span class="number">3</span>+<span class="number">1</span>,<span class="keyword">sizeof</span>(<span class="keyword">char</span>));	<span class="comment">//strlen(s)*3+1  全为空格‘ ’-&gt;‘%20’+‘\0’</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;<span class="comment">//两个指针i，k</span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(s == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(s[i]!=<span class="string">'\0'</span>)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="keyword">if</span>(s[i] == <span class="string">' '</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = <span class="string">'%'</span>;	<span class="comment">//k++，替换</span></span><br><span class="line">            A[k++] = <span class="string">'2'</span>;</span><br><span class="line">            A[k++] = <span class="string">'0'</span>;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = s[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> A;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
 
-<hr>
-<h3 id="方法二：不创造新的字符串，在原有的字符串上面进行替换。"><a href="#方法二：不创造新的字符串，在原有的字符串上面进行替换。" class="headerlink" title="方法二：不创造新的字符串，在原有的字符串上面进行替换。"></a>方法二：不创造新的字符串，在原有的字符串上面进行替换。</h3><ol>
-<li><p>从头到尾扫描字符串，每次遇到空格的时候进行替换。替换时把后面的所有字符都往后移动2个字节。</p>
-</li>
-<li><p>先遍历一遍字符串，计算出字符串中的空格数。再从字符串的后面开始复制和替换，指针p1指向原始字符串的末尾，p2指向替换后的字符串的末尾。</p>
-<p><strong>从后往前替换，节省了字符后移的步骤。</strong></p>
+
+
+<h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
+<li><p>互联性（Interconnectivity）</p>
+<p>任何设备都能够通过网络互连互通</p>
 </li>
 </ol>
+<ol start="2">
+<li><p>与物相关服务（Things-related services）</p>
+<p>通过虚拟化的信息命令，可以实现相应实体化的物体的变化</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>异构性、兼容性（Heterogeneity）</p>
+<p>不同的硬件平台和网络，可以通过不同的网络与其他设备或服务平台交互</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>动态变化（Dynamic changes）</p>
+<p>随着系统指令的改变，设备的状态会动态变化，例如睡眠和唤醒、连接和/或断开等</p>
+</li>
+</ol>
+<ol start="5">
+<li><p>超大规模（Enormous scale）</p>
+<p>连接的设备至少比手机、电脑等通信设备高一个量级，处理的信息数据也会更多</p>
+</li>
+</ol>
+<ol start="6">
+<li><p>安全（Safety）</p>
+<p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>物联网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——大小端问题</title>
+    <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h2><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中<strong>（低对高，高对低）</strong></p>
+<p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中<strong>（低对低，高对高）</strong></p>
+<blockquote>
+<p>实例：</p>
+<p>A=0x12345678存入地址1000H~1003H中</p>
+<p>小端模式：1000H=78,1001H=56,1002H=34,1003H=12</p>
+<p>大端模式：1000H=12,1001H=34,1002H=56,1003H=78</p>
+</blockquote>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/b2de9c82d158ccbf4ea6fbf1c413933bb0354137.jpeg" alt="大小端数据储存示意" style="zoom:50%;" />
+
+<h2 id="区分大小端"><a href="#区分大小端" class="headerlink" title="区分大小端"></a>区分大小端</h2><ol>
+<li><h3 id="利用指针来区分大小端"><a href="#利用指针来区分大小端" class="headerlink" title="利用指针来区分大小端"></a>利用指针来区分大小端</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">1</span>;  <span class="comment">//定义为1是为了方便 如果你喜欢你可以随意，</span></span><br><span class="line">	            <span class="comment">//只要你能搞清楚 例如：0x11223344;</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">char</span> *p = (<span class="keyword">char</span> *)&amp;a;<span class="comment">//在这里将整形a的地址转化为char*；</span></span><br><span class="line">	                     <span class="comment">//方便后面取一个字节内容</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span>(*p == <span class="number">1</span>)<span class="comment">//在这里解引用了p的一个字节的内容与1进行比较；</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20160426194551009" alt="利用指针来区分大小端" style="zoom: 67%;" />
+
+<ol start="2">
+<li><h3 id="Linux操作系统的源码中大小端的判断"><a href="#Linux操作系统的源码中大小端的判断" class="headerlink" title="Linux操作系统的源码中大小端的判断"></a>Linux操作系统的源码中大小端的判断</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">union</span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> mylong;</span><br><span class="line">&#125;endian_test = &#123;&#123;<span class="string">'l'</span>,<span class="string">'?'</span>,<span class="string">'?'</span>,<span class="string">'b'</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<p>   这是利用了联合体union的存放顺序是所有成员都从低地址开始存放的特性。由于联合体的各个成员共用内存，并同时只有一个成员获得该块地址的读取使用权。如果结果‘l’为小端模式，结果是‘b’为大端模式。</p>
+<ol start="3">
+<li><h3 id="利用联合体来检测大小端"><a href="#利用联合体来检测大小端" class="headerlink" title="利用联合体来检测大小端"></a>利用联合体来检测大小端</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 利用联合体来检测大小端 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">union</span> t</span><br><span class="line">	&#123;</span><br><span class="line">         <span class="keyword">int</span> i;</span><br><span class="line">         <span class="keyword">char</span> c;</span><br><span class="line">	&#125; t1;</span><br><span class="line">     t1.i = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">if</span>(t1.c == <span class="number">1</span>)</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	 <span class="keyword">else</span></span><br><span class="line">	     <span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Judge_duan();<span class="comment">//在这里我们封装成一个函数，可以有参数和返回值也可以不需要</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="大小端的转换"><a href="#大小端的转换" class="headerlink" title="大小端的转换"></a>大小端的转换</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">endian_convert</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(t); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        result &lt;&lt;= <span class="number">8</span>;</span><br><span class="line">        result |= (t &amp; <span class="number">0xff</span>);</span><br><span class="line">        t &gt;&gt;= <span class="number">8</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>参考：<a href="https://blog.csdn.net/bitboss/article/details/51247869" target="_blank" rel="noopener">https://blog.csdn.net/bitboss/article/details/51247869</a></p>
 ]]></content>
       <categories>
         <category>TOOFFER</category>
       </categories>
       <tags>
-        <tag>数据结构与算法</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——通信总线、混合三目运算</title>
+    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E9%80%9A%E4%BF%A1%E6%80%BB%E7%BA%BF%E3%80%81%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h3 id="总线的分类："><a href="#总线的分类：" class="headerlink" title="总线的分类："></a>总线的分类：</h3><ol>
+<li><p>总线按功能和规范可分为五大类型：数据总线、地址总线、控制总线、扩展总线及局部总线。</p>
+<p>数据总线、地址总线和控制总线也统称为系统总线，即通常意义上所说的总线。常见的数据总线为ISA、EISA、VESA、PCI等。</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>按照传输数据的方式划分，可以分为串行总线和并行总线。</p>
+<p>串行总线中，二进制数据逐位通过一根数据线发送到目的器件；并行总线的数据线通常超过2根。常见的串行总线有S<a href="http://www.elecfans.com/tags/pi/" target="_blank" rel="noopener">PI</a>、<a href="http://www.elecfans.com/tags/i2c/" target="_blank" rel="noopener">I2C</a>、<a href="http://www.elecfans.com/tags/usb/" target="_blank" rel="noopener">USB</a>及<a href="http://www.elecfans.com/tags/rs/" target="_blank" rel="noopener">RS</a>232等。</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>按照<a href="http://www.elecfans.com/tags/时钟/" target="_blank" rel="noopener">时钟</a>信号是否独立，可以分为同步总线和异步总线。</p>
+<p>同步总线的时钟信号独立于数据，而异步总线的时钟信号是从数据中提取出来的。SPI、I2C是同步串行总线，RS232采用异步串行总线。</p>
+</li>
+</ol>
+<h3 id="常用总线："><a href="#常用总线：" class="headerlink" title="常用总线："></a>常用总线：</h3><table>
+<thead>
+<tr>
+<th>总线接口</th>
+<th>串/并</th>
+<th>同步/异步</th>
+<th>速率</th>
+<th>工作方式</th>
+<th>用线</th>
+<th>总线拓扑结构</th>
+<th>通信距离</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UART</td>
+<td>串</td>
+<td>异步</td>
+<td>慢（波特率）</td>
+<td>全双工</td>
+<td>2线（RX、TX）</td>
+<td>RS485支持总线式、星形、树形</td>
+<td>远（最远1200m）</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>串</td>
+<td>同步</td>
+<td>慢</td>
+<td>半双工</td>
+<td>2线（SDA、SCL）</td>
+<td>总线型（特殊的树形）</td>
+<td>近</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>串</td>
+<td>同步</td>
+<td>快</td>
+<td>全双工</td>
+<td>3线或4线（SCLK、SIMO、SOMI、SS(片选)）</td>
+<td>环形</td>
+<td>远</td>
+</tr>
+<tr>
+<td>USB</td>
+<td>串</td>
+<td>同步</td>
+<td>快</td>
+<td>半双工</td>
+<td>4线（Vbus(5V)、GND、D+、D-(3.3V)）</td>
+<td>星形</td>
+<td>近</td>
+</tr>
+</tbody></table>
+<p>在SOC中常常用作于对外设寄存器配置的总线是：I2C，SPI</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/aidelong/article/details/83146340" target="_blank" rel="noopener">https://blog.csdn.net/aidelong/article/details/83146340</a></li>
+<li><a href="http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html" target="_blank" rel="noopener">http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html</a></li>
+</ul>
+<hr>
+<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
+<p>表达式的结果为c = 1</p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入--作用域和生命周期</title>
+    <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</url>
+    <content><![CDATA[<h2 id="作用域和生命周期"><a href="#作用域和生命周期" class="headerlink" title="作用域和生命周期"></a>作用域和生命周期</h2><h3 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h3><p>变量的作用域指变量能在代码什么地方可以被访问到。</p>
+<table>
+<thead>
+<tr>
+<th>变量类型</th>
+<th>作用域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>全局变量</td>
+<td>所有程序中的代码都能访问</td>
+</tr>
+<tr>
+<td>静态全局变量</td>
+<td>在同一个源文件中可以访问，不同源文件不可访问，也不能用extern来导入</td>
+</tr>
+<tr>
+<td>局部变量</td>
+<td>只能在函数内部访问</td>
+</tr>
+<tr>
+<td>静态局部变量</td>
+<td>只能函数内部访问</td>
+</tr>
+<tr>
+<td>寄存器变量</td>
+<td>只能在函数内部访问</td>
+</tr>
+</tbody></table>
+<p>注：如果全局变量在一个源文件中定义，在另一个源文件中访问，需要用extern关键字导入。多线程访问全局变量注意安全问题。</p>
+<h3 id="变量的生命周期"><a href="#变量的生命周期" class="headerlink" title="变量的生命周期"></a>变量的生命周期</h3><p>变量的生命周期是指变量在程序运行期间的有效时间</p>
+<table>
+<thead>
+<tr>
+<th>变量类型</th>
+<th>生命周期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>全局变量</td>
+<td>整个程序运行期间有效</td>
+</tr>
+<tr>
+<td>静态全局变量</td>
+<td>整个程序运行期间有效</td>
+</tr>
+<tr>
+<td>局部变量</td>
+<td>函数范围内或代码块范围内有效</td>
+</tr>
+<tr>
+<td>静态局部变量</td>
+<td>整个程序运行期间有效</td>
+</tr>
+<tr>
+<td>寄存器变量</td>
+<td>函数范围内或代码块范围内有效</td>
+</tr>
+</tbody></table>
+<h2 id="static和extern"><a href="#static和extern" class="headerlink" title="static和extern"></a>static和extern</h2><h3 id="static修饰全局变量"><a href="#static修饰全局变量" class="headerlink" title="static修饰全局变量"></a>static修饰全局变量</h3><ul>
+<li>表示这个全局变量只能在<strong>当前文件</strong>使用，不能在其他文件使用</li>
+<li>在不同文件可以声明同名变量</li>
+<li>修饰函数表示这是一个内部函数</li>
+</ul>
+<h3 id="static修饰局部变量"><a href="#static修饰局部变量" class="headerlink" title="static修饰局部变量"></a>static修饰局部变量</h3><ul>
+<li>延长局部变量声明周期，从程序启动到程序结束，但是没有修改变量的作用域</li>
+<li>定义变量的代码在整个程序运行期间就只<strong>执行一次</strong></li>
+</ul>
+<h3 id="extern修饰全局变量"><a href="#extern修饰全局变量" class="headerlink" title="extern修饰全局变量"></a>extern修饰全局变量</h3><ul>
+<li>表示这个全局变量可以在<strong>其他文件</strong>使用</li>
+<li>在不同文件不能声明同名变量</li>
+<li>修饰函数表示这是一个外部函数</li>
+</ul>
+<h3 id="extern-不能修饰局部变量"><a href="#extern-不能修饰局部变量" class="headerlink" title="extern 不能修饰局部变量"></a><em>extern 不能修饰局部变量</em></h3><p><strong>注：全局变量、静态全局变量、静态局部变量的声明周期相同，都是直到程序结束才被释放</strong></p>
+<hr>
+<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><blockquote>
+<p>分析下列程序中每个变量的存储位置，作用域，与生命周期 </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">char</span> *p1;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> x = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="keyword">int</span> b;</span><br><span class="line"> <span class="keyword">char</span> s[] = <span class="string">"123"</span>;</span><br><span class="line"> <span class="keyword">char</span> *p2;</span><br><span class="line"> <span class="keyword">char</span> *p3 = <span class="string">"hello,world"</span>;</span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line"> <span class="keyword">register</span> <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"> p1 = (<span class="keyword">char</span> *)<span class="built_in">malloc</span>(<span class="number">128</span>);</span><br><span class="line"> p2 = (<span class="keyword">char</span> *)<span class="built_in">malloc</span>(<span class="number">256</span>);</span><br><span class="line"> <span class="built_in">free</span>(p1);</span><br><span class="line"> <span class="built_in">free</span>(p2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> func();</span><br><span class="line"> <span class="built_in">printf</span>(<span class="string">"hello,world\n"</span>);</span><br><span class="line"> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">0</span>;			<span class="comment">//全局变量,初始化</span></span><br><span class="line"><span class="keyword">char</span> *p1;			<span class="comment">//全局变量,</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> x = <span class="number">10</span>;	<span class="comment">//全局变量,初始化</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> b;				<span class="comment">//局部变量</span></span><br><span class="line">    <span class="keyword">char</span> s[] = <span class="string">"123"</span>;	<span class="comment">//s为局部变量,"123"为常量,初始化</span></span><br><span class="line">    <span class="keyword">char</span> *p2;			<span class="comment">//局部变量</span></span><br><span class="line">    <span class="keyword">char</span> *p3 = <span class="string">"hello,world"</span>;	<span class="comment">//p3为局部变量,"hello,world"为常量,初始化</span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> c = <span class="number">0</span>;	<span class="comment">//局部静态变量,初始化</span></span><br><span class="line">    <span class="keyword">register</span> <span class="keyword">int</span> i = <span class="number">0</span>;	<span class="comment">//寄存器变量,初始化</span></span><br><span class="line">    p1 = (<span class="keyword">char</span> *)<span class="built_in">malloc</span>(<span class="number">128</span>);	<span class="comment">//p1指向堆上的内存,直到free</span></span><br><span class="line">    p2 = (<span class="keyword">char</span> *)<span class="built_in">malloc</span>(<span class="number">256</span>);	<span class="comment">//p2指向堆上的内存,直到free</span></span><br><span class="line">    <span class="built_in">free</span>(p1);</span><br><span class="line">    <span class="built_in">free</span>(p2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<table>
+<thead>
+<tr>
+<th>变量或常量</th>
+<th>存储空间</th>
+<th>作用域</th>
+<th>生命周期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a</td>
+<td>静态区（data.）</td>
+<td>整个工程,extern int a;</td>
+<td>整个程序结束</td>
+</tr>
+<tr>
+<td>p1</td>
+<td>静态区（bbs.），指向的内存在堆上</td>
+<td>整个工程,extern char *p1;</td>
+<td>整个程序结束，指向的内存需要free释放。</td>
+</tr>
+<tr>
+<td>x</td>
+<td>静态区（data.）</td>
+<td>当前文件</td>
+<td>整个程序结束</td>
+</tr>
+<tr>
+<td>b</td>
+<td>栈</td>
+<td>main函数</td>
+<td>main函数结束</td>
+</tr>
+<tr>
+<td>s</td>
+<td>栈</td>
+<td>main函数</td>
+<td>main函数结束</td>
+</tr>
+<tr>
+<td>p2</td>
+<td>栈，指向的内存在堆上</td>
+<td>main函数</td>
+<td>main函数结束，指向的内存需要free释放</td>
+</tr>
+<tr>
+<td>p3</td>
+<td>栈</td>
+<td>main函数</td>
+<td>main函数结束</td>
+</tr>
+<tr>
+<td>c（参考demo/static）</td>
+<td>静态区（data.）</td>
+<td>main函数</td>
+<td>整个程序结束</td>
+</tr>
+<tr>
+<td>i</td>
+<td>可能是寄存器或栈</td>
+<td>main函数</td>
+<td>main函数结束</td>
+</tr>
+<tr>
+<td>“hello,world”,”123”</td>
+<td>静态区（data.）</td>
+<td></td>
+<td>整个程序结束</td>
+</tr>
+</tbody></table>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/ce19ec49511c" target="_blank" rel="noopener">https://www.jianshu.com/p/ce19ec49511c</a></li>
+<li><a href="https://blog.csdn.net/weixin_42528287/article/details/85783662" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42528287/article/details/85783662</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——哈佛结构和冯诺依曼结构</title>
+    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%93%88%E4%BD%9B%E7%BB%93%E6%9E%84%E5%92%8C%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="哈佛结构和冯诺依曼结构定义"><a href="#哈佛结构和冯诺依曼结构定义" class="headerlink" title="哈佛结构和冯诺依曼结构定义"></a>哈佛结构和冯诺依曼结构定义</h2><p>编程时程序代码被分为两大部分</p>
+<ol>
+<li>逻辑代码部分：程序编写完成后，就不需要对其进行修改了的；</li>
+<li>定义变量部分：程序别写完成后，会随着程序的运行不断变化的内容。</li>
+</ol>
+<p>哈佛结构和冯诺依曼结构就是对这两部分代码的<strong>储存方式的区别</strong>。</p>
+<h2 id="哈佛结构"><a href="#哈佛结构" class="headerlink" title="哈佛结构"></a>哈佛结构</h2><p><strong>程序指令储存器和数据储存器分开的储存结构。</strong></p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180331225849539" alt="哈佛结构" style="zoom: 50%;" />
+
+<p>数据和指令的储存可以同时进行，可以使指令和数据有不同的数据宽度，哈佛结构有较高的执行效率。</p>
+<p>预取指对指令顺序执行程序代码执行效率高，<strong>适合任务单调但需要高速率执行效率的CPU</strong>，如ARM、DSP。但总线多，成本高，对外设要求高。</p>
+<h2 id="冯诺依曼结构"><a href="#冯诺依曼结构" class="headerlink" title="冯诺依曼结构"></a>冯诺依曼结构</h2><p><strong>是将程序指令储存器和数据储存器合并在一起的的储存结构。</strong></p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180331225814322" alt="冯诺依曼结构" style="zoom:50%;" />
+
+<p>冯洛伊曼结构是将逻辑代码和变量统一储存在内存当中，他们之间一般是按照代码的执行顺序依次储存。冯洛伊曼结构可以充分的利用有限的内存空间。并且会使CPU对程序的执行十分的方便，不用来回的跑。</p>
+<p>数据区和指令区共用memory，方便数据区和指令区灵活调整，如果程序频繁的切换，可以提高memory的利用率。总线简单，成本低，对外设要求低。<strong>适合PC这样多任务多软件的CPU</strong>。</p>
+<h2 id="改进型哈佛结构："><a href="#改进型哈佛结构：" class="headerlink" title="改进型哈佛结构："></a>改进型哈佛结构：</h2><p>使用两个不同的存储器，程序存储器和数据存储器；使用两根总线，把两个存储器的2条地址总线和2条数据总线进行了合并；即<strong>原来哈佛结构需要４条不同的总线，改进后只需要两2条总线。</strong></p>
+<p>使用两个独立的存储器模块，分别存储指令和数据，每个存储模块都不允许指令和数据并存，以便实现并行处理；具有一条独立的地址总线和一条独立的数据总线，利用公用地址总线访问两个存储模块（程序存储模块和数据存储模块），公用数据总线则被用来完成程序存储模块或数据存储模块与CPU之间的数据传输；两条总线由程序存储器和数据存储器分时共用。</p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180331225943123" alt="改进型哈佛结构" style="zoom:50%;" />
+
+<hr>
+<p>参考：<a href="https://blog.csdn.net/u014470361/article/details/79774331" target="_blank" rel="noopener">https://blog.csdn.net/u014470361/article/details/79774331</a></p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入--数据存储结构</title>
+    <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p>可执行程序（没有调用内存，没有运行时），内存结构分为：</p>
+<ul>
+<li>代码区</li>
+<li>数据区</li>
+<li>未初始化数据区（BSS区）</li>
+</ul>
+<p>可执行文件运行时有多处两个内存区域：</p>
+<ul>
+<li>堆区</li>
+<li>栈区</li>
+</ul>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20190812222411723." alt="程序内存结构"></p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20190812173831493." alt="内存结构"></p>
+<hr>
+<h2 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h2><h3 id="代码区（text区）"><a href="#代码区（text区）" class="headerlink" title="代码区（text区）"></a>代码区（text区）</h3><p>存放数据：存放程序<strong>执行代码</strong>，也有可能包含一些只读的常数变量。</p>
+<p>这部分区域的内存大小在程序执行前就已经确定，并且内存区域属于<strong>只读</strong>。数据保存在目标文件中。</p>
+<h3 id="数据区（data区）"><a href="#数据区（data区）" class="headerlink" title="数据区（data区）"></a>数据区（data区）</h3><p>存放数据：在程序中明确被初始化的全局变量、已经初始化的静态变量（包括全局静态变量和局部静态变量）和常量数据。</p>
+<p>data区在编译时已经为数据分配了空间，数据保存在目标文件中。</p>
+<p>data区属于静态分配，程序结束后静态变量资源由系统自动释放。</p>
+<h3 id="未初始化数据区（BSS区）"><a href="#未初始化数据区（BSS区）" class="headerlink" title="未初始化数据区（BSS区）"></a>未初始化数据区（BSS区）</h3><p>存放数据：程序中未初始化的全局变量和静态变量。</p>
+<p>BBS区内容不存放在磁盘上的程序文件中，不占用可执行文件的大小，它是由链接器来获取内存的；原因是内核在程序运行前将他们都置为0。</p>
+<p>BBS区属于静态分配，程序结束后静态变量资源由系统自动释放。</p>
+<hr>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="堆区"><a href="#堆区" class="headerlink" title="堆区"></a>堆区</h3><p>堆允许程序在运行时动态分配内存，一般由程序员申请释放；</p>
+<p>堆是由低地址位向高地址位增长，采用链式储存结构，位于BSS与栈中间的地址区域；</p>
+<p>频繁的进行malloc/free会造成内存空间的不连续，产生碎片；</p>
+<p>当申请对空间时库函数是按照一定的算法来搜索可用的足够大的空间。因此堆的效率比栈要地的多。</p>
+<h3 id="栈区"><a href="#栈区" class="headerlink" title="栈区"></a>栈区</h3><p>由编译器自动分配释放，存放函数的参数值、局部变量等值；每当一个函数被调用时，该函数的返回类型和一些调用信息被存放到栈中；然后这个被调用的函数再为它的自动变量和临时变量在栈上分配空间。每调用一个函数一个新的栈就会被使用。</p>
+<p>栈区是由高地址位向低地址为增长的，是一块连续的内存区域，最大容量是由系统预先定义好的，申请的栈空间超过这个界限时会提示溢出。一般Windows是1M ~ 8M不等，一般Linux是1M ~ 16M不等。</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/weixin_42528287/article/details/85783662" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42528287/article/details/85783662</a></li>
+<li><a href="https://blog.csdn.net/u011616739/article/details/61621815" target="_blank" rel="noopener">https://blog.csdn.net/u011616739/article/details/61621815</a></li>
+<li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42060900/article/details/99229518</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
       </tags>
   </entry>
   <entry>
@@ -825,36 +1046,32 @@
       </tags>
   </entry>
   <entry>
-    <title>深入/嵌入——哈佛结构和冯诺依曼结构</title>
-    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%93%88%E4%BD%9B%E7%BB%93%E6%9E%84%E5%92%8C%E5%86%AF%E8%AF%BA%E4%BE%9D%E6%9B%BC%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h2 id="哈佛结构和冯诺依曼结构定义"><a href="#哈佛结构和冯诺依曼结构定义" class="headerlink" title="哈佛结构和冯诺依曼结构定义"></a>哈佛结构和冯诺依曼结构定义</h2><p>编程时程序代码被分为两大部分</p>
-<ol>
-<li>逻辑代码部分：程序编写完成后，就不需要对其进行修改了的；</li>
-<li>定义变量部分：程序别写完成后，会随着程序的运行不断变化的内容。</li>
-</ol>
-<p>哈佛结构和冯诺依曼结构就是对这两部分代码的<strong>储存方式的区别</strong>。</p>
-<h2 id="哈佛结构"><a href="#哈佛结构" class="headerlink" title="哈佛结构"></a>哈佛结构</h2><p><strong>程序指令储存器和数据储存器分开的储存结构。</strong></p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180331225849539" alt="哈佛结构" style="zoom: 50%;" />
-
-<p>数据和指令的储存可以同时进行，可以使指令和数据有不同的数据宽度，哈佛结构有较高的执行效率。</p>
-<p>预取指对指令顺序执行程序代码执行效率高，<strong>适合任务单调但需要高速率执行效率的CPU</strong>，如ARM、DSP。但总线多，成本高，对外设要求高。</p>
-<h2 id="冯诺依曼结构"><a href="#冯诺依曼结构" class="headerlink" title="冯诺依曼结构"></a>冯诺依曼结构</h2><p><strong>是将程序指令储存器和数据储存器合并在一起的的储存结构。</strong></p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180331225814322" alt="冯诺依曼结构" style="zoom:50%;" />
-
-<p>冯洛伊曼结构是将逻辑代码和变量统一储存在内存当中，他们之间一般是按照代码的执行顺序依次储存。冯洛伊曼结构可以充分的利用有限的内存空间。并且会使CPU对程序的执行十分的方便，不用来回的跑。</p>
-<p>数据区和指令区共用memory，方便数据区和指令区灵活调整，如果程序频繁的切换，可以提高memory的利用率。总线简单，成本低，对外设要求低。<strong>适合PC这样多任务多软件的CPU</strong>。</p>
-<h2 id="改进型哈佛结构："><a href="#改进型哈佛结构：" class="headerlink" title="改进型哈佛结构："></a>改进型哈佛结构：</h2><p>使用两个不同的存储器，程序存储器和数据存储器；使用两根总线，把两个存储器的2条地址总线和2条数据总线进行了合并；即<strong>原来哈佛结构需要４条不同的总线，改进后只需要两2条总线。</strong></p>
-<p>使用两个独立的存储器模块，分别存储指令和数据，每个存储模块都不允许指令和数据并存，以便实现并行处理；具有一条独立的地址总线和一条独立的数据总线，利用公用地址总线访问两个存储模块（程序存储模块和数据存储模块），公用数据总线则被用来完成程序存储模块或数据存储模块与CPU之间的数据传输；两条总线由程序存储器和数据存储器分时共用。</p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180331225943123" alt="改进型哈佛结构" style="zoom:50%;" />
+    <title>Sword Finger Offer——05替换空格</title>
+    <url>/2020/07/29/Sword-Finger-Offer-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</url>
+    <content><![CDATA[<blockquote>
+<p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 </p>
+<blockquote>
+<p>示例 1：</p>
+<p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p>
+</blockquote>
+<p>限制：0 &lt;= s 的长度 &lt;= 10000</p>
+</blockquote>
+<h3 id="方法一：创造新的字符串，在新的字符串上面进行替换。"><a href="#方法一：创造新的字符串，在新的字符串上面进行替换。" class="headerlink" title="方法一：创造新的字符串，在新的字符串上面进行替换。"></a>方法一：创造新的字符串，在新的字符串上面进行替换。</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span>* s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *A = <span class="built_in">calloc</span>(<span class="built_in">strlen</span>(s)*<span class="number">3</span>+<span class="number">1</span>,<span class="keyword">sizeof</span>(<span class="keyword">char</span>));	<span class="comment">//strlen(s)*3+1  全为空格‘ ’-&gt;‘%20’+‘\0’</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;<span class="comment">//两个指针i，k</span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(s == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(s[i]!=<span class="string">'\0'</span>)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="keyword">if</span>(s[i] == <span class="string">' '</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = <span class="string">'%'</span>;	<span class="comment">//k++，替换</span></span><br><span class="line">            A[k++] = <span class="string">'2'</span>;</span><br><span class="line">            A[k++] = <span class="string">'0'</span>;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = s[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> A;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p>参考：<a href="https://blog.csdn.net/u014470361/article/details/79774331" target="_blank" rel="noopener">https://blog.csdn.net/u014470361/article/details/79774331</a></p>
+<h3 id="方法二：不创造新的字符串，在原有的字符串上面进行替换。"><a href="#方法二：不创造新的字符串，在原有的字符串上面进行替换。" class="headerlink" title="方法二：不创造新的字符串，在原有的字符串上面进行替换。"></a>方法二：不创造新的字符串，在原有的字符串上面进行替换。</h3><ol>
+<li><p>从头到尾扫描字符串，每次遇到空格的时候进行替换。替换时把后面的所有字符都往后移动2个字节。</p>
+</li>
+<li><p>先遍历一遍字符串，计算出字符串中的空格数。再从字符串的后面开始复制和替换，指针p1指向原始字符串的末尾，p2指向替换后的字符串的末尾。</p>
+<p><strong>从后往前替换，节省了字符后移的步骤。</strong></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>TOOFFER</category>
       </categories>
       <tags>
-        <tag>嵌入式</tag>
+        <tag>数据结构与算法</tag>
       </tags>
   </entry>
 </search>
