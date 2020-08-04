@@ -1,84 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MATLAB——常用绘图命令</title>
-    <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hold on;#已经画的线保持，不被清除，再画线时在原图上添加</span><br><span class="line"></span><br><span class="line"><span class="built_in">hold</span> off;</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">get(gcf,<span class="string">'doubleBuffer'</span>,<span class="string">'on'</span>);</span><br><span class="line"></span><br><span class="line">drawnow;</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">yyaxis left#同一张图，左右使用不同y轴坐标系</span><br><span class="line"></span><br><span class="line">yyaxis right</span><br></pre></td></tr></table></figure>
-
-
-
-
-<table>
-<thead>
-<tr>
-<th align="center">线型</th>
-<th align="center">- 实线</th>
-<th align="center">. 点线</th>
-<th align="center">-. 虚点线</th>
-<th align="center">– 波折线</th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">点型</td>
-<td align="center">. 圆点</td>
-<td align="center">+ 加号</td>
-<td align="center">* 星号</td>
-<td align="center">x x星号</td>
-<td align="center">o 小圆</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">颜色</td>
-<td align="center">y 黄色</td>
-<td align="center">r 红色</td>
-<td align="center">g 绿色</td>
-<td align="center">b 蓝色</td>
-<td align="center">w 白色</td>
-<td align="center">k 黑色</td>
-<td align="center">m 紫色</td>
-<td align="center">c 青色</td>
-</tr>
-</tbody></table>
+    <title>物联网学习录——架构与使能技术</title>
+    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
+    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
+<p>物联网的使能技术可以分为三类：</p>
+<ol>
+<li>使“物”能够获得信息的技术</li>
+<li>使“物”能够处理信息的技术</li>
+<li>提高安全性和私密性的技术</li>
+</ol>
+<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
+<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
+<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
 <hr>
+<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
+
+<hr>
+<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
+<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
+<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
+<hr>
+<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
+<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
+<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
+<hr>
+<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
+<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
+<ul>
+<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
+</li>
+<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
+</li>
+</ul>
+<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
+<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
+<ul>
+<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
+</li>
+<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
+</li>
+</ul>
+<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
+<ul>
+<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
+<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
+<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
+</ul>
+<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
+<hr>
+<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
+<p>下一节将具体讲解这一部分内容。</p>
 ]]></content>
       <categories>
         <category>学习记录</category>
       </categories>
       <tags>
-        <tag>Matlab</tag>
+        <tag>物联网</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>线上班会：疫情期间感悟</title>
-    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
-    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
-<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
-<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
-<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
-<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
-]]></content>
-      <categories>
-        <category>生活随笔</category>
-      </categories>
   </entry>
   <entry>
     <title>物联网学习录——应用领域</title>
@@ -156,161 +136,17 @@
       </tags>
   </entry>
   <entry>
-    <title>物联网学习录——物联网之初见</title>
-    <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-IoT-1/</url>
-    <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
-<p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
-<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
-<p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
-<blockquote>
-<p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
-</blockquote>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
-
-
-
-<h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
-<li><p>互联性（Interconnectivity）</p>
-<p>任何设备都能够通过网络互连互通</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>与物相关服务（Things-related services）</p>
-<p>通过虚拟化的信息命令，可以实现相应实体化的物体的变化</p>
-</li>
-</ol>
-<ol start="3">
-<li><p>异构性、兼容性（Heterogeneity）</p>
-<p>不同的硬件平台和网络，可以通过不同的网络与其他设备或服务平台交互</p>
-</li>
-</ol>
-<ol start="4">
-<li><p>动态变化（Dynamic changes）</p>
-<p>随着系统指令的改变，设备的状态会动态变化，例如睡眠和唤醒、连接和/或断开等</p>
-</li>
-</ol>
-<ol start="5">
-<li><p>超大规模（Enormous scale）</p>
-<p>连接的设备至少比手机、电脑等通信设备高一个量级，处理的信息数据也会更多</p>
-</li>
-</ol>
-<ol start="6">
-<li><p>安全（Safety）</p>
-<p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
-</li>
-</ol>
+    <title>线上班会：疫情期间感悟</title>
+    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
+    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
+<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
+<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
+<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
+<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
 ]]></content>
       <categories>
-        <category>学习记录</category>
+        <category>生活随笔</category>
       </categories>
-      <tags>
-        <tag>物联网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网学习录——架构与使能技术</title>
-    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
-    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
-<p>物联网的使能技术可以分为三类：</p>
-<ol>
-<li>使“物”能够获得信息的技术</li>
-<li>使“物”能够处理信息的技术</li>
-<li>提高安全性和私密性的技术</li>
-</ol>
-<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
-<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
-<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
-<hr>
-<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
-
-<hr>
-<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
-<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
-<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
-<hr>
-<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
-<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
-<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
-<hr>
-<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
-<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
-<ul>
-<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
-</li>
-<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
-</li>
-</ul>
-<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
-<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
-<ul>
-<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
-</li>
-<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
-</li>
-</ul>
-<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
-<ul>
-<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
-<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
-<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
-</ul>
-<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
-<hr>
-<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
-<p>下一节将具体讲解这一部分内容。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>物联网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入/嵌入——大小端问题</title>
-    <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h2><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中<strong>（低对高，高对低）</strong></p>
-<p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中<strong>（低对低，高对高）</strong></p>
-<blockquote>
-<p>实例：</p>
-<p>A=0x12345678存入地址1000H~1003H中</p>
-<p>小端模式：1000H=78,1001H=56,1002H=34,1003H=12</p>
-<p>大端模式：1000H=12,1001H=34,1002H=56,1003H=78</p>
-</blockquote>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/b2de9c82d158ccbf4ea6fbf1c413933bb0354137.jpeg" alt="大小端数据储存示意" style="zoom:50%;" />
-
-<h2 id="区分大小端"><a href="#区分大小端" class="headerlink" title="区分大小端"></a>区分大小端</h2><ol>
-<li><h3 id="利用指针来区分大小端"><a href="#利用指针来区分大小端" class="headerlink" title="利用指针来区分大小端"></a>利用指针来区分大小端</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">1</span>;  <span class="comment">//定义为1是为了方便 如果你喜欢你可以随意，</span></span><br><span class="line">	            <span class="comment">//只要你能搞清楚 例如：0x11223344;</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">char</span> *p = (<span class="keyword">char</span> *)&amp;a;<span class="comment">//在这里将整形a的地址转化为char*；</span></span><br><span class="line">	                     <span class="comment">//方便后面取一个字节内容</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span>(*p == <span class="number">1</span>)<span class="comment">//在这里解引用了p的一个字节的内容与1进行比较；</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20160426194551009" alt="利用指针来区分大小端" style="zoom: 67%;" />
-
-<ol start="2">
-<li><h3 id="Linux操作系统的源码中大小端的判断"><a href="#Linux操作系统的源码中大小端的判断" class="headerlink" title="Linux操作系统的源码中大小端的判断"></a>Linux操作系统的源码中大小端的判断</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">union</span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> mylong;</span><br><span class="line">&#125;endian_test = &#123;&#123;<span class="string">'l'</span>,<span class="string">'?'</span>,<span class="string">'?'</span>,<span class="string">'b'</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<p>   这是利用了联合体union的存放顺序是所有成员都从低地址开始存放的特性。由于联合体的各个成员共用内存，并同时只有一个成员获得该块地址的读取使用权。如果结果‘l’为小端模式，结果是‘b’为大端模式。</p>
-<ol start="3">
-<li><h3 id="利用联合体来检测大小端"><a href="#利用联合体来检测大小端" class="headerlink" title="利用联合体来检测大小端"></a>利用联合体来检测大小端</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 利用联合体来检测大小端 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">union</span> t</span><br><span class="line">	&#123;</span><br><span class="line">         <span class="keyword">int</span> i;</span><br><span class="line">         <span class="keyword">char</span> c;</span><br><span class="line">	&#125; t1;</span><br><span class="line">     t1.i = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">if</span>(t1.c == <span class="number">1</span>)</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	 <span class="keyword">else</span></span><br><span class="line">	     <span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Judge_duan();<span class="comment">//在这里我们封装成一个函数，可以有参数和返回值也可以不需要</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="大小端的转换"><a href="#大小端的转换" class="headerlink" title="大小端的转换"></a>大小端的转换</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">endian_convert</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(t); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        result &lt;&lt;= <span class="number">8</span>;</span><br><span class="line">        result |= (t &amp; <span class="number">0xff</span>);</span><br><span class="line">        t &gt;&gt;= <span class="number">8</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>参考：<a href="https://blog.csdn.net/bitboss/article/details/51247869" target="_blank" rel="noopener">https://blog.csdn.net/bitboss/article/details/51247869</a></p>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
   </entry>
   <entry>
     <title>Sword Finger Offer——初刷算法</title>
@@ -376,94 +212,201 @@
       </tags>
   </entry>
   <entry>
-    <title>深入/嵌入——通信总线、混合三目运算</title>
-    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E9%80%9A%E4%BF%A1%E6%80%BB%E7%BA%BF%E3%80%81%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<h3 id="总线的分类："><a href="#总线的分类：" class="headerlink" title="总线的分类："></a>总线的分类：</h3><ol>
-<li><p>总线按功能和规范可分为五大类型：数据总线、地址总线、控制总线、扩展总线及局部总线。</p>
-<p>数据总线、地址总线和控制总线也统称为系统总线，即通常意义上所说的总线。常见的数据总线为ISA、EISA、VESA、PCI等。</p>
+    <title>深入/嵌入——struct与union内存对齐</title>
+    <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-struct%E4%B8%8Eunion%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/</url>
+    <content><![CDATA[<h1 id="数据内存对齐"><a href="#数据内存对齐" class="headerlink" title="数据内存对齐"></a>数据内存对齐</h1><h3 id="内存对齐的作用："><a href="#内存对齐的作用：" class="headerlink" title="内存对齐的作用："></a>内存对齐的作用：</h3><ol>
+<li><p>平台原因（移植原因）：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p>
+</li>
+<li><p>性能原因：数据结构（尤其是栈）应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存，处理器需要做两次内存访问；而对齐的内存访问只需要依次访问。</p>
 </li>
 </ol>
-<ol start="2">
-<li><p>按照传输数据的方式划分，可以分为串行总线和并行总线。</p>
-<p>串行总线中，二进制数据逐位通过一根数据线发送到目的器件；并行总线的数据线通常超过2根。常见的串行总线有S<a href="http://www.elecfans.com/tags/pi/" target="_blank" rel="noopener">PI</a>、<a href="http://www.elecfans.com/tags/i2c/" target="_blank" rel="noopener">I2C</a>、<a href="http://www.elecfans.com/tags/usb/" target="_blank" rel="noopener">USB</a>及<a href="http://www.elecfans.com/tags/rs/" target="_blank" rel="noopener">RS</a>232等。</p>
-</li>
-</ol>
-<ol start="3">
-<li><p>按照<a href="http://www.elecfans.com/tags/时钟/" target="_blank" rel="noopener">时钟</a>信号是否独立，可以分为同步总线和异步总线。</p>
-<p>同步总线的时钟信号独立于数据，而异步总线的时钟信号是从数据中提取出来的。SPI、I2C是同步串行总线，RS232采用异步串行总线。</p>
-</li>
-</ol>
-<h3 id="常用总线："><a href="#常用总线：" class="headerlink" title="常用总线："></a>常用总线：</h3><table>
+<h3 id="不同平台数据类型占用字节表："><a href="#不同平台数据类型占用字节表：" class="headerlink" title="不同平台数据类型占用字节表："></a>不同平台数据类型占用字节表：</h3><table>
 <thead>
 <tr>
-<th>总线接口</th>
-<th>串/并</th>
-<th>同步/异步</th>
-<th>速率</th>
-<th>工作方式</th>
-<th>用线</th>
-<th>总线拓扑结构</th>
-<th>通信距离</th>
+<th>数据类型</th>
+<th>32位</th>
+<th>64位</th>
+<th>备注</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>UART</td>
-<td>串</td>
-<td>异步</td>
-<td>慢（波特率）</td>
-<td>全双工</td>
-<td>2线（RX、TX）</td>
-<td>RS485支持总线式、星形、树形</td>
-<td>远（最远1200m）</td>
+<td>char</td>
+<td>1</td>
+<td>1</td>
+<td></td>
 </tr>
 <tr>
-<td>I2C</td>
-<td>串</td>
-<td>同步</td>
-<td>慢</td>
-<td>半双工</td>
-<td>2线（SDA、SCL）</td>
-<td>总线型（特殊的树形）</td>
-<td>近</td>
+<td>short</td>
+<td>2</td>
+<td>2</td>
+<td></td>
 </tr>
 <tr>
-<td>SPI</td>
-<td>串</td>
-<td>同步</td>
-<td>快</td>
-<td>全双工</td>
-<td>3线或4线（SCLK、SIMO、SOMI、SS(片选)）</td>
-<td>环形</td>
-<td>远</td>
+<td>int</td>
+<td>4</td>
+<td>4</td>
+<td></td>
 </tr>
 <tr>
-<td>USB</td>
-<td>串</td>
-<td>同步</td>
-<td>快</td>
-<td>半双工</td>
-<td>4线（Vbus(5V)、GND、D+、D-(3.3V)）</td>
-<td>星形</td>
-<td>近</td>
+<td>long</td>
+<td>4</td>
+<td>8</td>
+<td>32位于64位不同</td>
+</tr>
+<tr>
+<td>float</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>char*</td>
+<td>4</td>
+<td>8</td>
+<td>其他类型指针也是如此</td>
+</tr>
+<tr>
+<td>long long</td>
+<td>8</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td>double</td>
+<td>8</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td>long double</td>
+<td>10/12</td>
+<td>10/16</td>
+<td>有效字节10字节，为了内存对齐实际分配：32位12字节，64位16字节</td>
 </tr>
 </tbody></table>
-<p>在SOC中常常用作于对外设寄存器配置的总线是：I2C，SPI</p>
+<h2 id="结构体（struct）"><a href="#结构体（struct）" class="headerlink" title="结构体（struct）"></a>结构体（struct）</h2><p>结构体（struct）各成员各自拥有自己的内存，各自使用互不干涉，同时存在的，遵循内存对齐原则。</p>
+<h3 id="struct内存对齐规则："><a href="#struct内存对齐规则：" class="headerlink" title="struct内存对齐规则："></a>struct内存对齐规则：</h3><ol>
+<li>结构体变量的<strong>起始地址</strong>能够被其最宽的成员大小整除</li>
+<li>结构体每个成员相对于<strong>起始地址的偏移</strong>能够被其<strong>自身大小整除</strong>，如果不能则在<strong>前一个成员后面</strong>补充字节</li>
+<li>结构体总体大小能够<strong>被最宽的成员的大小</strong>整除，如不能则在<strong>后面</strong>补充字节</li>
+<li>程序中有<code>#pragma pack(n)</code>预编译指令，所有成员对齐以<strong>n字节为准</strong>（即偏移量是n的整数倍），不再考虑当前类型以及最大结构体类型。</li>
+</ol>
+<h3 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//64位</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">C</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">double</span> t;	<span class="comment">//8</span></span><br><span class="line">    <span class="keyword">char</span> b;		<span class="comment">//1</span></span><br><span class="line">    <span class="keyword">int</span> a;		<span class="comment">//4</span></span><br><span class="line">    short c;	<span class="comment">//2</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>t占8个字节，是b的1个字节的整数倍，不需要补充字节；</p>
+<p>b占1个字节，不是a的4个字节的整数倍，所以b后面需要加3个补充字节；</p>
+<p>a占4个字节，是c的2个字节的整数倍，不需要补充字节；</p>
+<p>c占2个字节，字节数为5+1+3+4+2=18；</p>
+<p>总字节数要为double类型所占8字节的整数倍；所以c后面增加6个补充字节。</p>
+<p>所以sizeof（C）=24；</p>
+<hr>
+<h3 id="实例：-1"><a href="#实例：-1" class="headerlink" title="实例："></a>实例：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(1)</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">fun</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> i;		<span class="comment">//4</span></span><br><span class="line">    <span class="keyword">double</span> d;	<span class="comment">//8</span></span><br><span class="line">    <span class="keyword">char</span> c; 	<span class="comment">//1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>因为程序中有<code>#pragma pack(1)</code>预编译命令，所谓所占字节为1字节的整数倍。</p>
+<p>总字节数为4+8+1=13</p>
+<p>sizeof（fun）=13；</p>
+<hr>
+<h2 id="联合体（union）"><a href="#联合体（union）" class="headerlink" title="联合体（union）"></a>联合体（union）</h2><p>联合体（union）各自成员共用一块内存空间，并且同时只有一个成员可以得到这这块内存的使用权（对该内存的读写），各变量共用一个内存首地址。</p>
+<h3 id="union内存对齐规则："><a href="#union内存对齐规则：" class="headerlink" title="union内存对齐规则："></a>union内存对齐规则：</h3><ol>
+<li>找到<strong>占用字节最多</strong>的成员</li>
+<li>union的字节数必须是占用字节最多的成员的的字节的倍数，而且需要能够容纳其他的成员。</li>
+</ol>
+<p>实例：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">union</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">long</span> i;		<span class="comment">//8</span></span><br><span class="line">    <span class="keyword">int</span> k[<span class="number">5</span>];	<span class="comment">//4*5</span></span><br><span class="line">    <span class="keyword">char</span> c;		<span class="comment">//1</span></span><br><span class="line">&#125;D;</span><br></pre></td></tr></table></figure>
+
+<p>long为占字节最多的数据类型，占8个字节；所以该union字节数为8的整数倍；成员k占字节数为4*5=20。所以该union占字节数为24个字节。</p>
+<hr>
+<h2 id="更复杂的实例："><a href="#更复杂的实例：" class="headerlink" title="更复杂的实例："></a>更复杂的实例：</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">BU</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> number;             <span class="comment">//4字节</span></span><br><span class="line">    <span class="keyword">union</span> UBffer</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> <span class="built_in">buffer</span>[<span class="number">13</span>];    <span class="comment">//填充3字节，该成员占16字节空间</span></span><br><span class="line">        <span class="keyword">int</span> number;</span><br><span class="line">    &#125;ubuf;</span><br><span class="line">    <span class="keyword">int</span> aa;                 <span class="comment">//占4字节空间,当前偏移量已补齐为20</span></span><br><span class="line">    <span class="keyword">double</span> dou;             <span class="comment">//占8字节空间</span></span><br><span class="line">&#125;bu;</span><br></pre></td></tr></table></figure>
+
+<p>sizeof(BU) = 4 + 13 + 3(补齐) + 4 + 8 = 32，分析方法类似，在计算aa的偏移量时，我们可以肯定的是一定是int类型的整数倍，由于不作任何缓冲补齐的情况下，number + buffer = 17字节，为了符合规则1，需要填充3个字节。</p>
+<p>结构体BU稍微变换下aa和dou成员顺序，则结果就大不相同:</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">BC</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> number;             <span class="comment">//4字节</span></span><br><span class="line">    <span class="keyword">union</span> UBffer</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> <span class="built_in">buffer</span>[<span class="number">13</span>];    <span class="comment">//填充7字节，该成员占20字节空间</span></span><br><span class="line">        <span class="keyword">int</span> number;</span><br><span class="line">    &#125;ubuf;</span><br><span class="line">    <span class="keyword">double</span> dou;             <span class="comment">//占8字节空间，当前偏移量已补齐为24</span></span><br><span class="line">    <span class="keyword">int</span> aa;                 <span class="comment">//占4字节空间，当前占用空间36字节，最大double类型，还需要根据规则2补齐</span></span><br><span class="line">&#125;bu;</span><br></pre></td></tr></table></figure>
+
+<p>此时sizeof(BC) = 4 + 13 + 7(规则1补齐) + 8 + 4 + 4(规则2补齐) = 40 (8的整数倍)</p>
+<hr>
+<p><code>__attribute__ ((__packed__))</code> 关键字，该关键字的作用：可以让结构体，按照紧凑排列的方式，占用内存。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">test1</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">struct</span> __<span class="title">attribute__</span> ((__<span class="title">packed__</span>)) <span class="title">test2</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"size of test1:"</span> &lt;&lt; <span class="keyword">sizeof</span>(struct test1) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"size of test2:"</span> &lt;&lt; <span class="keyword">sizeof</span>(struct test2) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：<br>sizeof (test1) = 8<br>sizeof (test2) = 5</p>
+<hr>
 <p>参考：</p>
 <ul>
-<li><a href="https://blog.csdn.net/aidelong/article/details/83146340" target="_blank" rel="noopener">https://blog.csdn.net/aidelong/article/details/83146340</a></li>
-<li><a href="http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html" target="_blank" rel="noopener">http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html</a></li>
+<li><a href="https://levphy.github.io/2017/03/23/memory-alignment.html" target="_blank" rel="noopener">https://levphy.github.io/2017/03/23/memory-alignment.html</a></li>
+<li><a href="https://blog.csdn.net/genzld/article/details/99744350" target="_blank" rel="noopener">https://blog.csdn.net/genzld/article/details/99744350</a></li>
 </ul>
-<hr>
-<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
-<p>表达式的结果为c = 1</p>
 ]]></content>
       <categories>
         <category>TOOFFER</category>
       </categories>
       <tags>
         <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MATLAB——常用绘图命令</title>
+    <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hold on;#已经画的线保持，不被清除，再画线时在原图上添加</span><br><span class="line"></span><br><span class="line"><span class="built_in">hold</span> off;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">get(gcf,<span class="string">'doubleBuffer'</span>,<span class="string">'on'</span>);</span><br><span class="line"></span><br><span class="line">drawnow;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">yyaxis left#同一张图，左右使用不同y轴坐标系</span><br><span class="line"></span><br><span class="line">yyaxis right</span><br></pre></td></tr></table></figure>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">线型</th>
+<th align="center">- 实线</th>
+<th align="center">. 点线</th>
+<th align="center">-. 虚点线</th>
+<th align="center">– 波折线</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">点型</td>
+<td align="center">. 圆点</td>
+<td align="center">+ 加号</td>
+<td align="center">* 星号</td>
+<td align="center">x x星号</td>
+<td align="center">o 小圆</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">颜色</td>
+<td align="center">y 黄色</td>
+<td align="center">r 红色</td>
+<td align="center">g 绿色</td>
+<td align="center">b 蓝色</td>
+<td align="center">w 白色</td>
+<td align="center">k 黑色</td>
+<td align="center">m 紫色</td>
+<td align="center">c 青色</td>
+</tr>
+</tbody></table>
+<hr>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>Matlab</tag>
       </tags>
   </entry>
   <entry>
@@ -621,30 +564,223 @@
       </tags>
   </entry>
   <entry>
-    <title>深入/嵌入——动态分配堆内存</title>
-    <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/</url>
-    <content><![CDATA[<h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
-<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>深入/嵌入——宏定义</title>
+    <url>/2020/07/28/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
+<p>宏定义计算问题</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRODUCT (x) (x*x)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> 	<span class="keyword">int</span> a,b = <span class="number">3</span>;</span><br><span class="line"> 	a = PRODUCT(b+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>生成了40个字节大小未被初始化的内存空间。</p>
-<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
-<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
+<p>求a的值：</p>
+</blockquote>
+<p>结果为：<code>a = b+2*b+2=3+2*3+2=11</code></p>
+<h2 id="实例2："><a href="#实例2：" class="headerlink" title="实例2："></a>实例2：</h2><blockquote>
+<p>描述下面XXX这个宏的作用。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>第一个宏：</strong></p>
+<p><code>#define offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</code></p>
 <ul>
-<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
-<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
+<li><code>(TYPE*)0</code>，将0强制转换为TYPE类型的指针，并且指向了0地址空间。</li>
+<li><code>(TYPE*)0)-&gt;MEMBER</code>，指向结构体中的成员</li>
+<li><code>&amp;((TYPE*)0)-&gt;MEMBER</code>，获取成员在结构体中的位置，因为其实位置为0，所以获取的地址即为实际的偏移地址。</li>
+<li><code>(size_t)&amp;((TYPE*)0)-&gt;MEMBER</code>，将偏移地址强制转换为size_t，即unsigned int。</li>
 </ul>
-<hr>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(TYPE*)<span class="number">0</span>				=&gt;	p = (TYPE*)<span class="number">0</span></span><br><span class="line">(TYPE*)<span class="number">0</span>)-&gt;MEMBER		=&gt;	p-&gt;MEMBER</span><br><span class="line">&amp;((TYPE*)<span class="number">0</span>)-&gt;MEMBER)	=&gt;	&amp;(p-&gt;MEMBER)	<span class="comment">//成员MEMBER的地址</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第二个宏：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>({ })</code>的语法形式是GNU C编译器的语法扩展，与逗号表达式类似，表达式结果为最后一个语句的值。</li>
+<li><code>typeof</code>主要用于宏定义之中，可以使用typeof关键字来引用宏参数的类型。</li>
+<li><code>typeof(((type*)0)-&gt;member)</code>，引用type结构体的member成员的数据类型。</li>
+<li><code>const typeof(((type*)0)-&gt;member) *__mpter=(ptr);</code>，定义一个与type结构体的member成员相同的类型的指针变量<code>__mpter</code>，而且将<code>ptr</code>赋值给它。</li>
+<li><code>offsetof(type,member)</code>，获取member成员在type结构中的偏移量。</li>
+<li><code>(type*)((type*)__mpter - offsetof(type,member));</code>，将<code>__mpter</code>减去偏移量，就得到了这个结构变量的地址了（指针）。</li>
+</ul>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180207165907690" alt="结构变量的地址"></p>
+<p>ptr是指向正被使用的某类型变量指针；</p>
+<p>type是包含ptr指向的变量类型的结构类型；</p>
+<p>member是type结构体中的成员，类型与ptr指向的变量类型一样；</p>
+<p>宏定义的功能是：计算返回包含ptr指向的变量所在的type类型结构变量的指针。</p>
+<p>参考：<a href="https://blog.csdn.net/feiyanaffection/article/details/79282562" target="_blank" rel="noopener">https://blog.csdn.net/feiyanaffection/article/details/79282562</a></p>
+<h2 id="实例3："><a href="#实例3：" class="headerlink" title="实例3："></a>实例3：</h2><blockquote>
+<p>用C语言字节编写一下四个宏</p>
+<p>ALGN_DOWN(x, a)将数值x按照a的整数倍向下取整，例如ALGN_DOWN(65,3) = 63；</p>
+<p>ALGN_UP(x, a)将数值x按照a的整数倍向上取整，例如ALGN_UP(65,3) = 66；</p>
+<p>ALGN_2N_DOWN(x, a)将数值x按照a的整数倍向下取整，a是2的n次幂，例如ALGN_2N_DOWN(65,4) = 64；</p>
+<p>ALGN_2N_UP(x, a)将数值x按照a的整数倍向上取整，a是2的n次幂，例如ALGN_2N_UP(65,4) = 68。</p>
+</blockquote>
+<p>设条件为：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x; </span><br><span class="line"><span class="keyword">int</span> a = <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>将数值x按照a的整数倍向下取整，a是2的n次幂:</strong></p>
+<p>对齐掩码a_mask = 11111 11111 11111 11111 11111 11110 00，即 ~(a- 1)</p>
+<p>对齐掩码a_mask与a进行”与运算”就可以得到，将数值x按照a的整数倍向下取整，a是2的n次幂。</p>
+<p><code>#ALGN_2N_DOWN(x, a)        (x &amp; ([~(a-1)]) )</code></p>
+<p><strong>将数值x按照a的整数倍向上取整，a是2的n次幂</strong></p>
+<p>如果要求出比x大的是不是需要加上a就可以了？可是如果x本身就是a的倍数，这样加a不就错了吗？</p>
+<p>所以在x基础上加上(a - 1)，然后与a的对齐掩码进行与运算。</p>
+<p><code>#ALGN_2N_UP(x, a)     ((x+a-1) &amp; (~ (a-1)))</code></p>
+<p>实例：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x=<span class="number">0</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">0.</span></span><br><span class="line">x=<span class="number">6</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">8</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">14</span>, a=<span class="number">8</span>,则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">16.</span></span><br><span class="line">注:a应当为<span class="number">2</span>的n次方, 即<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">1024</span>, <span class="number">2048</span>, <span class="number">4096</span> ...</span><br></pre></td></tr></table></figure>
+
+<p>参考：<a href="https://blog.csdn.net/heybeaman/article/details/80491871" target="_blank" rel="noopener">https://blog.csdn.net/heybeaman/article/details/80491871</a></p>
+<h2 id="实例4"><a href="#实例4" class="headerlink" title="实例4"></a>实例4</h2><blockquote>
+<p>用预处理指令#define声明一个常数，用以表示1年中有多少秒（忽略闰年问题）</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SECONDS_PER_YEAR (60 * 60 * 24 * 365)UL</span></span><br></pre></td></tr></table></figure>
+
+<p>一年的秒数为31536000，16位的int型将会溢出，因此要使用长整型符号L</p>
+<h2 id="实例5"><a href="#实例5" class="headerlink" title="实例5"></a>实例5</h2><blockquote>
+<p>写一个“标准”宏MIN，这个宏输入两个参数并返回较小的一个。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(A,B) ((A)&lt;=(B)?(A):(B))</span></span><br></pre></td></tr></table></figure>
+
+<p>容易错的地方：宏中间要小心地把参数用括号括起来。</p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>物联网学习录——物联网之初见</title>
+    <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-IoT-1/</url>
+    <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
+<p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
+<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
+<p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
+<blockquote>
+<p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
+</blockquote>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
+
+
+
+<h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
+<li><p>互联性（Interconnectivity）</p>
+<p>任何设备都能够通过网络互连互通</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>与物相关服务（Things-related services）</p>
+<p>通过虚拟化的信息命令，可以实现相应实体化的物体的变化</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>异构性、兼容性（Heterogeneity）</p>
+<p>不同的硬件平台和网络，可以通过不同的网络与其他设备或服务平台交互</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>动态变化（Dynamic changes）</p>
+<p>随着系统指令的改变，设备的状态会动态变化，例如睡眠和唤醒、连接和/或断开等</p>
+</li>
+</ol>
+<ol start="5">
+<li><p>超大规模（Enormous scale）</p>
+<p>连接的设备至少比手机、电脑等通信设备高一个量级，处理的信息数据也会更多</p>
+</li>
+</ol>
+<ol start="6">
+<li><p>安全（Safety）</p>
+<p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>物联网</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——通信总线、混合三目运算</title>
+    <url>/2020/07/27/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E9%80%9A%E4%BF%A1%E6%80%BB%E7%BA%BF%E3%80%81%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h3 id="总线的分类："><a href="#总线的分类：" class="headerlink" title="总线的分类："></a>总线的分类：</h3><ol>
+<li><p>总线按功能和规范可分为五大类型：数据总线、地址总线、控制总线、扩展总线及局部总线。</p>
+<p>数据总线、地址总线和控制总线也统称为系统总线，即通常意义上所说的总线。常见的数据总线为ISA、EISA、VESA、PCI等。</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>按照传输数据的方式划分，可以分为串行总线和并行总线。</p>
+<p>串行总线中，二进制数据逐位通过一根数据线发送到目的器件；并行总线的数据线通常超过2根。常见的串行总线有S<a href="http://www.elecfans.com/tags/pi/" target="_blank" rel="noopener">PI</a>、<a href="http://www.elecfans.com/tags/i2c/" target="_blank" rel="noopener">I2C</a>、<a href="http://www.elecfans.com/tags/usb/" target="_blank" rel="noopener">USB</a>及<a href="http://www.elecfans.com/tags/rs/" target="_blank" rel="noopener">RS</a>232等。</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>按照<a href="http://www.elecfans.com/tags/时钟/" target="_blank" rel="noopener">时钟</a>信号是否独立，可以分为同步总线和异步总线。</p>
+<p>同步总线的时钟信号独立于数据，而异步总线的时钟信号是从数据中提取出来的。SPI、I2C是同步串行总线，RS232采用异步串行总线。</p>
+</li>
+</ol>
+<h3 id="常用总线："><a href="#常用总线：" class="headerlink" title="常用总线："></a>常用总线：</h3><table>
+<thead>
+<tr>
+<th>总线接口</th>
+<th>串/并</th>
+<th>同步/异步</th>
+<th>速率</th>
+<th>工作方式</th>
+<th>用线</th>
+<th>总线拓扑结构</th>
+<th>通信距离</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UART</td>
+<td>串</td>
+<td>异步</td>
+<td>慢（波特率）</td>
+<td>全双工</td>
+<td>2线（RX、TX）</td>
+<td>RS485支持总线式、星形、树形</td>
+<td>远（最远1200m）</td>
+</tr>
+<tr>
+<td>I2C</td>
+<td>串</td>
+<td>同步</td>
+<td>慢</td>
+<td>半双工</td>
+<td>2线（SDA、SCL）</td>
+<td>总线型（特殊的树形）</td>
+<td>近</td>
+</tr>
+<tr>
+<td>SPI</td>
+<td>串</td>
+<td>同步</td>
+<td>快</td>
+<td>全双工</td>
+<td>3线或4线（SCLK、SIMO、SOMI、SS(片选)）</td>
+<td>环形</td>
+<td>远</td>
+</tr>
+<tr>
+<td>USB</td>
+<td>串</td>
+<td>同步</td>
+<td>快</td>
+<td>半双工</td>
+<td>4线（Vbus(5V)、GND、D+、D-(3.3V)）</td>
+<td>星形</td>
+<td>近</td>
+</tr>
+</tbody></table>
+<p>在SOC中常常用作于对外设寄存器配置的总线是：I2C，SPI</p>
 <p>参考：</p>
 <ul>
-<li><a href="https://blog.csdn.net/MarcoAsensio/article/details/85937002" target="_blank" rel="noopener">https://blog.csdn.net/MarcoAsensio/article/details/85937002</a></li>
-<li><a href="https://blog.csdn.net/csdn_kou/article/details/80499565" target="_blank" rel="noopener">https://blog.csdn.net/csdn_kou/article/details/80499565</a></li>
-<li><a href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html" target="_blank" rel="noopener">https://www.cnblogs.com/stevenwuzheng/p/5484986.html</a></li>
+<li><a href="https://blog.csdn.net/aidelong/article/details/83146340" target="_blank" rel="noopener">https://blog.csdn.net/aidelong/article/details/83146340</a></li>
+<li><a href="http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html" target="_blank" rel="noopener">http://wangboxyk.cn/post/Zongxian-Bus-QPI-Memory.html</a></li>
 </ul>
+<hr>
+<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
+<p>表达式的结果为c = 1</p>
 ]]></content>
       <categories>
         <category>TOOFFER</category>
@@ -824,112 +960,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深入/嵌入——宏定义</title>
-    <url>/2020/07/28/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
-<p>宏定义计算问题</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRODUCT (x) (x*x)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> 	<span class="keyword">int</span> a,b = <span class="number">3</span>;</span><br><span class="line"> 	a = PRODUCT(b+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>求a的值：</p>
-</blockquote>
-<p>结果为：<code>a = b+2*b+2=3+2*3+2=11</code></p>
-<hr>
-<h2 id="实例2："><a href="#实例2：" class="headerlink" title="实例2："></a>实例2：</h2><blockquote>
-<p>描述下面XXX这个宏的作用。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p><strong>第一个宏：</strong></p>
-<p><code>#define offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</code></p>
-<ul>
-<li><code>(TYPE*)0</code>，将0强制转换为TYPE类型的指针，并且指向了0地址空间。</li>
-<li><code>(TYPE*)0)-&gt;MEMBER</code>，指向结构体中的成员</li>
-<li><code>&amp;((TYPE*)0)-&gt;MEMBER</code>，获取成员在结构体中的位置，因为其实位置为0，所以获取的地址即为实际的偏移地址。</li>
-<li><code>(size_t)&amp;((TYPE*)0)-&gt;MEMBER</code>，将偏移地址强制转换为size_t，即unsigned int。</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(TYPE*)<span class="number">0</span>				=&gt;	p = (TYPE*)<span class="number">0</span></span><br><span class="line">(TYPE*)<span class="number">0</span>)-&gt;MEMBER		=&gt;	p-&gt;MEMBER</span><br><span class="line">&amp;((TYPE*)<span class="number">0</span>)-&gt;MEMBER)	=&gt;	&amp;(p-&gt;MEMBER)	<span class="comment">//成员MEMBER的地址</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>第二个宏：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>({ })</code>的语法形式是GNU C编译器的语法扩展，与逗号表达式类似，表达式结果为最后一个语句的值。</li>
-<li><code>typeof</code>主要用于宏定义之中，可以使用typeof关键字来引用宏参数的类型。</li>
-<li><code>typeof(((type*)0)-&gt;member)</code>，引用type结构体的member成员的数据类型。</li>
-<li><code>const typeof(((type*)0)-&gt;member) *__mpter=(ptr);</code>，定义一个与type结构体的member成员相同的类型的指针变量<code>__mpter</code>，而且将<code>ptr</code>赋值给它。</li>
-<li><code>offsetof(type,member)</code>，获取member成员在type结构中的偏移量。</li>
-<li><code>(type*)((type*)__mpter - offsetof(type,member));</code>，将<code>__mpter</code>减去偏移量，就得到了这个结构变量的地址了（指针）。</li>
-</ul>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180207165907690" alt="结构变量的地址"></p>
-<p>ptr是指向正被使用的某类型变量指针；</p>
-<p>type是包含ptr指向的变量类型的结构类型；</p>
-<p>member是type结构体中的成员，类型与ptr指向的变量类型一样；</p>
-<p>宏定义的功能是：计算返回包含ptr指向的变量所在的type类型结构变量的指针。</p>
-<p>参考：<a href="https://blog.csdn.net/feiyanaffection/article/details/79282562" target="_blank" rel="noopener">https://blog.csdn.net/feiyanaffection/article/details/79282562</a></p>
-<hr>
-<h2 id="实例3："><a href="#实例3：" class="headerlink" title="实例3："></a>实例3：</h2><blockquote>
-<p>用C语言字节编写一下四个宏</p>
-<p>ALGN_DOWN(x, a)将数值x按照a的整数倍向下取整，例如ALGN_DOWN(65,3) = 63；</p>
-<p>ALGN_UP(x, a)将数值x按照a的整数倍向上取整，例如ALGN_UP(65,3) = 66；</p>
-<p>ALGN_2N_DOWN(x, a)将数值x按照a的整数倍向下取整，a是2的n次幂，例如ALGN_2N_DOWN(65,4) = 64；</p>
-<p>ALGN_2N_UP(x, a)将数值x按照a的整数倍向上取整，a是2的n次幂，例如ALGN_2N_UP(65,4) = 68。</p>
-</blockquote>
-<p>设条件为：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x; </span><br><span class="line"><span class="keyword">int</span> a = <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>将数值x按照a的整数倍向下取整，a是2的n次幂:</strong></p>
-<p>对齐掩码a_mask = 11111 11111 11111 11111 11111 11110 00，即 ~(a- 1)</p>
-<p>对齐掩码a_mask与a进行”与运算”就可以得到，将数值x按照a的整数倍向下取整，a是2的n次幂。</p>
-<p><code>#ALGN_2N_DOWN(x, a)        (x &amp; ([~(a-1)]) )</code></p>
-<p><strong>将数值x按照a的整数倍向上取整，a是2的n次幂</strong></p>
-<p>如果要求出比x大的是不是需要加上a就可以了？可是如果x本身就是a的倍数，这样加a不就错了吗？</p>
-<p>所以在x基础上加上(a - 1)，然后与a的对齐掩码进行与运算。</p>
-<p><code>#ALGN_2N_UP(x, a)     ((x+a-1) &amp; (~ (a-1)))</code></p>
-<p>实例：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x=<span class="number">0</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">0.</span></span><br><span class="line">x=<span class="number">6</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">8</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">14</span>, a=<span class="number">8</span>,则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">16.</span></span><br><span class="line">注:a应当为<span class="number">2</span>的n次方, 即<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">1024</span>, <span class="number">2048</span>, <span class="number">4096</span> ...</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>参考：<a href="https://blog.csdn.net/heybeaman/article/details/80491871" target="_blank" rel="noopener">https://blog.csdn.net/heybeaman/article/details/80491871</a></p>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sword Finger Offer——05替换空格</title>
-    <url>/2020/07/29/Sword-Finger-Offer-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</url>
-    <content><![CDATA[<blockquote>
-<p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 </p>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p>
-</blockquote>
-<p>限制：0 &lt;= s 的长度 &lt;= 10000</p>
-</blockquote>
-<h3 id="方法一：创造新的字符串，在新的字符串上面进行替换。"><a href="#方法一：创造新的字符串，在新的字符串上面进行替换。" class="headerlink" title="方法一：创造新的字符串，在新的字符串上面进行替换。"></a>方法一：创造新的字符串，在新的字符串上面进行替换。</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span>* s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *A = <span class="built_in">calloc</span>(<span class="built_in">strlen</span>(s)*<span class="number">3</span>+<span class="number">1</span>,<span class="keyword">sizeof</span>(<span class="keyword">char</span>));	<span class="comment">//strlen(s)*3+1  全为空格‘ ’-&gt;‘%20’+‘\0’</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;<span class="comment">//两个指针i，k</span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(s == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(s[i]!=<span class="string">'\0'</span>)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="keyword">if</span>(s[i] == <span class="string">' '</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = <span class="string">'%'</span>;	<span class="comment">//k++，替换</span></span><br><span class="line">            A[k++] = <span class="string">'2'</span>;</span><br><span class="line">            A[k++] = <span class="string">'0'</span>;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = s[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> A;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="方法二：不创造新的字符串，在原有的字符串上面进行替换。"><a href="#方法二：不创造新的字符串，在原有的字符串上面进行替换。" class="headerlink" title="方法二：不创造新的字符串，在原有的字符串上面进行替换。"></a>方法二：不创造新的字符串，在原有的字符串上面进行替换。</h3><ol>
-<li><p>从头到尾扫描字符串，每次遇到空格的时候进行替换。替换时把后面的所有字符都往后移动2个字节。</p>
-</li>
-<li><p>先遍历一遍字符串，计算出字符串中的空格数。再从字符串的后面开始复制和替换，指针p1指向原始字符串的末尾，p2指向替换后的字符串的末尾。</p>
-<p><strong>从后往前替换，节省了字符后移的步骤。</strong></p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>数据结构与算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深入/嵌入——数据存储结构</title>
     <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p>可执行程序（没有调用内存，没有运行时），内存结构分为：</p>
@@ -977,127 +1007,163 @@
       </tags>
   </entry>
   <entry>
-    <title>深入/嵌入——struct与union内存对齐</title>
-    <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-struct%E4%B8%8Eunion%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/</url>
-    <content><![CDATA[<h1 id="数据内存对齐"><a href="#数据内存对齐" class="headerlink" title="数据内存对齐"></a>数据内存对齐</h1><h3 id="内存对齐的作用："><a href="#内存对齐的作用：" class="headerlink" title="内存对齐的作用："></a>内存对齐的作用：</h3><ol>
-<li><p>平台原因（移植原因）：不是所有的硬件平台都能访问任意地址上的任意数据的；某些硬件平台只能在某些地址处取某些特定类型的数据，否则抛出硬件异常。</p>
-</li>
-<li><p>性能原因：数据结构（尤其是栈）应该尽可能地在自然边界上对齐。原因在于，为了访问未对齐的内存，处理器需要做两次内存访问；而对齐的内存访问只需要依次访问。</p>
+    <title>深入/嵌入——大小端问题</title>
+    <url>/2020/07/26/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h2><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中<strong>（低对高，高对低）</strong></p>
+<p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中<strong>（低对低，高对高）</strong></p>
+<blockquote>
+<p>实例：</p>
+<p>A=0x12345678存入地址1000H~1003H中</p>
+<p>小端模式：1000H=78,1001H=56,1002H=34,1003H=12</p>
+<p>大端模式：1000H=12,1001H=34,1002H=56,1003H=78</p>
+</blockquote>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/b2de9c82d158ccbf4ea6fbf1c413933bb0354137.jpeg" alt="大小端数据储存示意" style="zoom:50%;" />
+
+<h2 id="区分大小端"><a href="#区分大小端" class="headerlink" title="区分大小端"></a>区分大小端</h2><ol>
+<li><h3 id="利用指针来区分大小端"><a href="#利用指针来区分大小端" class="headerlink" title="利用指针来区分大小端"></a>利用指针来区分大小端</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">1</span>;  <span class="comment">//定义为1是为了方便 如果你喜欢你可以随意，</span></span><br><span class="line">	            <span class="comment">//只要你能搞清楚 例如：0x11223344;</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">char</span> *p = (<span class="keyword">char</span> *)&amp;a;<span class="comment">//在这里将整形a的地址转化为char*；</span></span><br><span class="line">	                     <span class="comment">//方便后面取一个字节内容</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span>(*p == <span class="number">1</span>)<span class="comment">//在这里解引用了p的一个字节的内容与1进行比较；</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20160426194551009" alt="利用指针来区分大小端" style="zoom: 67%;" />
+
+<ol start="2">
+<li><h3 id="Linux操作系统的源码中大小端的判断"><a href="#Linux操作系统的源码中大小端的判断" class="headerlink" title="Linux操作系统的源码中大小端的判断"></a>Linux操作系统的源码中大小端的判断</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">union</span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> mylong;</span><br><span class="line">&#125;endian_test = &#123;&#123;<span class="string">'l'</span>,<span class="string">'?'</span>,<span class="string">'?'</span>,<span class="string">'b'</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
 </li>
 </ol>
-<h3 id="不同平台数据类型占用字节表："><a href="#不同平台数据类型占用字节表：" class="headerlink" title="不同平台数据类型占用字节表："></a>不同平台数据类型占用字节表：</h3><table>
+<p>   这是利用了联合体union的存放顺序是所有成员都从低地址开始存放的特性。由于联合体的各个成员共用内存，并同时只有一个成员获得该块地址的读取使用权。如果结果‘l’为小端模式，结果是‘b’为大端模式。</p>
+<ol start="3">
+<li><h3 id="利用联合体来检测大小端"><a href="#利用联合体来检测大小端" class="headerlink" title="利用联合体来检测大小端"></a>利用联合体来检测大小端</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 利用联合体来检测大小端 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">union</span> t</span><br><span class="line">	&#123;</span><br><span class="line">         <span class="keyword">int</span> i;</span><br><span class="line">         <span class="keyword">char</span> c;</span><br><span class="line">	&#125; t1;</span><br><span class="line">     t1.i = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">if</span>(t1.c == <span class="number">1</span>)</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	 <span class="keyword">else</span></span><br><span class="line">	     <span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Judge_duan();<span class="comment">//在这里我们封装成一个函数，可以有参数和返回值也可以不需要</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="大小端的转换"><a href="#大小端的转换" class="headerlink" title="大小端的转换"></a>大小端的转换</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">endian_convert</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(t); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        result &lt;&lt;= <span class="number">8</span>;</span><br><span class="line">        result |= (t &amp; <span class="number">0xff</span>);</span><br><span class="line">        t &gt;&gt;= <span class="number">8</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>参考：<a href="https://blog.csdn.net/bitboss/article/details/51247869" target="_blank" rel="noopener">https://blog.csdn.net/bitboss/article/details/51247869</a></p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——const关键字</title>
+    <url>/2020/08/04/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-const%E5%85%B3%E9%94%AE%E5%AD%97/</url>
+    <content><![CDATA[<h2 id="const与指针"><a href="#const与指针" class="headerlink" title="const与指针"></a>const与指针</h2><table>
 <thead>
 <tr>
-<th>数据类型</th>
-<th>32位</th>
-<th>64位</th>
-<th>备注</th>
+<th>指针</th>
+<th>含义</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>char</td>
-<td>1</td>
-<td>1</td>
-<td></td>
+<td><code>const int a;</code></td>
+<td>a是一个常整型数</td>
 </tr>
 <tr>
-<td>short</td>
-<td>2</td>
-<td>2</td>
-<td></td>
+<td><code>int const a;</code></td>
+<td>a是一个常整型数</td>
 </tr>
 <tr>
-<td>int</td>
-<td>4</td>
-<td>4</td>
-<td></td>
+<td><code>const int *a;</code></td>
+<td>a是一个指向常整型数的指针（数不可修改，指针可以修改）</td>
 </tr>
 <tr>
-<td>long</td>
-<td>4</td>
-<td>8</td>
-<td>32位于64位不同</td>
+<td><code>int const *a;</code></td>
+<td>a是一个指向整型数的常指针（数可修改，指针不可以修改）</td>
 </tr>
 <tr>
-<td>float</td>
-<td>4</td>
-<td>4</td>
-<td></td>
+<td><code>const int *const a;</code></td>
+<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
 </tr>
 <tr>
-<td>char*</td>
-<td>4</td>
-<td>8</td>
-<td>其他类型指针也是如此</td>
-</tr>
-<tr>
-<td>long long</td>
-<td>8</td>
-<td>8</td>
-<td></td>
-</tr>
-<tr>
-<td>double</td>
-<td>8</td>
-<td>8</td>
-<td></td>
-</tr>
-<tr>
-<td>long double</td>
-<td>10/12</td>
-<td>10/16</td>
-<td>有效字节10字节，为了内存对齐实际分配：32位12字节，64位16字节</td>
+<td><code>int const *const a;</code></td>
+<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
 </tr>
 </tbody></table>
-<h2 id="结构体（struct）"><a href="#结构体（struct）" class="headerlink" title="结构体（struct）"></a>结构体（struct）</h2><p>结构体（struct）各成员各自拥有自己的内存，各自使用互不干涉，同时存在的，遵循内存对齐原则。</p>
-<h3 id="struct内存对齐规则："><a href="#struct内存对齐规则：" class="headerlink" title="struct内存对齐规则："></a>struct内存对齐规则：</h3><ol>
-<li>结构体变量的<strong>起始地址</strong>能够被其最宽的成员大小整除</li>
-<li>结构体每个成员相对于<strong>起始地址的偏移</strong>能够被其<strong>自身大小整除</strong>，如果不能则在<strong>前一个成员后面</strong>补充字节</li>
-<li>结构体总体大小能够<strong>被最宽的成员的大小</strong>整除，如不能则在<strong>后面</strong>补充字节</li>
-<li>程序中有<code>#pragma pack(n)</code>预编译指令，所有成员对齐以<strong>n字节为准</strong>（即偏移量是n的整数倍），不再考虑当前类型以及最大结构体类型。</li>
+<h2 id="const与函数"><a href="#const与函数" class="headerlink" title="const与函数"></a>const与函数</h2><p>const通常用在函数形参当中，如果形参是一个指针，为了<strong>防止在函数内部修改指针指向的数据</strong>。就可以用const来限制。比如在String的程序中就有很多const修饰形参的情况。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">StringCopy</span> <span class="params">(<span class="keyword">char</span>* strDestination, <span class="keyword">const</span> <span class="keyword">char</span> *strSource)</span></span></span><br></pre></td></tr></table></figure>
+
+<p>const还可以表示该函数返回的一个常量，放在函数的返回值的位置，例如</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="title">GetString</span><span class="params">(<span class="keyword">void</span>)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>在类成员函数的声明和定义之中，const放在函数的形参表之后，函数体之前，表示该函数的this指针是一个常量，不能修饰该对象的数据成员，例如</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getId</span> <span class="params">()</span> <span class="keyword">const</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><p>下面这段程序的运行结果？</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> x = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> *ptr;</span><br><span class="line">    ptr = &amp;x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,x);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>编译出错</strong></p>
+<p>x是常整型数，ptr是指向常整型的指针。<code>ptr = &amp;x;</code>，即<code>ptr = 10;</code>，违反了const的规则；const是通过编译器在编译的时候检查来实现的，所以编译报错。</p>
+<hr>
+<p>参考：</p>
+<p><a href="https://www.cnblogs.com/fengxing999/p/10248636.html" target="_blank" rel="noopener">https://www.cnblogs.com/fengxing999/p/10248636.html</a></p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sword Finger Offer——05替换空格</title>
+    <url>/2020/07/29/Sword-Finger-Offer-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</url>
+    <content><![CDATA[<blockquote>
+<p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 </p>
+<blockquote>
+<p>示例 1：</p>
+<p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p>
+</blockquote>
+<p>限制：0 &lt;= s 的长度 &lt;= 10000</p>
+</blockquote>
+<h3 id="方法一：创造新的字符串，在新的字符串上面进行替换。"><a href="#方法一：创造新的字符串，在新的字符串上面进行替换。" class="headerlink" title="方法一：创造新的字符串，在新的字符串上面进行替换。"></a>方法一：创造新的字符串，在新的字符串上面进行替换。</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span>* s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *A = <span class="built_in">calloc</span>(<span class="built_in">strlen</span>(s)*<span class="number">3</span>+<span class="number">1</span>,<span class="keyword">sizeof</span>(<span class="keyword">char</span>));	<span class="comment">//strlen(s)*3+1  全为空格‘ ’-&gt;‘%20’+‘\0’</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;<span class="comment">//两个指针i，k</span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(s == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(s[i]!=<span class="string">'\0'</span>)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="keyword">if</span>(s[i] == <span class="string">' '</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = <span class="string">'%'</span>;	<span class="comment">//k++，替换</span></span><br><span class="line">            A[k++] = <span class="string">'2'</span>;</span><br><span class="line">            A[k++] = <span class="string">'0'</span>;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = s[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> A;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="方法二：不创造新的字符串，在原有的字符串上面进行替换。"><a href="#方法二：不创造新的字符串，在原有的字符串上面进行替换。" class="headerlink" title="方法二：不创造新的字符串，在原有的字符串上面进行替换。"></a>方法二：不创造新的字符串，在原有的字符串上面进行替换。</h3><ol>
+<li><p>从头到尾扫描字符串，每次遇到空格的时候进行替换。替换时把后面的所有字符都往后移动2个字节。</p>
+</li>
+<li><p>先遍历一遍字符串，计算出字符串中的空格数。再从字符串的后面开始复制和替换，指针p1指向原始字符串的末尾，p2指向替换后的字符串的末尾。</p>
+<p><strong>从后往前替换，节省了字符后移的步骤。</strong></p>
+</li>
 </ol>
-<h3 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//64位</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">C</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">double</span> t;	<span class="comment">//8</span></span><br><span class="line">    <span class="keyword">char</span> b;		<span class="comment">//1</span></span><br><span class="line">    <span class="keyword">int</span> a;		<span class="comment">//4</span></span><br><span class="line">    short c;	<span class="comment">//2</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>数据结构与算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——动态分配堆内存</title>
+    <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/</url>
+    <content><![CDATA[<h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
+<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>t占8个字节，是b的1个字节的整数倍，不需要补充字节；</p>
-<p>b占1个字节，不是a的4个字节的整数倍，所以b后面需要加3个补充字节；</p>
-<p>a占4个字节，是c的2个字节的整数倍，不需要补充字节；</p>
-<p>c占2个字节，字节数为5+1+3+4+2=18；</p>
-<p>总字节数要为double类型所占8字节的整数倍；所以c后面增加6个补充字节。</p>
-<p>所以sizeof（C）=24；</p>
-<hr>
-<h3 id="实例：-1"><a href="#实例：-1" class="headerlink" title="实例："></a>实例：</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> pack(1)</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">fun</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> i;		<span class="comment">//4</span></span><br><span class="line">    <span class="keyword">double</span> d;	<span class="comment">//8</span></span><br><span class="line">    <span class="keyword">char</span> c; 	<span class="comment">//1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>生成了40个字节大小未被初始化的内存空间。</p>
+<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>因为程序中有<code>#pragma pack(1)</code>预编译命令，所谓所占字节为1字节的整数倍。</p>
-<p>总字节数为4+8+1=13</p>
-<p>sizeof（fun）=13；</p>
-<hr>
-<h2 id="联合体（union）"><a href="#联合体（union）" class="headerlink" title="联合体（union）"></a>联合体（union）</h2><p>联合体（union）各自成员共用一块内存空间，并且同时只有一个成员可以得到这这块内存的使用权（对该内存的读写），各变量共用一个内存首地址。</p>
-<h3 id="union内存对齐规则："><a href="#union内存对齐规则：" class="headerlink" title="union内存对齐规则："></a>union内存对齐规则：</h3><ol>
-<li>找到<strong>占用字节最多</strong>的成员</li>
-<li>union的字节数必须是占用字节最多的成员的的字节的倍数，而且需要能够容纳其他的成员。</li>
-</ol>
-<p>实例：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">union</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">long</span> i;		<span class="comment">//8</span></span><br><span class="line">    <span class="keyword">int</span> k[<span class="number">5</span>];	<span class="comment">//4*5</span></span><br><span class="line">    <span class="keyword">char</span> c;		<span class="comment">//1</span></span><br><span class="line">&#125;D;</span><br></pre></td></tr></table></figure>
-
-<p>long为占字节最多的数据类型，占8个字节；所以该union字节数为8的整数倍；成员k占字节数为4*5=20。所以该union占字节数为24个字节。</p>
-<hr>
-<h2 id="更复杂的实例："><a href="#更复杂的实例：" class="headerlink" title="更复杂的实例："></a>更复杂的实例：</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">BU</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> number;             <span class="comment">//4字节</span></span><br><span class="line">    <span class="keyword">union</span> UBffer</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> <span class="built_in">buffer</span>[<span class="number">13</span>];    <span class="comment">//填充3字节，该成员占16字节空间</span></span><br><span class="line">        <span class="keyword">int</span> number;</span><br><span class="line">    &#125;ubuf;</span><br><span class="line">    <span class="keyword">int</span> aa;                 <span class="comment">//占4字节空间,当前偏移量已补齐为20</span></span><br><span class="line">    <span class="keyword">double</span> dou;             <span class="comment">//占8字节空间</span></span><br><span class="line">&#125;bu;</span><br></pre></td></tr></table></figure>
-
-<p>sizeof(BU) = 4 + 13 + 3(补齐) + 4 + 8 = 32，分析方法类似，在计算aa的偏移量时，我们可以肯定的是一定是int类型的整数倍，由于不作任何缓冲补齐的情况下，number + buffer = 17字节，为了符合规则1，需要填充3个字节。</p>
-<p>结构体BU稍微变换下aa和dou成员顺序，则结果就大不相同:</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">BC</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> number;             <span class="comment">//4字节</span></span><br><span class="line">    <span class="keyword">union</span> UBffer</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> <span class="built_in">buffer</span>[<span class="number">13</span>];    <span class="comment">//填充7字节，该成员占20字节空间</span></span><br><span class="line">        <span class="keyword">int</span> number;</span><br><span class="line">    &#125;ubuf;</span><br><span class="line">    <span class="keyword">double</span> dou;             <span class="comment">//占8字节空间，当前偏移量已补齐为24</span></span><br><span class="line">    <span class="keyword">int</span> aa;                 <span class="comment">//占4字节空间，当前占用空间36字节，最大double类型，还需要根据规则2补齐</span></span><br><span class="line">&#125;bu;</span><br></pre></td></tr></table></figure>
-
-<p>此时sizeof(BC) = 4 + 13 + 7(规则1补齐) + 8 + 4 + 4(规则2补齐) = 40 (8的整数倍)</p>
-<hr>
-<p><code>__attribute__ ((__packed__))</code> 关键字，该关键字的作用：可以让结构体，按照紧凑排列的方式，占用内存。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">test1</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="class"><span class="keyword">struct</span> __<span class="title">attribute__</span> ((__<span class="title">packed__</span>)) <span class="title">test2</span> </span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> c;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"size of test1:"</span> &lt;&lt; <span class="keyword">sizeof</span>(struct test1) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"size of test2:"</span> &lt;&lt; <span class="keyword">sizeof</span>(struct test2) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：<br>sizeof (test1) = 8<br>sizeof (test2) = 5</p>
+<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
+<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
+<ul>
+<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
+<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
+</ul>
 <hr>
 <p>参考：</p>
 <ul>
-<li><a href="https://levphy.github.io/2017/03/23/memory-alignment.html" target="_blank" rel="noopener">https://levphy.github.io/2017/03/23/memory-alignment.html</a></li>
-<li><a href="https://blog.csdn.net/genzld/article/details/99744350" target="_blank" rel="noopener">https://blog.csdn.net/genzld/article/details/99744350</a></li>
+<li><a href="https://blog.csdn.net/MarcoAsensio/article/details/85937002" target="_blank" rel="noopener">https://blog.csdn.net/MarcoAsensio/article/details/85937002</a></li>
+<li><a href="https://blog.csdn.net/csdn_kou/article/details/80499565" target="_blank" rel="noopener">https://blog.csdn.net/csdn_kou/article/details/80499565</a></li>
+<li><a href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html" target="_blank" rel="noopener">https://www.cnblogs.com/stevenwuzheng/p/5484986.html</a></li>
 </ul>
 ]]></content>
       <categories>
