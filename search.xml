@@ -1,70 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>MATLAB——常用绘图命令</title>
-    <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hold on;#已经画的线保持，不被清除，再画线时在原图上添加</span><br><span class="line"></span><br><span class="line"><span class="built_in">hold</span> off;</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">get(gcf,<span class="string">'doubleBuffer'</span>,<span class="string">'on'</span>);</span><br><span class="line"></span><br><span class="line">drawnow;</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">yyaxis left#同一张图，左右使用不同y轴坐标系</span><br><span class="line"></span><br><span class="line">yyaxis right</span><br></pre></td></tr></table></figure>
-
-
-
-
-<table>
-<thead>
-<tr>
-<th align="center">线型</th>
-<th align="center">- 实线</th>
-<th align="center">. 点线</th>
-<th align="center">-. 虚点线</th>
-<th align="center">– 波折线</th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">点型</td>
-<td align="center">. 圆点</td>
-<td align="center">+ 加号</td>
-<td align="center">* 星号</td>
-<td align="center">x x星号</td>
-<td align="center">o 小圆</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">颜色</td>
-<td align="center">y 黄色</td>
-<td align="center">r 红色</td>
-<td align="center">g 绿色</td>
-<td align="center">b 蓝色</td>
-<td align="center">w 白色</td>
-<td align="center">k 黑色</td>
-<td align="center">m 紫色</td>
-<td align="center">c 青色</td>
-</tr>
-</tbody></table>
+    <title>线上班会：疫情期间感悟</title>
+    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
+    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
+<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
+<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
+<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
+<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
+]]></content>
+      <categories>
+        <category>生活随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>物联网学习录——架构与使能技术</title>
+    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
+    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
+<p>物联网的使能技术可以分为三类：</p>
+<ol>
+<li>使“物”能够获得信息的技术</li>
+<li>使“物”能够处理信息的技术</li>
+<li>提高安全性和私密性的技术</li>
+</ol>
+<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
+<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
+<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
 <hr>
+<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
+
+<hr>
+<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
+<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
+<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
+<hr>
+<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
+<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
+<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
+<hr>
+<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
+<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
+<ul>
+<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
+</li>
+<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
+</li>
+</ul>
+<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
+<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
+<ul>
+<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
+</li>
+<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
+</li>
+</ul>
+<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
+<ul>
+<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
+<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
+<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
+</ul>
+<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
+<hr>
+<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
+<p>下一节将具体讲解这一部分内容。</p>
 ]]></content>
       <categories>
         <category>学习记录</category>
       </categories>
       <tags>
-        <tag>Matlab</tag>
+        <tag>物联网</tag>
       </tags>
   </entry>
   <entry>
@@ -143,17 +149,71 @@
       </tags>
   </entry>
   <entry>
-    <title>线上班会：疫情期间感悟</title>
-    <url>/2020/03/19/%E7%96%AB%E6%83%85%E5%8F%91%E8%A8%80/</url>
-    <content><![CDATA[<p>疫情持续到现在，我感触比较大的是：自己从来没有这么想去学校。在此之前，我经常会想要在忙碌的学习中抽离出来，可以有一大段的时间停下来。可突然实现时，却发现自己更多的是感到焦虑和迷茫。并且，开始怀念起以前忙碌有序的学习和生活状态来。这些，也都是我身边大多数人的状态。</p>
-<p>突如其来的疫情，打乱了年前的各种计划。因为需要少聚集，取消了和高中同学的聚会；因为需要控制出门与人接触，也没有玩到早就想去的密室逃脱；因为疫情这段时间没法出门，我每天就呆在家里看看电视，打打游戏。在这个阶段，健康自然是最重要的，能够在父母身边也是一种幸福，但同时，心里还是感到非常空虚和无聊。</p>
-<p>所以决定开始找点事情做:在家里学习自己做菜，现在做的还算有模有样了；既然不能出门运动，就在家里每天做俯卧撑、仰卧起坐，感觉也挺好的；开学遥遥无期，就在家打开论文学习，虽然还是没有很好的学习状态，但是在晚上打游戏打得更心安理得了，哈哈。</p>
-<p>很多人觉得，经过这次疫情，活着最重要，过得开心最重要，和家人在一起最重要的，我当然也是这样认为的，但是我们要认识到，疫情不是让我们暂时逃避面对现实的机会。因为疫情过后，我们还是得回归现实，该学习的努力学习，该工作的努力工作，但到那时候，你是否已经准备好了呢？</p>
-<p>知乎之前有个话题：面对疫情，我们普通人能够做什么？我想大概就是，做好眼前的事情，保护好身边的人。现在或许有很多我们没办法控制的因素，比如因为疫情，学习和工作受到影响，很多人会觉得很焦虑或沮丧。但是不管在怎样的情况下，我们不能去抱怨我们无法控制的东西，而是应该承担起责任。疫情之下，提升自己的竞争力，就是可以并且努力去控制的事情。希望大家在这个期间，多充实，多提升自己。</p>
+    <title>MATLAB——常用绘图命令</title>
+    <url>/2020/06/11/%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">figure(1);#绘图界面1</span><br><span class="line"></span><br><span class="line">subplot(2,1,1);#画面被分为两个小图，小图1</span><br><span class="line"></span><br><span class="line">plot(x,y);#画图</span><br><span class="line">#plot(x,y,'-k');#画黑色实线</span><br><span class="line">#plot(t,x,t,y);#同时画两条线</span><br><span class="line">#plot(t,y(t,length(t)));</span><br><span class="line"></span><br><span class="line">subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">stem(t_n,f);#绘制茎状图</span><br><span class="line"></span><br><span class="line">title('x&amp;y');#设置标题</span><br><span class="line"></span><br><span class="line">xlabel('t');#坐标系命名</span><br><span class="line">ylabel(<span class="string">'y'</span>);</span><br><span class="line"></span><br><span class="line">legend('x line','y line');#给线添加名称</span><br><span class="line"></span><br><span class="line">text(x_position,y_position,['N=',num2str(N)]);#任意位置添加文字</span><br><span class="line"></span><br><span class="line">grid on;#打开网格</span><br><span class="line"></span><br><span class="line">axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度</span><br><span class="line">#axis('square');#将坐标系设置为方形</span><br><span class="line">#axis('off');#关闭坐标系</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hold on;#已经画的线保持，不被清除，再画线时在原图上添加</span><br><span class="line"></span><br><span class="line"><span class="built_in">hold</span> off;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">get(gcf,<span class="string">'doubleBuffer'</span>,<span class="string">'on'</span>);</span><br><span class="line"></span><br><span class="line">drawnow;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">yyaxis left#同一张图，左右使用不同y轴坐标系</span><br><span class="line"></span><br><span class="line">yyaxis right</span><br></pre></td></tr></table></figure>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">线型</th>
+<th align="center">- 实线</th>
+<th align="center">. 点线</th>
+<th align="center">-. 虚点线</th>
+<th align="center">– 波折线</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">点型</td>
+<td align="center">. 圆点</td>
+<td align="center">+ 加号</td>
+<td align="center">* 星号</td>
+<td align="center">x x星号</td>
+<td align="center">o 小圆</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">颜色</td>
+<td align="center">y 黄色</td>
+<td align="center">r 红色</td>
+<td align="center">g 绿色</td>
+<td align="center">b 蓝色</td>
+<td align="center">w 白色</td>
+<td align="center">k 黑色</td>
+<td align="center">m 紫色</td>
+<td align="center">c 青色</td>
+</tr>
+</tbody></table>
+<hr>
 ]]></content>
       <categories>
-        <category>生活随笔</category>
+        <category>学习记录</category>
       </categories>
+      <tags>
+        <tag>Matlab</tag>
+      </tags>
   </entry>
   <entry>
     <title>Sword Finger Offer——初刷算法</title>
@@ -216,187 +276,6 @@
       </categories>
       <tags>
         <tag>数据结构与算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入/嵌入——*运算符和&amp;运算符、二维数组和指针</title>
-    <url>/2020/07/24/%E6%B7%B1%E5%85%A5%E5%B5%8C%E5%85%A5-1-%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C/</url>
-    <content><![CDATA[<h3 id="间接运算符和-amp-取址运算符"><a href="#间接运算符和-amp-取址运算符" class="headerlink" title="*间接运算符和&amp;取址运算符"></a>*间接运算符和&amp;取址运算符</h3><p>变量a本质上代表一个存储单元；CPU通过该存储单元的地址访问该存储单元中的数据。所以a本来代表两个值：存储单元的地址和储单元中的数据。即：    </p>
-<ul>
-<li><code>a</code>表示a对应的存储单元中的数据 </li>
-<li><code>&amp;a</code>表示a对应的存储单元的地址 </li>
-<li><code>*a</code>表示另一个存储单元中的数据 </li>
-</ul>
-<p><strong>声明</strong></p>
-<p><code>int a</code>        a中存储的是一个整数数值，通过a可以访问这个数值</p>
-<p><code>int *a</code>        a中存储的是一个存储单元的地址，而该存储单元中存储的数据是一个整数数值；通过<code>*a</code>可以访问这个数值。</p>
-<p><code>int** a</code>        a中存储的是一个存储单元的地址；而该存储单元中存储的数据是另外一个存储单元的地址，这个存储单元中存储的是整数数值。</p>
-<p>在C语言里地址叫指针。还有，数组本质上其实也是指针，即：<code>*a</code> 等同于 a[]。</p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> *b = &amp;a;		<span class="comment">//指针b指向a的地址</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a );		<span class="comment">//a的数据值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;a);		<span class="comment">//a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, b );		<span class="comment">//指针b的值，即指针b指向的a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *b);		<span class="comment">//指针b指向的a的数据值</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>结果为：</strong><br>10<br>6487620<br>6487620<br>10</p>
-<p>参考：<a href="https://blog.csdn.net/qq_21583681/article/details/78572009" target="_blank" rel="noopener">https://blog.csdn.net/qq_21583681/article/details/78572009</a></p>
-<hr>
-<h3 id="二维数组和指针"><a href="#二维数组和指针" class="headerlink" title="二维数组和指针"></a>二维数组和指针</h3><p><strong>二维数组的各种申明方式</strong></p>
-<table>
-<thead>
-<tr>
-<th>表示形式</th>
-<th align="left">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int a[5] [5];</td>
-<td align="left">int类型二维数组</td>
-</tr>
-<tr>
-<td>int ** a;</td>
-<td align="left">指向指针的指针，可用于二维数组</td>
-</tr>
-<tr>
-<td>int * a[5];</td>
-<td align="left">指针数组</td>
-</tr>
-<tr>
-<td>int (*a) [5];</td>
-<td align="left">指向一个具有5个元素的数组的指针</td>
-</tr>
-<tr>
-<td>int * a[5] [5];</td>
-<td align="left">存放指针的二维数组</td>
-</tr>
-<tr>
-<td>int (* a[3]) [4];</td>
-<td align="left">一个3元素数组，每个元素为指向具有4个元素的数组的指针</td>
-</tr>
-</tbody></table>
-<p><strong>二维数组的其他表现形式</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">表示形式</th>
-<th align="left">含义</th>
-<th align="left">地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">a</td>
-<td align="left">二维数组名，指向一维数组a[0]，即0行首地址</td>
-<td align="left">2000</td>
-</tr>
-<tr>
-<td align="left">a+1， &amp;a[1]</td>
-<td align="left">指向一维数组a[1]，即1行首地址</td>
-<td align="left">2016</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">a[0]， *(a+0)， *a</td>
-<td align="left">0行0列元素，a[0] [0]地址</td>
-<td align="left">2000</td>
-</tr>
-<tr>
-<td align="left">a[1]， *(a+1)</td>
-<td align="left">1行0列元素，a[1] [0]地址</td>
-<td align="left">2016</td>
-</tr>
-<tr>
-<td align="left">a[1]+2， *(a+1)+2， &amp;a[1] [2]</td>
-<td align="left">1行2列元素，a[1] [2]地址</td>
-<td align="left">2024</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">* (a[1]+2)， * (*(a+1)+2)， a[1] [2]</td>
-<td align="left">1行2列元素，a[1] [2]的值</td>
-<td align="left">元素值，13</td>
-</tr>
-</tbody></table>
-<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><blockquote>
-<p>数组int a[3] [4] 中的a[2] [1] 用其他形式表示</p>
-</blockquote>
-<p>仔细使用上面的解析方式</p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/1601164D5-1.png" alt="把二维数组拆解成一维数组"></p>
-<p>通过上面的图，可以很直观的得出三种a[2] [1] 的其他表达形式</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">*(*(a+<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">*(a[<span class="number">2</span>]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> *p = &amp;a[<span class="number">0</span>] [<span class="number">0</span>];</span><br><span class="line">p[<span class="number">9</span>];	<span class="comment">//p的第10个元素</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>参考：<a href="http://c.biancheng.net/view/2022.html" target="_blank" rel="noopener">http://c.biancheng.net/view/2022.html</a></p>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>物联网学习录——架构与使能技术</title>
-    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-IoT-2/</url>
-    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
-<p>物联网的使能技术可以分为三类：</p>
-<ol>
-<li>使“物”能够获得信息的技术</li>
-<li>使“物”能够处理信息的技术</li>
-<li>提高安全性和私密性的技术</li>
-</ol>
-<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
-<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
-<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
-<hr>
-<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
-
-<hr>
-<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
-<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
-<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
-<hr>
-<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
-<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
-<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
-<hr>
-<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
-<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
-<ul>
-<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
-</li>
-<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
-</li>
-</ul>
-<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
-<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
-<ul>
-<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
-</li>
-<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
-</li>
-</ul>
-<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
-<ul>
-<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
-<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
-<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
-</ul>
-<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
-<hr>
-<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
-<p>下一节将具体讲解这一部分内容。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>物联网</tag>
       </tags>
   </entry>
   <entry>
@@ -764,39 +643,6 @@
       </tags>
   </entry>
   <entry>
-    <title>深入/嵌入——动态分配堆内存</title>
-    <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/</url>
-    <content><![CDATA[<h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
-<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>生成了40个字节大小未被初始化的内存空间。</p>
-<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
-<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
-<ul>
-<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
-<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
-</ul>
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/MarcoAsensio/article/details/85937002" target="_blank" rel="noopener">https://blog.csdn.net/MarcoAsensio/article/details/85937002</a></li>
-<li><a href="https://blog.csdn.net/csdn_kou/article/details/80499565" target="_blank" rel="noopener">https://blog.csdn.net/csdn_kou/article/details/80499565</a></li>
-<li><a href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html" target="_blank" rel="noopener">https://www.cnblogs.com/stevenwuzheng/p/5484986.html</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>深入/嵌入——宏定义</title>
     <url>/2020/07/28/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
     <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
@@ -880,6 +726,160 @@
       </tags>
   </entry>
   <entry>
+    <title>深入/嵌入——*运算符和&amp;运算符、二维数组和指针</title>
+    <url>/2020/07/24/%E6%B7%B1%E5%85%A5%E5%B5%8C%E5%85%A5-1-%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C/</url>
+    <content><![CDATA[<h3 id="间接运算符和-amp-取址运算符"><a href="#间接运算符和-amp-取址运算符" class="headerlink" title="*间接运算符和&amp;取址运算符"></a>*间接运算符和&amp;取址运算符</h3><p>变量a本质上代表一个存储单元；CPU通过该存储单元的地址访问该存储单元中的数据。所以a本来代表两个值：存储单元的地址和储单元中的数据。即：    </p>
+<ul>
+<li><code>a</code>表示a对应的存储单元中的数据 </li>
+<li><code>&amp;a</code>表示a对应的存储单元的地址 </li>
+<li><code>*a</code>表示另一个存储单元中的数据 </li>
+</ul>
+<p><strong>声明</strong></p>
+<p><code>int a</code>        a中存储的是一个整数数值，通过a可以访问这个数值</p>
+<p><code>int *a</code>        a中存储的是一个存储单元的地址，而该存储单元中存储的数据是一个整数数值；通过<code>*a</code>可以访问这个数值。</p>
+<p><code>int** a</code>        a中存储的是一个存储单元的地址；而该存储单元中存储的数据是另外一个存储单元的地址，这个存储单元中存储的是整数数值。</p>
+<p>在C语言里地址叫指针。还有，数组本质上其实也是指针，即：<code>*a</code> 等同于 a[]。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> *b = &amp;a;		<span class="comment">//指针b指向a的地址</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a );		<span class="comment">//a的数据值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;a);		<span class="comment">//a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, b );		<span class="comment">//指针b的值，即指针b指向的a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *b);		<span class="comment">//指针b指向的a的数据值</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>结果为：</strong><br>10<br>6487620<br>6487620<br>10</p>
+<p>参考：<a href="https://blog.csdn.net/qq_21583681/article/details/78572009" target="_blank" rel="noopener">https://blog.csdn.net/qq_21583681/article/details/78572009</a></p>
+<hr>
+<h3 id="二维数组和指针"><a href="#二维数组和指针" class="headerlink" title="二维数组和指针"></a>二维数组和指针</h3><p><strong>二维数组的各种申明方式</strong></p>
+<table>
+<thead>
+<tr>
+<th>表示形式</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int a[5] [5];</td>
+<td align="left">int类型二维数组</td>
+</tr>
+<tr>
+<td>int ** a;</td>
+<td align="left">指向指针的指针，可用于二维数组</td>
+</tr>
+<tr>
+<td>int * a[5];</td>
+<td align="left">指针数组</td>
+</tr>
+<tr>
+<td>int (*a) [5];</td>
+<td align="left">指向一个具有5个元素的数组的指针</td>
+</tr>
+<tr>
+<td>int * a[5] [5];</td>
+<td align="left">存放指针的二维数组</td>
+</tr>
+<tr>
+<td>int (* a[3]) [4];</td>
+<td align="left">一个3元素数组，每个元素为指向具有4个元素的数组的指针</td>
+</tr>
+</tbody></table>
+<p><strong>二维数组的其他表现形式</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">表示形式</th>
+<th align="left">含义</th>
+<th align="left">地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">a</td>
+<td align="left">二维数组名，指向一维数组a[0]，即0行首地址</td>
+<td align="left">2000</td>
+</tr>
+<tr>
+<td align="left">a+1， &amp;a[1]</td>
+<td align="left">指向一维数组a[1]，即1行首地址</td>
+<td align="left">2016</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">a[0]， *(a+0)， *a</td>
+<td align="left">0行0列元素，a[0] [0]地址</td>
+<td align="left">2000</td>
+</tr>
+<tr>
+<td align="left">a[1]， *(a+1)</td>
+<td align="left">1行0列元素，a[1] [0]地址</td>
+<td align="left">2016</td>
+</tr>
+<tr>
+<td align="left">a[1]+2， *(a+1)+2， &amp;a[1] [2]</td>
+<td align="left">1行2列元素，a[1] [2]地址</td>
+<td align="left">2024</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">* (a[1]+2)， * (*(a+1)+2)， a[1] [2]</td>
+<td align="left">1行2列元素，a[1] [2]的值</td>
+<td align="left">元素值，13</td>
+</tr>
+</tbody></table>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><blockquote>
+<p>数组int a[3] [4] 中的a[2] [1] 用其他形式表示</p>
+</blockquote>
+<p>仔细使用上面的解析方式</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/1601164D5-1.png" alt="把二维数组拆解成一维数组"></p>
+<p>通过上面的图，可以很直观的得出三种a[2] [1] 的其他表达形式</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">*(*(a+<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">*(a[<span class="number">2</span>]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> *p = &amp;a[<span class="number">0</span>] [<span class="number">0</span>];</span><br><span class="line">p[<span class="number">9</span>];	<span class="comment">//p的第10个元素</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>参考：<a href="http://c.biancheng.net/view/2022.html" target="_blank" rel="noopener">http://c.biancheng.net/view/2022.html</a></p>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——动态分配堆内存</title>
+    <url>/2020/07/31/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/</url>
+    <content><![CDATA[<h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
+<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>生成了40个字节大小未被初始化的内存空间。</p>
+<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
+<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
+<ul>
+<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
+<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
+</ul>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/MarcoAsensio/article/details/85937002" target="_blank" rel="noopener">https://blog.csdn.net/MarcoAsensio/article/details/85937002</a></li>
+<li><a href="https://blog.csdn.net/csdn_kou/article/details/80499565" target="_blank" rel="noopener">https://blog.csdn.net/csdn_kou/article/details/80499565</a></li>
+<li><a href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html" target="_blank" rel="noopener">https://www.cnblogs.com/stevenwuzheng/p/5484986.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>深入/嵌入——const关键字</title>
     <url>/2020/08/04/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-const%E5%85%B3%E9%94%AE%E5%AD%97/</url>
     <content><![CDATA[<ul>
@@ -938,48 +938,6 @@
 <hr>
 <p>参考：</p>
 <p><a href="https://www.cnblogs.com/fengxing999/p/10248636.html" target="_blank" rel="noopener">https://www.cnblogs.com/fengxing999/p/10248636.html</a></p>
-]]></content>
-      <categories>
-        <category>TOOFFER</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>深入/嵌入——源码到可执行文件过程</title>
-    <url>/2020/08/04/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E6%BA%90%E7%A0%81%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<p>从文本到可执行文件一般需要4个过程：</p>
-<table>
-<thead>
-<tr>
-<th>执行过程</th>
-<th>处理内容</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>预编译阶段</td>
-<td>主要处理源代码文件中的以“#”开头的预编译指令，生成<strong>预编译文件</strong>。</td>
-</tr>
-<tr>
-<td>编译阶段</td>
-<td>预编译文件转换为特定汇编代码，生成<strong>汇编文件</strong>。</td>
-</tr>
-<tr>
-<td>汇编阶段</td>
-<td>将汇编文件转换为机器码，生成<strong>可重定位目标文件</strong>。</td>
-</tr>
-<tr>
-<td>链接阶段</td>
-<td>将多个目标文件及所需要的库连接成最终的<strong>可执行目标文件</strong>。</td>
-</tr>
-</tbody></table>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200804140530964.png" alt="文本到可执行文件处理过程"></p>
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42060900/article/details/99229518</a></li>
-</ul>
 ]]></content>
       <categories>
         <category>TOOFFER</category>
@@ -1196,6 +1154,76 @@
 <ul>
 <li><a href="https://www.jianshu.com/p/ce19ec49511c" target="_blank" rel="noopener">https://www.jianshu.com/p/ce19ec49511c</a></li>
 <li><a href="https://blog.csdn.net/weixin_42528287/article/details/85783662" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42528287/article/details/85783662</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>TOOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——volatile关键字</title>
+    <url>/2020/08/05/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-volatile%E5%85%B3%E9%94%AE%E5%AD%97/</url>
+    <content><![CDATA[<p>volatile是易变，不稳定的意思</p>
+<p>volatile修变量可以被某些未知的因素而改变，未知的因素包括操作系统、硬件或其他线程等。每次使用都从<strong>内存重新装载内容</strong>。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">#示例<span class="number">1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;studio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> a = i;</span><br><span class="line">    <span class="keyword">int</span> b = i;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">"i = %d\n"</span>, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>i的值直接从寄存器中读取，a，b的值相等。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">#示例<span class="number">2</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;studio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">volatile</span> <span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> a = i;</span><br><span class="line">    <span class="keyword">int</span> b = i;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">"i = %d\n"</span>, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>i的值是随时可能发生变化的，所以a，b的值不一定相等。</p>
+<p>volatile的使用：</p>
+<ol>
+<li>并行设备的硬件寄存器（如：状态寄存器）</li>
+<li>中断服务子程序中会访问到的非自动变量</li>
+<li>多线程应用中被几个任务共享的变量</li>
+</ol>
+<p>C语言编译过程中，volatile关键字和extern关键字分别在哪个阶段起作用？</p>
+<p>volatile：编译阶段</p>
+<p>extern：链接阶段</p>
+]]></content>
+      <categories>
+        <category>TOFFER</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>深入/嵌入——源码到可执行文件过程</title>
+    <url>/2020/08/04/%E6%B7%B1%E5%85%A5-%E5%B5%8C%E5%85%A5-%E6%BA%90%E7%A0%81%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<p>从文本到可执行文件一般需要4个过程：</p>
+<table>
+<thead>
+<tr>
+<th>执行过程</th>
+<th>处理内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>预编译阶段</td>
+<td>主要处理源代码文件中的以“#”开头的预编译指令，生成<strong>预编译文件</strong>。</td>
+</tr>
+<tr>
+<td>编译阶段</td>
+<td>预编译文件转换为特定汇编代码，生成<strong>汇编文件</strong>。</td>
+</tr>
+<tr>
+<td>汇编阶段</td>
+<td>将汇编文件转换为机器码，生成<strong>可重定位目标文件</strong>。</td>
+</tr>
+<tr>
+<td>链接阶段</td>
+<td>将多个目标文件及所需要的库连接成最终的<strong>可执行目标文件</strong>。</td>
+</tr>
+</tbody></table>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200804140530964.png" alt="文本到可执行文件处理过程"></p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42060900/article/details/99229518</a></li>
 </ul>
 ]]></content>
       <categories>
