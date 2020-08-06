@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>【C语言】*运算符和&amp;运算符、二维数组和指针 | Jack's Building</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【C语言】*运算符和&amp;运算符、二维数组和指针</h1><a id="logo" href="/.">Jack's Building</a><p class="description">赤子之心，乘风破浪。</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于我</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【C语言】*运算符和&amp;运算符、二维数组和指针</h1><div class="post-meta">2020-07-24<span> | </span><span class="category"><a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 697</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 2</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" href="/2020/07/24/C%E8%AF%AD%E8%A8%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E6%8C%87%E9%92%88/#vcomment"><span class="valine-comment-count" data-xid="/2020/07/24/C%E8%AF%AD%E8%A8%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E6%8C%87%E9%92%88/"></span><span> 条评论</span></a><div class="post-content"><h3 id="间接运算符和-amp-取址运算符"><a href="#间接运算符和-amp-取址运算符" class="headerlink" title="*间接运算符和&amp;取址运算符"></a>*间接运算符和&amp;取址运算符</h3><p>变量a本质上代表一个存储单元；CPU通过该存储单元的地址访问该存储单元中的数据。所以a本来代表两个值：存储单元的地址和储单元中的数据。即：    </p>
+<ul>
+<li><code>a</code>表示a对应的存储单元中的数据 </li>
+<li><code>&amp;a</code>表示a对应的存储单元的地址 </li>
+<li><code>*a</code>表示另一个存储单元中的数据 </li>
+</ul>
+<p><strong>声明</strong></p>
+<p><code>int a</code>        a中存储的是一个整数数值，通过a可以访问这个数值</p>
+<p><code>int *a</code>        a中存储的是一个存储单元的地址，而该存储单元中存储的数据是一个整数数值；通过<code>*a</code>可以访问这个数值。</p>
+<p><code>int** a</code>        a中存储的是一个存储单元的地址；而该存储单元中存储的数据是另外一个存储单元的地址，这个存储单元中存储的是整数数值。</p>
+<p>在C语言里地址叫指针。还有，数组本质上其实也是指针，即：<code>*a</code> 等同于 a[]。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> *b = &amp;a;		<span class="comment">//指针b指向a的地址</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a );		<span class="comment">//a的数据值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;a);		<span class="comment">//a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, b );		<span class="comment">//指针b的值，即指针b指向的a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *b);		<span class="comment">//指针b指向的a的数据值</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>结果为：</strong><br>10<br>6487620<br>6487620<br>10</p>
+<p>参考：<a href="https://blog.csdn.net/qq_21583681/article/details/78572009" target="_blank" rel="noopener">https://blog.csdn.net/qq_21583681/article/details/78572009</a></p>
+<hr>
+<h3 id="二维数组和指针"><a href="#二维数组和指针" class="headerlink" title="二维数组和指针"></a>二维数组和指针</h3><p><strong>二维数组的各种申明方式</strong></p>
+<table>
+<thead>
+<tr>
+<th>表示形式</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int a[5] [5];</td>
+<td align="left">int类型二维数组</td>
+</tr>
+<tr>
+<td>int ** a;</td>
+<td align="left">指向指针的指针，可用于二维数组</td>
+</tr>
+<tr>
+<td>int * a[5];</td>
+<td align="left">指针数组</td>
+</tr>
+<tr>
+<td>int (*a) [5];</td>
+<td align="left">指向一个具有5个元素的数组的指针</td>
+</tr>
+<tr>
+<td>int * a[5] [5];</td>
+<td align="left">存放指针的二维数组</td>
+</tr>
+<tr>
+<td>int (* a[3]) [4];</td>
+<td align="left">一个3元素数组，每个元素为指向具有4个元素的数组的指针</td>
+</tr>
+</tbody></table>
+<p><strong>二维数组的其他表现形式</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">表示形式</th>
+<th align="left">含义</th>
+<th align="left">地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">a</td>
+<td align="left">二维数组名，指向一维数组a[0]，即0行首地址</td>
+<td align="left">2000</td>
+</tr>
+<tr>
+<td align="left">a+1， &amp;a[1]</td>
+<td align="left">指向一维数组a[1]，即1行首地址</td>
+<td align="left">2016</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">a[0]， *(a+0)， *a</td>
+<td align="left">0行0列元素，a[0] [0]地址</td>
+<td align="left">2000</td>
+</tr>
+<tr>
+<td align="left">a[1]， *(a+1)</td>
+<td align="left">1行0列元素，a[1] [0]地址</td>
+<td align="left">2016</td>
+</tr>
+<tr>
+<td align="left">a[1]+2， *(a+1)+2， &amp;a[1] [2]</td>
+<td align="left">1行2列元素，a[1] [2]地址</td>
+<td align="left">2024</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">* (a[1]+2)， * (*(a+1)+2)， a[1] [2]</td>
+<td align="left">1行2列元素，a[1] [2]的值</td>
+<td align="left">元素值，13</td>
+</tr>
+</tbody></table>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><blockquote>
+<p>数组int a[3] [4] 中的a[2] [1] 用其他形式表示</p>
+</blockquote>
+<p>仔细使用上面的解析方式</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/1601164D5-1.png" alt="把二维数组拆解成一维数组"></p>
+<p>通过上面的图，可以很直观的得出三种a[2] [1] 的其他表达形式</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*(*(a+<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">*(a[<span class="number">2</span>]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> *p = &amp;a[<span class="number">0</span>] [<span class="number">0</span>];</span><br><span class="line">p[<span class="number">9</span>];	<span class="comment">//p的第10个元素</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>参考：<a href="http://c.biancheng.net/view/2022.html" target="_blank" rel="noopener">http://c.biancheng.net/view/2022.html</a></p>
+</div><div class="tags"><a href="/tags/TOOFFER/"><i class="fa fa-tag"></i>TOOFFER</a><a href="/tags/C%E8%AF%AD%E8%A8%80/"><i class="fa fa-tag"></i>C语言</a></div><div class="post-nav"><a class="pre" href="/2020/07/26/C%E8%AF%AD%E8%A8%80-struct%E4%B8%8Eunion%E5%86%85%E5%AD%98%E5%AF%B9%E9%BD%90/">【C语言】struct与union内存对齐</a><a class="next" href="/2020/07/23/%E7%AE%97%E6%B3%95-%E5%88%9D%E5%88%B7%E7%AE%97%E6%B3%95/">【算法】初刷算法</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == 'true' ? true : false;
+var verify = 'false' == 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'XjSiIVSsgAVihgbEz5ICwLGz-gzGzoHsz',
+  appKey:'G94lTTxDNLvxidBoDUxGrvLC',
+  placeholder:'撰写评论',
+  avatar:'identicon',
+  guest_info:guest_info,
+  pageSize:'10'
+})
+</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Matlab/" style="font-size: 15px;">Matlab</a> <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 15px;">物联网</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 15px;">算法</a> <a href="/tags/TOOFFER/" style="font-size: 15px;">TOOFFER</a> <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 15px;">C语言</a> <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" style="font-size: 15px;">嵌入式</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/08/06/C%E8%AF%AD%E8%A8%80-static%E5%85%B3%E9%94%AE%E5%AD%97-%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/">【C语言】static关键字、混合三目运算</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/05/%E5%B5%8C%E5%85%A5%E5%BC%8F-TCP%E4%B8%8EUDP/">【嵌入式】TCP与UDP</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/05/C%E8%AF%AD%E8%A8%80-volatile%E5%85%B3%E9%94%AE%E5%AD%97/">【C语言】volatile关键字</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/04/C%E8%AF%AD%E8%A8%80-%E6%BA%90%E7%A0%81%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E8%BF%87%E7%A8%8B/">【C语言】源码到可执行文件过程</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/04/C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/">【C语言】const关键字</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/31/C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/">【C语言】动态分配堆内存</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/31/C%E8%AF%AD%E8%A8%80-%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">【C语言】作用域和生命周期</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/31/C%E8%AF%AD%E8%A8%80-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/">【C语言】数据存储结构</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/29/%E7%AE%97%E6%B3%95-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/">【算法】05替换空格</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/07/28/C%E8%AF%AD%E8%A8%80-%E5%AE%8F%E5%AE%9A%E4%B9%89/">【C语言】宏定义</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">Jack's Building.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=0.0.0"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" color="100,99,98" opacity="0.4" zIndex="-1" count="50" src="//cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.min.js"></script><script type="text/javascript" src="/js/love.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
