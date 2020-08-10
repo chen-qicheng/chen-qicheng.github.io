@@ -74,58 +74,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【物联网】01物联网之初见</title>
-    <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-01%E7%89%A9%E8%81%94%E7%BD%91%E4%B9%8B%E5%88%9D%E8%A7%81/</url>
-    <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
-<p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
-<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
-<p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
-<blockquote>
-<p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
-</blockquote>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
-
-
-
-<h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
-<li><p>互联性（Interconnectivity）</p>
-<p>任何设备都能够通过网络互连互通</p>
-</li>
-</ol>
-<ol start="2">
-<li><p>与物相关服务（Things-related services）</p>
-<p>通过虚拟化的信息命令，可以实现相应实体化的物体的变化</p>
-</li>
-</ol>
-<ol start="3">
-<li><p>异构性、兼容性（Heterogeneity）</p>
-<p>不同的硬件平台和网络，可以通过不同的网络与其他设备或服务平台交互</p>
-</li>
-</ol>
-<ol start="4">
-<li><p>动态变化（Dynamic changes）</p>
-<p>随着系统指令的改变，设备的状态会动态变化，例如睡眠和唤醒、连接和/或断开等</p>
-</li>
-</ol>
-<ol start="5">
-<li><p>超大规模（Enormous scale）</p>
-<p>连接的设备至少比手机、电脑等通信设备高一个量级，处理的信息数据也会更多</p>
-</li>
-</ol>
-<ol start="6">
-<li><p>安全（Safety）</p>
-<p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>知识扩展</category>
-      </categories>
-      <tags>
-        <tag>物联网</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【物联网】03应用领域</title>
     <url>/2020/07/05/%E7%89%A9%E8%81%94%E7%BD%91-03%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/</url>
     <content><![CDATA[<p>物联网的应用场景是非常多样化的，包括智能家居、智慧城市、智能工厂等等。但仔细研究这些应用场景，就大概能分出三个大类：面向个人、面向社会和面向企业。我们就通过这三个分类来仔细看看物理网的应用领域吧~</p>
@@ -328,6 +276,58 @@
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【物联网】01物联网之初见</title>
+    <url>/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-01%E7%89%A9%E8%81%94%E7%BD%91%E4%B9%8B%E5%88%9D%E8%A7%81/</url>
+    <content><![CDATA[<h2 id="物联网简介"><a href="#物联网简介" class="headerlink" title="物联网简介"></a>物联网简介</h2><p>物联网简称IoT，Internet of Things，通俗的解释就是，用物品连接起来的网络，是物理对象的网络。</p>
+<p>物联网的概念是射频识别(RFID)开发社区的一名成员在1999年提出的，但是因为技术的不成熟，概念一直没有发展成现实。直到最近几年，由于移动设备、嵌入式和无处不在的通信网络、云计算和数据分析技术的出现，它才变得更加贴近实际世界。</p>
+<h2 id="发展目标"><a href="#发展目标" class="headerlink" title="发展目标"></a>发展目标</h2><p>物联网的发展目标可以总结为6个any：</p>
+<p>使物品/设备能够随时（any time）随地（any place）的连接在一起，任何事物（anything）、任何人（anyone）都能随心所欲的使用任何路径/网络（any path/network）来完成任何服务（any service）。</p>
+<blockquote>
+<p>The goal of the Internet of Things is to enable things to be connected anytime, anyplace, with anything and anyone ideally using any path/network and any service.</p>
+</blockquote>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/微信截图_20200614232849.png" alt="物联网的6个any" style="zoom:67%;" />
+
+
+
+<h2 id="物联网特性"><a href="#物联网特性" class="headerlink" title="物联网特性"></a>物联网特性</h2><ol>
+<li><p>互联性（Interconnectivity）</p>
+<p>任何设备都能够通过网络互连互通</p>
+</li>
+</ol>
+<ol start="2">
+<li><p>与物相关服务（Things-related services）</p>
+<p>通过虚拟化的信息命令，可以实现相应实体化的物体的变化</p>
+</li>
+</ol>
+<ol start="3">
+<li><p>异构性、兼容性（Heterogeneity）</p>
+<p>不同的硬件平台和网络，可以通过不同的网络与其他设备或服务平台交互</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>动态变化（Dynamic changes）</p>
+<p>随着系统指令的改变，设备的状态会动态变化，例如睡眠和唤醒、连接和/或断开等</p>
+</li>
+</ol>
+<ol start="5">
+<li><p>超大规模（Enormous scale）</p>
+<p>连接的设备至少比手机、电脑等通信设备高一个量级，处理的信息数据也会更多</p>
+</li>
+</ol>
+<ol start="6">
+<li><p>安全（Safety）</p>
+<p>创建可扩展的安全范例，来保护终端、网络和整个网络中移动的数据，达到保护我们个人数据的安全和我们身体健康的安全的目的</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>知识扩展</category>
+      </categories>
+      <tags>
+        <tag>物联网</tag>
       </tags>
   </entry>
   <entry>
@@ -702,6 +702,89 @@
       </tags>
   </entry>
   <entry>
+    <title>【C语言】宏定义</title>
+    <url>/2020/07/28/C%E8%AF%AD%E8%A8%80-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
+<p>宏定义计算问题</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRODUCT (x) (x*x)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> 	<span class="keyword">int</span> a,b = <span class="number">3</span>;</span><br><span class="line"> 	a = PRODUCT(b+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>求a的值：</p>
+</blockquote>
+<p>结果为：<code>a = b+2*b+2=3+2*3+2=11</code></p>
+<h2 id="实例2："><a href="#实例2：" class="headerlink" title="实例2："></a>实例2：</h2><blockquote>
+<p>描述下面XXX这个宏的作用。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>第一个宏：</strong></p>
+<p><code>#define offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</code></p>
+<ul>
+<li><code>(TYPE*)0</code>，将0强制转换为TYPE类型的指针，并且指向了0地址空间。</li>
+<li><code>(TYPE*)0)-&gt;MEMBER</code>，指向结构体中的成员</li>
+<li><code>&amp;((TYPE*)0)-&gt;MEMBER</code>，获取成员在结构体中的位置，因为其实位置为0，所以获取的地址即为实际的偏移地址。</li>
+<li><code>(size_t)&amp;((TYPE*)0)-&gt;MEMBER</code>，将偏移地址强制转换为size_t，即unsigned int。</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(TYPE*)<span class="number">0</span>				=&gt;	p = (TYPE*)<span class="number">0</span></span><br><span class="line">(TYPE*)<span class="number">0</span>)-&gt;MEMBER		=&gt;	p-&gt;MEMBER</span><br><span class="line">&amp;((TYPE*)<span class="number">0</span>)-&gt;MEMBER)	=&gt;	&amp;(p-&gt;MEMBER)	<span class="comment">//成员MEMBER的地址</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第二个宏：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>({ })</code>的语法形式是GNU C编译器的语法扩展，与逗号表达式类似，表达式结果为最后一个语句的值。</li>
+<li><code>typeof</code>主要用于宏定义之中，可以使用typeof关键字来引用宏参数的类型。</li>
+<li><code>typeof(((type*)0)-&gt;member)</code>，引用type结构体的member成员的数据类型。</li>
+<li><code>const typeof(((type*)0)-&gt;member) *__mpter=(ptr);</code>，定义一个与type结构体的member成员相同的类型的指针变量<code>__mpter</code>，而且将<code>ptr</code>赋值给它。</li>
+<li><code>offsetof(type,member)</code>，获取member成员在type结构中的偏移量。</li>
+<li><code>(type*)((type*)__mpter - offsetof(type,member));</code>，将<code>__mpter</code>减去偏移量，就得到了这个结构变量的地址了（指针）。</li>
+</ul>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180207165907690" alt="结构变量的地址"></p>
+<p>ptr是指向正被使用的某类型变量指针；</p>
+<p>type是包含ptr指向的变量类型的结构类型；</p>
+<p>member是type结构体中的成员，类型与ptr指向的变量类型一样；</p>
+<p>宏定义的功能是：计算返回包含ptr指向的变量所在的type类型结构变量的指针。</p>
+<p>参考：<a href="https://blog.csdn.net/feiyanaffection/article/details/79282562" target="_blank" rel="noopener">https://blog.csdn.net/feiyanaffection/article/details/79282562</a></p>
+<h2 id="实例3："><a href="#实例3：" class="headerlink" title="实例3："></a>实例3：</h2><blockquote>
+<p>用C语言字节编写一下四个宏</p>
+<p>ALGN_DOWN(x, a)将数值x按照a的整数倍向下取整，例如ALGN_DOWN(65,3) = 63；</p>
+<p>ALGN_UP(x, a)将数值x按照a的整数倍向上取整，例如ALGN_UP(65,3) = 66；</p>
+<p>ALGN_2N_DOWN(x, a)将数值x按照a的整数倍向下取整，a是2的n次幂，例如ALGN_2N_DOWN(65,4) = 64；</p>
+<p>ALGN_2N_UP(x, a)将数值x按照a的整数倍向上取整，a是2的n次幂，例如ALGN_2N_UP(65,4) = 68。</p>
+</blockquote>
+<p>设条件为：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x; </span><br><span class="line"><span class="keyword">int</span> a = <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>将数值x按照a的整数倍向下取整，a是2的n次幂:</strong></p>
+<p>对齐掩码a_mask = 11111 11111 11111 11111 11111 11110 00，即 ~(a- 1)</p>
+<p>对齐掩码a_mask与a进行”与运算”就可以得到，将数值x按照a的整数倍向下取整，a是2的n次幂。</p>
+<p><code>#ALGN_2N_DOWN(x, a)        (x &amp; ([~(a-1)]) )</code></p>
+<p><strong>将数值x按照a的整数倍向上取整，a是2的n次幂</strong></p>
+<p>如果要求出比x大的是不是需要加上a就可以了？可是如果x本身就是a的倍数，这样加a不就错了吗？</p>
+<p>所以在x基础上加上(a - 1)，然后与a的对齐掩码进行与运算。</p>
+<p><code>#ALGN_2N_UP(x, a)     ((x+a-1) &amp; (~ (a-1)))</code></p>
+<p>实例：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x=<span class="number">0</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">0.</span></span><br><span class="line">x=<span class="number">6</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">8</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">14</span>, a=<span class="number">8</span>,则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">16.</span></span><br><span class="line">注:a应当为<span class="number">2</span>的n次方, 即<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">1024</span>, <span class="number">2048</span>, <span class="number">4096</span> ...</span><br></pre></td></tr></table></figure>
+
+<p>参考：<a href="https://blog.csdn.net/heybeaman/article/details/80491871" target="_blank" rel="noopener">https://blog.csdn.net/heybeaman/article/details/80491871</a></p>
+<h2 id="实例4"><a href="#实例4" class="headerlink" title="实例4"></a>实例4</h2><blockquote>
+<p>用预处理指令#define声明一个常数，用以表示1年中有多少秒（忽略闰年问题）</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SECONDS_PER_YEAR (60 * 60 * 24 * 365)UL</span></span><br></pre></td></tr></table></figure>
+
+<p>一年的秒数为31536000，16位的int型将会溢出，因此要使用长整型符号L</p>
+<h2 id="实例5"><a href="#实例5" class="headerlink" title="实例5"></a>实例5</h2><blockquote>
+<p>写一个“标准”宏MIN，这个宏输入两个参数并返回较小的一个。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(A,B) ((A)&lt;=(B)?(A):(B))</span></span><br></pre></td></tr></table></figure>
+
+<p>容易错的地方：宏中间要小心地把参数用括号括起来。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【嵌入式】通信总线</title>
     <url>/2020/07/27/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E9%80%9A%E4%BF%A1%E6%80%BB%E7%BA%BF/</url>
     <content><![CDATA[<h3 id="总线的分类："><a href="#总线的分类：" class="headerlink" title="总线的分类："></a>总线的分类：</h3><ol>
@@ -788,80 +871,44 @@
       </tags>
   </entry>
   <entry>
-    <title>【C语言】宏定义</title>
-    <url>/2020/07/28/C%E8%AF%AD%E8%A8%80-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
-<p>宏定义计算问题</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRODUCT (x) (x*x)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> 	<span class="keyword">int</span> a,b = <span class="number">3</span>;</span><br><span class="line"> 	a = PRODUCT(b+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>求a的值：</p>
-</blockquote>
-<p>结果为：<code>a = b+2*b+2=3+2*3+2=11</code></p>
-<h2 id="实例2："><a href="#实例2：" class="headerlink" title="实例2："></a>实例2：</h2><blockquote>
-<p>描述下面XXX这个宏的作用。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p><strong>第一个宏：</strong></p>
-<p><code>#define offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</code></p>
+    <title>【C语言】数据存储结构</title>
+    <url>/2020/07/31/C%E8%AF%AD%E8%A8%80-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p>可执行程序（没有调用内存，没有运行时），内存结构分为：</p>
 <ul>
-<li><code>(TYPE*)0</code>，将0强制转换为TYPE类型的指针，并且指向了0地址空间。</li>
-<li><code>(TYPE*)0)-&gt;MEMBER</code>，指向结构体中的成员</li>
-<li><code>&amp;((TYPE*)0)-&gt;MEMBER</code>，获取成员在结构体中的位置，因为其实位置为0，所以获取的地址即为实际的偏移地址。</li>
-<li><code>(size_t)&amp;((TYPE*)0)-&gt;MEMBER</code>，将偏移地址强制转换为size_t，即unsigned int。</li>
+<li>代码区</li>
+<li>数据区</li>
+<li>未初始化数据区（BSS区）</li>
 </ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(TYPE*)<span class="number">0</span>				=&gt;	p = (TYPE*)<span class="number">0</span></span><br><span class="line">(TYPE*)<span class="number">0</span>)-&gt;MEMBER		=&gt;	p-&gt;MEMBER</span><br><span class="line">&amp;((TYPE*)<span class="number">0</span>)-&gt;MEMBER)	=&gt;	&amp;(p-&gt;MEMBER)	<span class="comment">//成员MEMBER的地址</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>第二个宏：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
-
+<p>可执行文件运行时有多处两个内存区域：</p>
 <ul>
-<li><code>({ })</code>的语法形式是GNU C编译器的语法扩展，与逗号表达式类似，表达式结果为最后一个语句的值。</li>
-<li><code>typeof</code>主要用于宏定义之中，可以使用typeof关键字来引用宏参数的类型。</li>
-<li><code>typeof(((type*)0)-&gt;member)</code>，引用type结构体的member成员的数据类型。</li>
-<li><code>const typeof(((type*)0)-&gt;member) *__mpter=(ptr);</code>，定义一个与type结构体的member成员相同的类型的指针变量<code>__mpter</code>，而且将<code>ptr</code>赋值给它。</li>
-<li><code>offsetof(type,member)</code>，获取member成员在type结构中的偏移量。</li>
-<li><code>(type*)((type*)__mpter - offsetof(type,member));</code>，将<code>__mpter</code>减去偏移量，就得到了这个结构变量的地址了（指针）。</li>
+<li>堆区</li>
+<li>栈区</li>
 </ul>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180207165907690" alt="结构变量的地址"></p>
-<p>ptr是指向正被使用的某类型变量指针；</p>
-<p>type是包含ptr指向的变量类型的结构类型；</p>
-<p>member是type结构体中的成员，类型与ptr指向的变量类型一样；</p>
-<p>宏定义的功能是：计算返回包含ptr指向的变量所在的type类型结构变量的指针。</p>
-<p>参考：<a href="https://blog.csdn.net/feiyanaffection/article/details/79282562" target="_blank" rel="noopener">https://blog.csdn.net/feiyanaffection/article/details/79282562</a></p>
-<h2 id="实例3："><a href="#实例3：" class="headerlink" title="实例3："></a>实例3：</h2><blockquote>
-<p>用C语言字节编写一下四个宏</p>
-<p>ALGN_DOWN(x, a)将数值x按照a的整数倍向下取整，例如ALGN_DOWN(65,3) = 63；</p>
-<p>ALGN_UP(x, a)将数值x按照a的整数倍向上取整，例如ALGN_UP(65,3) = 66；</p>
-<p>ALGN_2N_DOWN(x, a)将数值x按照a的整数倍向下取整，a是2的n次幂，例如ALGN_2N_DOWN(65,4) = 64；</p>
-<p>ALGN_2N_UP(x, a)将数值x按照a的整数倍向上取整，a是2的n次幂，例如ALGN_2N_UP(65,4) = 68。</p>
-</blockquote>
-<p>设条件为：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x; </span><br><span class="line"><span class="keyword">int</span> a = <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>将数值x按照a的整数倍向下取整，a是2的n次幂:</strong></p>
-<p>对齐掩码a_mask = 11111 11111 11111 11111 11111 11110 00，即 ~(a- 1)</p>
-<p>对齐掩码a_mask与a进行”与运算”就可以得到，将数值x按照a的整数倍向下取整，a是2的n次幂。</p>
-<p><code>#ALGN_2N_DOWN(x, a)        (x &amp; ([~(a-1)]) )</code></p>
-<p><strong>将数值x按照a的整数倍向上取整，a是2的n次幂</strong></p>
-<p>如果要求出比x大的是不是需要加上a就可以了？可是如果x本身就是a的倍数，这样加a不就错了吗？</p>
-<p>所以在x基础上加上(a - 1)，然后与a的对齐掩码进行与运算。</p>
-<p><code>#ALGN_2N_UP(x, a)     ((x+a-1) &amp; (~ (a-1)))</code></p>
-<p>实例：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x=<span class="number">0</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">0.</span></span><br><span class="line">x=<span class="number">6</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">8</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">14</span>, a=<span class="number">8</span>,则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">16.</span></span><br><span class="line">注:a应当为<span class="number">2</span>的n次方, 即<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">1024</span>, <span class="number">2048</span>, <span class="number">4096</span> ...</span><br></pre></td></tr></table></figure>
-
-<p>参考：<a href="https://blog.csdn.net/heybeaman/article/details/80491871" target="_blank" rel="noopener">https://blog.csdn.net/heybeaman/article/details/80491871</a></p>
-<h2 id="实例4"><a href="#实例4" class="headerlink" title="实例4"></a>实例4</h2><blockquote>
-<p>用预处理指令#define声明一个常数，用以表示1年中有多少秒（忽略闰年问题）</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SECONDS_PER_YEAR (60 * 60 * 24 * 365)UL</span></span><br></pre></td></tr></table></figure>
-
-<p>一年的秒数为31536000，16位的int型将会溢出，因此要使用长整型符号L</p>
-<h2 id="实例5"><a href="#实例5" class="headerlink" title="实例5"></a>实例5</h2><blockquote>
-<p>写一个“标准”宏MIN，这个宏输入两个参数并返回较小的一个。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(A,B) ((A)&lt;=(B)?(A):(B))</span></span><br></pre></td></tr></table></figure>
-
-<p>容易错的地方：宏中间要小心地把参数用括号括起来。</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20190812222411723." alt="程序内存结构"></p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20190812173831493." alt="内存结构"></p>
+<hr>
+<h2 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h2><h3 id="代码区（text区）"><a href="#代码区（text区）" class="headerlink" title="代码区（text区）"></a>代码区（text区）</h3><p>存放数据：存放程序<strong>执行代码</strong>，也有可能包含一些只读的常数变量。</p>
+<p>这部分区域的内存大小在程序执行前就已经确定，并且内存区域属于<strong>只读</strong>。数据保存在目标文件中。</p>
+<h3 id="数据区（data区）"><a href="#数据区（data区）" class="headerlink" title="数据区（data区）"></a>数据区（data区）</h3><p>存放数据：在程序中明确被初始化的全局变量、已经初始化的静态变量（包括全局静态变量和局部静态变量）和常量数据。</p>
+<p>data区在编译时已经为数据分配了空间，数据保存在目标文件中。</p>
+<p>data区属于静态分配，程序结束后静态变量资源由系统自动释放。</p>
+<h3 id="未初始化数据区（BSS区）"><a href="#未初始化数据区（BSS区）" class="headerlink" title="未初始化数据区（BSS区）"></a>未初始化数据区（BSS区）</h3><p>存放数据：程序中未初始化的全局变量和静态变量。</p>
+<p>BBS区内容不存放在磁盘上的程序文件中，不占用可执行文件的大小，它是由链接器来获取内存的；原因是内核在程序运行前将他们都置为0。</p>
+<p>BBS区属于静态分配，程序结束后静态变量资源由系统自动释放。</p>
+<hr>
+<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="堆区"><a href="#堆区" class="headerlink" title="堆区"></a>堆区</h3><p>堆允许程序在运行时动态分配内存，一般由程序员申请释放；</p>
+<p>堆是由低地址位向高地址位增长，采用链式储存结构，位于BSS与栈中间的地址区域；</p>
+<p>频繁的进行malloc/free会造成内存空间的不连续，产生碎片；</p>
+<p>当申请对空间时库函数是按照一定的算法来搜索可用的足够大的空间。因此堆的效率比栈要地的多。</p>
+<h3 id="栈区"><a href="#栈区" class="headerlink" title="栈区"></a>栈区</h3><p>由编译器自动分配释放，存放函数的参数值、局部变量等值；每当一个函数被调用时，该函数的返回类型和一些调用信息被存放到栈中；然后这个被调用的函数再为它的自动变量和临时变量在栈上分配空间。每调用一个函数一个新的栈就会被使用。</p>
+<p>栈区是由高地址位向低地址为增长的，是一块连续的内存区域，最大容量是由系统预先定义好的，申请的栈空间超过这个界限时会提示溢出。一般Windows是1M ~ 8M不等，一般Linux是1M ~ 16M不等。</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/weixin_42528287/article/details/85783662" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42528287/article/details/85783662</a></li>
+<li><a href="https://blog.csdn.net/u011616739/article/details/61621815" target="_blank" rel="noopener">https://blog.csdn.net/u011616739/article/details/61621815</a></li>
+<li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42060900/article/details/99229518</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>学习记录</category>
@@ -902,53 +949,6 @@
 <hr>
 <p>参考：</p>
 <ul>
-<li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42060900/article/details/99229518</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【C语言】数据存储结构</title>
-    <url>/2020/07/31/C%E8%AF%AD%E8%A8%80-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p>可执行程序（没有调用内存，没有运行时），内存结构分为：</p>
-<ul>
-<li>代码区</li>
-<li>数据区</li>
-<li>未初始化数据区（BSS区）</li>
-</ul>
-<p>可执行文件运行时有多处两个内存区域：</p>
-<ul>
-<li>堆区</li>
-<li>栈区</li>
-</ul>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20190812222411723." alt="程序内存结构"></p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20190812173831493." alt="内存结构"></p>
-<hr>
-<h2 id="可执行文件"><a href="#可执行文件" class="headerlink" title="可执行文件"></a>可执行文件</h2><h3 id="代码区（text区）"><a href="#代码区（text区）" class="headerlink" title="代码区（text区）"></a>代码区（text区）</h3><p>存放数据：存放程序<strong>执行代码</strong>，也有可能包含一些只读的常数变量。</p>
-<p>这部分区域的内存大小在程序执行前就已经确定，并且内存区域属于<strong>只读</strong>。数据保存在目标文件中。</p>
-<h3 id="数据区（data区）"><a href="#数据区（data区）" class="headerlink" title="数据区（data区）"></a>数据区（data区）</h3><p>存放数据：在程序中明确被初始化的全局变量、已经初始化的静态变量（包括全局静态变量和局部静态变量）和常量数据。</p>
-<p>data区在编译时已经为数据分配了空间，数据保存在目标文件中。</p>
-<p>data区属于静态分配，程序结束后静态变量资源由系统自动释放。</p>
-<h3 id="未初始化数据区（BSS区）"><a href="#未初始化数据区（BSS区）" class="headerlink" title="未初始化数据区（BSS区）"></a>未初始化数据区（BSS区）</h3><p>存放数据：程序中未初始化的全局变量和静态变量。</p>
-<p>BBS区内容不存放在磁盘上的程序文件中，不占用可执行文件的大小，它是由链接器来获取内存的；原因是内核在程序运行前将他们都置为0。</p>
-<p>BBS区属于静态分配，程序结束后静态变量资源由系统自动释放。</p>
-<hr>
-<h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><h3 id="堆区"><a href="#堆区" class="headerlink" title="堆区"></a>堆区</h3><p>堆允许程序在运行时动态分配内存，一般由程序员申请释放；</p>
-<p>堆是由低地址位向高地址位增长，采用链式储存结构，位于BSS与栈中间的地址区域；</p>
-<p>频繁的进行malloc/free会造成内存空间的不连续，产生碎片；</p>
-<p>当申请对空间时库函数是按照一定的算法来搜索可用的足够大的空间。因此堆的效率比栈要地的多。</p>
-<h3 id="栈区"><a href="#栈区" class="headerlink" title="栈区"></a>栈区</h3><p>由编译器自动分配释放，存放函数的参数值、局部变量等值；每当一个函数被调用时，该函数的返回类型和一些调用信息被存放到栈中；然后这个被调用的函数再为它的自动变量和临时变量在栈上分配空间。每调用一个函数一个新的栈就会被使用。</p>
-<p>栈区是由高地址位向低地址为增长的，是一块连续的内存区域，最大容量是由系统预先定义好的，申请的栈空间超过这个界限时会提示溢出。一般Windows是1M ~ 8M不等，一般Linux是1M ~ 16M不等。</p>
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/weixin_42528287/article/details/85783662" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42528287/article/details/85783662</a></li>
-<li><a href="https://blog.csdn.net/u011616739/article/details/61621815" target="_blank" rel="noopener">https://blog.csdn.net/u011616739/article/details/61621815</a></li>
 <li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42060900/article/details/99229518</a></li>
 </ul>
 ]]></content>
@@ -1452,6 +1452,64 @@
       </tags>
   </entry>
   <entry>
+    <title>【嵌入式】无锁编程</title>
+    <url>/2020/08/10/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E6%97%A0%E9%94%81%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="无锁编程："><a href="#无锁编程：" class="headerlink" title="无锁编程："></a>无锁编程：</h2><p>无锁编程：不使用锁的情况下实现<strong>多线程之间对变量同步和访问</strong>的一种程序设计实现方案</p>
+<p>无锁编程具体使用和考虑到的技术方法包括：</p>
+<ol>
+<li><strong>原子操作</strong>（atomic operations）</li>
+<li>内存栅栏（memory barriers）</li>
+<li>内存顺序冲突（memory order）</li>
+<li>指令序列一致性（consistency）</li>
+<li>ABA 问题</li>
+</ol>
+<h2 id="原子操作"><a href="#原子操作" class="headerlink" title="原子操作"></a>原子操作</h2><p>最基础最重要的是操作的原子性或说原子操作。原子操作可以理解为在执行完毕之前不会被任何其它任务或事件中断的一系列操作。<strong>原子操作是非阻塞编程最核心基本的部分</strong>，没有原子操作的话，操作会因为中断异常等各种原因引起数据状态的不一致从而影响到程序的正确。</p>
+<h2 id="CAS"><a href="#CAS" class="headerlink" title="CAS"></a>CAS</h2><p>最常用的原子操作又是 COMPARE AND SWAP (CAS)，几乎所有的 CPU 指令集都支持 CAS 的原子操作。</p>
+<p>CAS 操作行为是比较某个内存地址处的内容是否和期望值一致，如果一致则将该地址处的数值替换为一个新值。CAS 能够操作的位数越多，使用它来实现锁无关的数据结构就越容易。</p>
+<p>CAS 操作具体的实现原理主要是两种方式：总线锁定和缓存锁定。</p>
+<h2 id="ABA的问题"><a href="#ABA的问题" class="headerlink" title="ABA的问题"></a>ABA的问题</h2><p>线程 a 先读取了要对比的值v后，被线程 b 抢占了，线程 b 对 v 进行了修改后又改会 v 原来的值，线程a继续运行执行 CAS 操作的时候，无法判断出 v 的值被改过又改回来。</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/liusuper2088/article/details/41047501" target="_blank" rel="noopener">无锁编程技术及实现</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【C语言】内存复制函数memcpy</title>
+    <url>/2020/08/10/C%E8%AF%AD%E8%A8%80-%E5%86%85%E5%AD%98%E5%A4%8D%E5%88%B6%E5%87%BD%E6%95%B0memcpy/</url>
+    <content><![CDATA[<h2 id="内存复制函数"><a href="#内存复制函数" class="headerlink" title="内存复制函数"></a>内存复制函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> * <span class="title">memcpy</span> <span class="params">(<span class="keyword">void</span> * destination, <span class="keyword">const</span> <span class="keyword">void</span> * source, <span class="keyword">size_t</span> num)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>将 source 指向的地址处的 <strong>num 个字节</strong>，拷贝到 destination 指向的地址处，注意，<strong>是 num 个字节</strong>！</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><blockquote>
+<p>下面这段程序的运行结果？</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[<span class="number">10</span>] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="built_in">memcpy</span>(a + <span class="number">3</span>, a, <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;<span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>解答：0 1 2 0 1 5 6 7 8 9</p>
+<p>因为 memcpy 的最后一个参数是需要拷贝的字节的数目！一个 int 类型占 4 个字节！这样的话，本题 5 个字节，实际上只能移动 2 个数字<strong>（往大的去）</strong>。</p>
+<p>如果想要达到将 a 地址开始的 5 个元素拷贝到 a+3 地址处，应该这样写：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">memcpy</span>(a + <span class="number">3</span>, a, <span class="number">5</span>*<span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/baidu_35679960/article/details/80953973" target="_blank" rel="noopener">memcpy使用时需要注意的地方</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【C语言】static关键字、混合三目运算</title>
     <url>/2020/08/06/C%E8%AF%AD%E8%A8%80-static%E5%85%B3%E9%94%AE%E5%AD%97-%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
     <content><![CDATA[<h2 id="static用于声明静态变量"><a href="#static用于声明静态变量" class="headerlink" title="static用于声明静态变量"></a>static用于声明静态变量</h2><ul>
@@ -1493,34 +1551,6 @@
       </categories>
       <tags>
         <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【C语言】内存复制函数memcpy</title>
-    <url>/2020/08/10/C%E8%AF%AD%E8%A8%80-%E5%86%85%E5%AD%98%E5%A4%8D%E5%88%B6%E5%87%BD%E6%95%B0memcpy/</url>
-    <content><![CDATA[<h2 id="内存复制函数"><a href="#内存复制函数" class="headerlink" title="内存复制函数"></a>内存复制函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> * <span class="title">memcpy</span> <span class="params">(<span class="keyword">void</span> * destination, <span class="keyword">const</span> <span class="keyword">void</span> * source, <span class="keyword">size_t</span> num)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>将 source 指向的地址处的 <strong>num 个字节</strong>，拷贝到 destination 指向的地址处，注意，<strong>是 num 个字节</strong>！</p>
-<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><blockquote>
-<p>下面这段程序的运行结果？</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a[<span class="number">10</span>] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="built_in">memcpy</span>(a + <span class="number">3</span>, a, <span class="number">5</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;<span class="number">10</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>, a[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>解答：0 1 2 0 1 5 6 7 8 9</p>
-<p>因为 memcpy 的最后一个参数是需要拷贝的字节的数目！一个 int 类型占 4 个字节！这样的话，本题 5 个字节，实际上只能移动 2 个数字<strong>（往大的去）</strong>。</p>
-<p>如果想要达到将 a 地址开始的 5 个元素拷贝到 a+3 地址处，应该这样写：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">memcpy</span>(a + <span class="number">3</span>, a, <span class="number">5</span>*<span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/baidu_35679960/article/details/80953973" target="_blank" rel="noopener">memcpy使用时需要注意的地方</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
       </tags>
   </entry>
 </search>
