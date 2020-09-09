@@ -66,6 +66,66 @@
       </tags>
   </entry>
   <entry>
+    <title>【物联网】02架构与使能技术</title>
+    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-02%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%BD%BF%E8%83%BD%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
+<p>物联网的使能技术可以分为三类：</p>
+<ol>
+<li>使“物”能够获得信息的技术</li>
+<li>使“物”能够处理信息的技术</li>
+<li>提高安全性和私密性的技术</li>
+</ol>
+<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
+<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
+<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
+<hr>
+<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
+
+<hr>
+<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
+<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
+<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
+<hr>
+<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
+<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
+<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
+<hr>
+<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
+<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
+<ul>
+<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
+</li>
+<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
+</li>
+</ul>
+<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
+<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
+<ul>
+<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
+</li>
+<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
+</li>
+</ul>
+<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
+<ul>
+<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
+<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
+<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
+</ul>
+<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
+<hr>
+<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
+<p>下一节将具体讲解这一部分内容。</p>
+]]></content>
+      <categories>
+        <category>知识扩展</category>
+      </categories>
+      <tags>
+        <tag>物联网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【物联网】03应用领域</title>
     <url>/2020/07/05/%E7%89%A9%E8%81%94%E7%BD%91-03%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/</url>
     <content><![CDATA[<p>物联网的应用场景是非常多样化的，包括智能家居、智慧城市、智能工厂等等。但仔细研究这些应用场景，就大概能分出三个大类：面向个人、面向社会和面向企业。我们就通过这三个分类来仔细看看物理网的应用领域吧~</p>
@@ -141,250 +201,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【物联网】02架构与使能技术</title>
-    <url>/2020/06/18/%E7%89%A9%E8%81%94%E7%BD%91-02%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%BD%BF%E8%83%BD%E6%8A%80%E6%9C%AF/</url>
-    <content><![CDATA[<h2 id="使能技术"><a href="#使能技术" class="headerlink" title="使能技术"></a>使能技术</h2><p>随着物联网的出现，互联网扩展到我们周围的一切事物。物联网不仅仅是机器对机器的通信、无线传感器网络、传感器网络、2G/3G/4G/5G、以太网、WI-FI、蓝牙、ZigBee、GSM、GPRS、RFID、WI-FI、GPS、微控制器、微处理器等，这些都被认为是使“物联网”应用成为可能的使能技术。</p>
-<p>物联网的使能技术可以分为三类：</p>
-<ol>
-<li>使“物”能够获得信息的技术</li>
-<li>使“物”能够处理信息的技术</li>
-<li>提高安全性和私密性的技术</li>
-</ol>
-<p>前两类可以理解为将“物”变得智能所需要的技术，这确实是物联网与互联网不同的地方。</p>
-<p>第三类不是功能上的要求，而是事实上的要求，如果没有这个要求，物联网的普及率将会严重下降。</p>
-<p><strong>总而言之，物联网不是单一的技术，而是不同硬件和软件技术的结合体。</strong></p>
-<hr>
-<h2 id="物联网架构"><a href="#物联网架构" class="headerlink" title="物联网架构"></a>物联网架构</h2><p>物联网架构由支持物联网的不同技术层组成，它用于说明各种技术的作用是什么，是如何相互关联的。</p>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200617155741565.png" alt="物联网架构" style="zoom: 67%;" />
-
-<hr>
-<h3 id="智能设备-传感器层（smart-device-sensor-layer）"><a href="#智能设备-传感器层（smart-device-sensor-layer）" class="headerlink" title="智能设备/传感器层（smart device / sensor layer）"></a>智能设备/传感器层（smart device / sensor layer）</h3><p>由各种传感器组成，将物理世界和数字世界的连接起来，允许收集和处理实时信息。</p>
-<p>传感器可以测量物理属性，并将其转换为智能设备能理解的电信号。传感器有测量温度、空气质量、速度、湿度、压力、流量、运动和电力等。在某些情况下，它们还可能有一定程度的记忆，使它们能够记录一定数量的测量数据。</p>
-<p>不同类型的传感器用于不同的目的，传感器按其独特用途进行分组，如环境传感器、身体传感器、家用电器传感器和车辆远程信息处理传感器等。</p>
-<hr>
-<h3 id="网关和网络（Gateways-and-Networks-）"><a href="#网关和网络（Gateways-and-Networks-）" class="headerlink" title="网关和网络（Gateways and Networks ）"></a>网关和网络（Gateways and Networks ）</h3><p>大量的传感器将产生大量的数据，需要一个强大的、高性能的有线或无线网络基础设施作为传输媒介。同样需要支持低延迟、带宽或安全性的通信要求。</p>
-<p>当前的网络通常与非常不同的协议捆绑在一起，用作支持机器到机器(M2M)网络及其应用。随着服务于更广泛的物联网服务和应用(如高速事务服务、情景感知应用等)的需求，需要采用各种技术和接入协议的多个网络在异构配置中相互协作。</p>
-<p>诸如通过以太网和Wi-Fi连接的局域网(LAN)，或ZigBee、蓝牙和超宽带(UWB)的个人局域网(PAN)的形式，使大多数传感器连接到网关；对于不需要连接到网关的传感器，可以使用GSM、GPRS和LTE等广域网(WAN)提供到后端服务器/应用程序的连接。</p>
-<hr>
-<h3 id="管理服务层（Management-Service-Layer）"><a href="#管理服务层（Management-Service-Layer）" class="headerlink" title="管理服务层（Management Service Layer）"></a>管理服务层（Management Service Layer）</h3><p>管理服务层通过分析数据、安全控制、流程建模和设备管理，来达到物联网的控制。</p>
-<h4 id="业务和流程规则引擎"><a href="#业务和流程规则引擎" class="headerlink" title="业务和流程规则引擎"></a>业务和流程规则引擎</h4><p>物联网将对象和系统的连接和交互结合在一起，以事件或上下文数据(如货物温度、当前位置和交通数据)的形式提供信息。这是管理服务层的重要功能之一。</p>
-<ul>
-<li><p>其中一些事件需要过滤或路由到后处理系统，例如捕获定期感官数据，</p>
-</li>
-<li><p>而另一些事件则需要对紧急情况做出响应，例如对患者健康状况的紧急情况做出反应。</p>
-</li>
-</ul>
-<p>规则引擎支持决策逻辑的制定，并触发交互式和自动化流程，以实现响应更快的物联网系统。</p>
-<h4 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h4><p>在分析领域，各种分析工具被用来从海量的原始数据中提取相关信息，并以更快的速度进行处理。</p>
-<ul>
-<li><p>内存分析：大量数据缓存在随机存取存储器(RAM)中，而不是存储在物理磁盘中。内存分析减少了数据查询时间，提高了决策速度。</p>
-</li>
-<li><p>流分析：动态数据分析需要实时执行，在几秒钟内做出决定。</p>
-</li>
-</ul>
-<h4 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h4><p>数据管理是管理数据信息流的能力。通过管理服务层的数据管理，可以对信息进行访问、集成和控制。</p>
-<ul>
-<li>数据提取：高层应用程序可以避免处理不必要的数据，并降低数据源隐私泄露的风险。</li>
-<li>数据过滤：如数据匿名化、数据集成和数据同步，用于隐藏信息的细节，同时只提供可用于相关应用的基本信息。</li>
-<li>数据抽象：可以提取信息以提供数据的公共业务视图，从而获得更大的敏捷性和跨域的重用。</li>
-</ul>
-<h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>必须在物联网体系结构的<strong>整个维度</strong>上实施安全性，从智能设备/传感器层一直到应用层。系统的安全性可以防止未经授权的人员对系统进行黑客攻击和入侵，从而降低发生风险的可能性。</p>
-<hr>
-<h3 id="应用层（Application-Layer）"><a href="#应用层（Application-Layer）" class="headerlink" title="应用层（Application  Layer）"></a>应用层（Application  Layer）</h3><p>物联网应用层涵盖交通、建筑、城市、生活方式、零售、农业、工厂、供应链、应急、医疗保健、用户互动、文化和旅游、环境和能源等领域。</p>
-<p>下一节将具体讲解这一部分内容。</p>
-]]></content>
-      <categories>
-        <category>知识扩展</category>
-      </categories>
-      <tags>
-        <tag>物联网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【算法】初刷算法</title>
-    <url>/2020/07/23/%E7%AE%97%E6%B3%95-%E5%88%9D%E5%88%B7%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<p>做为一个通信工程专业的人，只做过嵌入式软件，对数据结构都还不够了解。现在拿起剑指offer开始刷算法题，真的感觉不太容易。讲一讲做的两道题，过程还蛮折磨人的。</p>
-<ul>
-<li><strong>03数组中重复的数字</strong></li>
-<li><strong>04二维数组的查找</strong></li>
-</ul>
-<hr>
-<h2 id="数组中重复的数字"><a href="#数组中重复的数字" class="headerlink" title="数组中重复的数字"></a>数组中重复的数字</h2><blockquote>
-<p>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。</p>
-<p><strong>示例 1：</strong></p>
-<p>输入：[2, 3, 1, 0, 2, 5, 3]<br>输出：2 或 3 </p>
-<p>限制：2 &lt;= n &lt;= 100000</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof</a></p>
-</blockquote>
-<p>看到题目之后，想都没想就立马开始敲代码。看看我的第一段代码：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;numsSize;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[j])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这几乎是最简单直接，不用动脑的方法了。但它的时间复杂度是有蛮高的，几乎达到了O(n^2)，果然在n=9000的事例中超出时间限制。而且也没有考虑程序的鲁棒性，算是很低级的解法了。</p>
-<p>第二段代码是，学习书上的交换数据元素的方式来解。考虑了空指针、数据元素等负面条件，考虑了程序的鲁棒性，应该是非常好的解法了。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&lt;<span class="number">0</span> || nums[i]&gt;numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(nums[i] != i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[nums[i]])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> a = nums[i];</span><br><span class="line">            nums[i] = nums[a];</span><br><span class="line">            nums[a] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>第三段程序是，书上有所提示的hash表的方式。没有打乱数组原有的顺序，但是新建hash表回占用部分内存，算是用空间换取时间的求解方式。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> hash[numsSize];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &lt; <span class="number">0</span> || nums[i] &gt; numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(hash[nums[i]] != <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            hash[nums[i]] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            <span class="keyword">return</span> nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>第四段程序，是参考书上的二分法的方式，既不打乱原有的数组元素，也不用创建新的数组占用空间。但是这个算法好像有问题。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">CountRange</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> *nums, <span class="keyword">int</span> numsSize,<span class="keyword">int</span> start, <span class="keyword">int</span> <span class="built_in">end</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &gt;= start &amp;&amp; nums[i] &lt;= <span class="built_in">end</span>)</span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> start = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">end</span> = numsSize<span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">end</span> &gt;= start)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> middle = ((<span class="built_in">end</span>-start)&gt;&gt;<span class="number">1</span>)+start;</span><br><span class="line">        <span class="keyword">int</span> count = CountRange(nums, numsSize, start, middle);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">end</span> == start)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(count&gt;<span class="number">1</span>)</span><br><span class="line">                <span class="keyword">return</span> start;</span><br><span class="line">            <span class="keyword">else</span> </span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(count &gt; (middle - start + <span class="number">1</span>))</span><br><span class="line">            <span class="built_in">end</span> = middle;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            start = middle + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输入：[0, 1, 2, 0, 4, 5, 6, 7, 8, 9]</p>
-<p>输出：ERROR</p>
-<p>预期结果：0</p>
-<p>因为在中点的时候start-middle和middle-end的count都是5，程序就看后面半段是否有重复的元素了。尔重复的元素在前面半段就被忽略掉了，所以输出为ERROR。所以这个算法还是有问题，需要改进呀。</p>
-<hr>
-<h2 id="二维数组的查找"><a href="#二维数组的查找" class="headerlink" title="二维数组的查找"></a>二维数组的查找</h2><blockquote>
-<p>在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
-<p>示例:</p>
-<p>现有矩阵 matrix 如下：</p>
-<p>[<br>  [1,   4,  7, 11, 15],<br>  [2,   5,  8, 12, 19],<br>  [3,   6,  9, 16, 22],<br>  [10, 13, 14, 17, 24],<br>  [18, 21, 23, 26, 30]<br>]<br>给定 target = 5，返回 true。</p>
-<p>给定 target = 20，返回 false。</p>
-<p>限制：0 &lt;= n &lt;= 1000 ；0 &lt;= m &lt;= 1000</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof</a></p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">findNumberIn2DArray</span><span class="params">(<span class="keyword">int</span>** matrix, <span class="keyword">int</span> matrixSize, <span class="keyword">int</span>* matrixColSize, <span class="keyword">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cow = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> col = *matrixColSize - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(matrix == <span class="literal">NULL</span> || matrixSize &lt;= <span class="number">0</span> || *matrixColSize &lt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">while</span>(cow &lt; matrixSize &amp;&amp; col &gt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(matrix[cow][col] &gt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            col--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(matrix[cow][col] &lt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            cow++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>这道题的思路是：将一个复杂问题，通过分析一个简单具体的例子，来寻找普遍的规律。这是将矩阵右上角的数字元素与目标数字进行对比，依次删除列和行，直至找到相等的元素或遍历完整个矩阵。就像下面所示的步骤。</p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/01065754-360a04e422b14e489869d9c58867f2a1.jpg" alt="img"></p>
-<p>第一遍的时候，在输入矩阵[]的时候，总是出错。还是边界条件、负面条件没有考虑到，还是要多考虑程序的鲁棒性。</p>
-<hr>
-<p>初刷算法，深刻感受到以前写代码的粗糙，代码的鲁棒性做的比较差，只考虑到最理想输入的情况。</p>
-<p>想要成为一名优秀的程序员，以后还要多注意代码的鲁棒性！</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【C语言】*运算符和&amp;运算符、二维数组和指针</title>
-    <url>/2020/07/24/C%E8%AF%AD%E8%A8%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E6%8C%87%E9%92%88/</url>
-    <content><![CDATA[<h3 id="间接运算符和-amp-取址运算符"><a href="#间接运算符和-amp-取址运算符" class="headerlink" title="*间接运算符和&amp;取址运算符"></a>*间接运算符和&amp;取址运算符</h3><p>变量a本质上代表一个存储单元；CPU通过该存储单元的地址访问该存储单元中的数据。所以a本来代表两个值：存储单元的地址和储单元中的数据。即：    </p>
-<ul>
-<li><code>a</code>表示a对应的存储单元中的数据 </li>
-<li><code>&amp;a</code>表示a对应的存储单元的地址 </li>
-<li><code>*a</code>表示另一个存储单元中的数据 </li>
-</ul>
-<p><strong>声明</strong></p>
-<p><code>int a</code>        a中存储的是一个整数数值，通过a可以访问这个数值</p>
-<p><code>int *a</code>        a中存储的是一个存储单元的地址，而该存储单元中存储的数据是一个整数数值；通过<code>*a</code>可以访问这个数值。</p>
-<p><code>int** a</code>        a中存储的是一个存储单元的地址；而该存储单元中存储的数据是另外一个存储单元的地址，这个存储单元中存储的是整数数值。</p>
-<p>在C语言里地址叫指针。还有，数组本质上其实也是指针，即：<code>*a</code> 等同于 a[]。</p>
-<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> *b = &amp;a;		<span class="comment">//指针b指向a的地址</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a );		<span class="comment">//a的数据值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;a);		<span class="comment">//a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, b );		<span class="comment">//指针b的值，即指针b指向的a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *b);		<span class="comment">//指针b指向的a的数据值</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>结果为：</strong><br>10<br>6487620<br>6487620<br>10</p>
-<p>参考：<a href="https://blog.csdn.net/qq_21583681/article/details/78572009" target="_blank" rel="noopener">C语言中的*和&amp;符号</a></p>
-<hr>
-<h3 id="二维数组和指针"><a href="#二维数组和指针" class="headerlink" title="二维数组和指针"></a>二维数组和指针</h3><p><strong>二维数组的各种申明方式</strong></p>
-<table>
-<thead>
-<tr>
-<th>表示形式</th>
-<th align="left">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int a[5] [5];</td>
-<td align="left">int类型二维数组</td>
-</tr>
-<tr>
-<td>int ** a;</td>
-<td align="left">指向指针的指针，可用于二维数组</td>
-</tr>
-<tr>
-<td>int * a[5];</td>
-<td align="left">指针数组</td>
-</tr>
-<tr>
-<td>int (*a) [5];</td>
-<td align="left">指向一个具有5个元素的数组的指针</td>
-</tr>
-<tr>
-<td>int * a[5] [5];</td>
-<td align="left">存放指针的二维数组</td>
-</tr>
-<tr>
-<td>int (* a[3]) [4];</td>
-<td align="left">一个3元素数组，每个元素为指向具有4个元素的数组的指针</td>
-</tr>
-</tbody></table>
-<p><strong>二维数组的其他表现形式</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">表示形式</th>
-<th align="left">含义</th>
-<th align="left">地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">a</td>
-<td align="left">二维数组名，指向一维数组a[0]，即0行首地址</td>
-<td align="left">2000</td>
-</tr>
-<tr>
-<td align="left">a+1， &amp;a[1]</td>
-<td align="left">指向一维数组a[1]，即1行首地址</td>
-<td align="left">2016</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">a[0]， *(a+0)， *a</td>
-<td align="left">0行0列元素，a[0] [0]地址</td>
-<td align="left">2000</td>
-</tr>
-<tr>
-<td align="left">a[1]， *(a+1)</td>
-<td align="left">1行0列元素，a[1] [0]地址</td>
-<td align="left">2016</td>
-</tr>
-<tr>
-<td align="left">a[1]+2， *(a+1)+2， &amp;a[1] [2]</td>
-<td align="left">1行2列元素，a[1] [2]地址</td>
-<td align="left">2024</td>
-</tr>
-<tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr>
-<td align="left">* (a[1]+2)， * (*(a+1)+2)， a[1] [2]</td>
-<td align="left">1行2列元素，a[1] [2]的值</td>
-<td align="left">元素值，13</td>
-</tr>
-</tbody></table>
-<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><blockquote>
-<p>数组int a[3] [4] 中的a[2] [1] 用其他形式表示</p>
-</blockquote>
-<p>仔细使用上面的解析方式</p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/1601164D5-1.png" alt="把二维数组拆解成一维数组"></p>
-<p>通过上面的图，可以很直观的得出三种a[2] [1] 的其他表达形式</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">*(*(a+<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">*(a[<span class="number">2</span>]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> *p = &amp;a[<span class="number">0</span>] [<span class="number">0</span>];</span><br><span class="line">p[<span class="number">9</span>];	<span class="comment">//p的第10个元素</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>参考：<a href="http://c.biancheng.net/view/2022.html" target="_blank" rel="noopener">C语言二维数组指针（指向二维数组的指针）</a></p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Matlab】常用绘图命令</title>
     <url>/2020/06/11/Matlab-%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>对Matlab的基本绘图命令进行介绍。</p>
@@ -449,6 +265,69 @@
       </categories>
       <tags>
         <tag>Matlab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【算法】初刷算法</title>
+    <url>/2020/07/23/%E7%AE%97%E6%B3%95-%E5%88%9D%E5%88%B7%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<p>做为一个通信工程专业的人，只做过嵌入式软件，对数据结构都还不够了解。现在拿起剑指offer开始刷算法题，真的感觉不太容易。讲一讲做的两道题，过程还蛮折磨人的。</p>
+<ul>
+<li><strong>03数组中重复的数字</strong></li>
+<li><strong>04二维数组的查找</strong></li>
+</ul>
+<hr>
+<h2 id="数组中重复的数字"><a href="#数组中重复的数字" class="headerlink" title="数组中重复的数字"></a>数组中重复的数字</h2><blockquote>
+<p>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。</p>
+<p><strong>示例 1：</strong></p>
+<p>输入：[2, 3, 1, 0, 2, 5, 3]<br>输出：2 或 3 </p>
+<p>限制：2 &lt;= n &lt;= 100000</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof</a></p>
+</blockquote>
+<p>看到题目之后，想都没想就立马开始敲代码。看看我的第一段代码：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;numsSize;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[j])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这几乎是最简单直接，不用动脑的方法了。但它的时间复杂度是有蛮高的，几乎达到了O(n^2)，果然在n=9000的事例中超出时间限制。而且也没有考虑程序的鲁棒性，算是很低级的解法了。</p>
+<p>第二段代码是，学习书上的交换数据元素的方式来解。考虑了空指针、数据元素等负面条件，考虑了程序的鲁棒性，应该是非常好的解法了。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i]&lt;<span class="number">0</span> || nums[i]&gt;numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(nums[i] != i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == nums[nums[i]])</span><br><span class="line">                <span class="keyword">return</span> nums[i];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">int</span> a = nums[i];</span><br><span class="line">            nums[i] = nums[a];</span><br><span class="line">            nums[a] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第三段程序是，书上有所提示的hash表的方式。没有打乱数组原有的顺序，但是新建hash表回占用部分内存，算是用空间换取时间的求解方式。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> hash[numsSize];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(nums == <span class="literal">NULL</span> || numsSize &lt;= <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &lt; <span class="number">0</span> || nums[i] &gt; numsSize<span class="number">-1</span>)</span><br><span class="line">            <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(hash[nums[i]] != <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            hash[nums[i]] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            <span class="keyword">return</span> nums[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>第四段程序，是参考书上的二分法的方式，既不打乱原有的数组元素，也不用创建新的数组占用空间。但是这个算法好像有问题。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">CountRange</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> *nums, <span class="keyword">int</span> numsSize,<span class="keyword">int</span> start, <span class="keyword">int</span> <span class="built_in">end</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;numsSize;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums[i] &gt;= start &amp;&amp; nums[i] &lt;= <span class="built_in">end</span>)</span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">findRepeatNumber</span><span class="params">(<span class="keyword">int</span>* nums, <span class="keyword">int</span> numsSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> start = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">end</span> = numsSize<span class="number">-1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">end</span> &gt;= start)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> middle = ((<span class="built_in">end</span>-start)&gt;&gt;<span class="number">1</span>)+start;</span><br><span class="line">        <span class="keyword">int</span> count = CountRange(nums, numsSize, start, middle);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">end</span> == start)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(count&gt;<span class="number">1</span>)</span><br><span class="line">                <span class="keyword">return</span> start;</span><br><span class="line">            <span class="keyword">else</span> </span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(count &gt; (middle - start + <span class="number">1</span>))</span><br><span class="line">            <span class="built_in">end</span> = middle;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">            start = middle + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ERROR;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输入：[0, 1, 2, 0, 4, 5, 6, 7, 8, 9]</p>
+<p>输出：ERROR</p>
+<p>预期结果：0</p>
+<p>因为在中点的时候start-middle和middle-end的count都是5，程序就看后面半段是否有重复的元素了。尔重复的元素在前面半段就被忽略掉了，所以输出为ERROR。所以这个算法还是有问题，需要改进呀。</p>
+<hr>
+<h2 id="二维数组的查找"><a href="#二维数组的查找" class="headerlink" title="二维数组的查找"></a>二维数组的查找</h2><blockquote>
+<p>在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
+<p>示例:</p>
+<p>现有矩阵 matrix 如下：</p>
+<p>[<br>  [1,   4,  7, 11, 15],<br>  [2,   5,  8, 12, 19],<br>  [3,   6,  9, 16, 22],<br>  [10, 13, 14, 17, 24],<br>  [18, 21, 23, 26, 30]<br>]<br>给定 target = 5，返回 true。</p>
+<p>给定 target = 20，返回 false。</p>
+<p>限制：0 &lt;= n &lt;= 1000 ；0 &lt;= m &lt;= 1000</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof</a></p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">findNumberIn2DArray</span><span class="params">(<span class="keyword">int</span>** matrix, <span class="keyword">int</span> matrixSize, <span class="keyword">int</span>* matrixColSize, <span class="keyword">int</span> target)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> cow = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> col = *matrixColSize - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(matrix == <span class="literal">NULL</span> || matrixSize &lt;= <span class="number">0</span> || *matrixColSize &lt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">while</span>(cow &lt; matrixSize &amp;&amp; col &gt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(matrix[cow][col] &gt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            col--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(matrix[cow][col] &lt; target)</span><br><span class="line">        &#123;</span><br><span class="line">            cow++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这道题的思路是：将一个复杂问题，通过分析一个简单具体的例子，来寻找普遍的规律。这是将矩阵右上角的数字元素与目标数字进行对比，依次删除列和行，直至找到相等的元素或遍历完整个矩阵。就像下面所示的步骤。</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/01065754-360a04e422b14e489869d9c58867f2a1.jpg" alt="img"></p>
+<p>第一遍的时候，在输入矩阵[]的时候，总是出错。还是边界条件、负面条件没有考虑到，还是要多考虑程序的鲁棒性。</p>
+<hr>
+<p>初刷算法，深刻感受到以前写代码的粗糙，代码的鲁棒性做的比较差，只考虑到最理想输入的情况。</p>
+<p>想要成为一名优秀的程序员，以后还要多注意代码的鲁棒性！</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -595,32 +474,124 @@
       </tags>
   </entry>
   <entry>
-    <title>【算法】05替换空格</title>
-    <url>/2020/07/29/%E7%AE%97%E6%B3%95-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</url>
-    <content><![CDATA[<blockquote>
-<p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 </p>
-<blockquote>
-<p>示例 1：</p>
-<p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p>
-</blockquote>
-<p>限制：0 &lt;= s 的长度 &lt;= 10000</p>
-</blockquote>
-<h3 id="方法一：创造新的字符串，在新的字符串上面进行替换。"><a href="#方法一：创造新的字符串，在新的字符串上面进行替换。" class="headerlink" title="方法一：创造新的字符串，在新的字符串上面进行替换。"></a>方法一：创造新的字符串，在新的字符串上面进行替换。</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span>* s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *A = <span class="built_in">calloc</span>(<span class="built_in">strlen</span>(s)*<span class="number">3</span>+<span class="number">1</span>,<span class="keyword">sizeof</span>(<span class="keyword">char</span>));	<span class="comment">//strlen(s)*3+1  全为空格‘ ’-&gt;‘%20’+‘\0’</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;<span class="comment">//两个指针i，k</span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(s == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(s[i]!=<span class="string">'\0'</span>)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="keyword">if</span>(s[i] == <span class="string">' '</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = <span class="string">'%'</span>;	<span class="comment">//k++，替换</span></span><br><span class="line">            A[k++] = <span class="string">'2'</span>;</span><br><span class="line">            A[k++] = <span class="string">'0'</span>;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = s[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> A;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>【C语言】*运算符和&amp;运算符、二维数组和指针</title>
+    <url>/2020/07/24/C%E8%AF%AD%E8%A8%80-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E6%8C%87%E9%92%88/</url>
+    <content><![CDATA[<h3 id="间接运算符和-amp-取址运算符"><a href="#间接运算符和-amp-取址运算符" class="headerlink" title="*间接运算符和&amp;取址运算符"></a>*间接运算符和&amp;取址运算符</h3><p>变量a本质上代表一个存储单元；CPU通过该存储单元的地址访问该存储单元中的数据。所以a本来代表两个值：存储单元的地址和储单元中的数据。即：    </p>
+<ul>
+<li><code>a</code>表示a对应的存储单元中的数据 </li>
+<li><code>&amp;a</code>表示a对应的存储单元的地址 </li>
+<li><code>*a</code>表示另一个存储单元中的数据 </li>
+</ul>
+<p><strong>声明</strong></p>
+<p><code>int a</code>        a中存储的是一个整数数值，通过a可以访问这个数值</p>
+<p><code>int *a</code>        a中存储的是一个存储单元的地址，而该存储单元中存储的数据是一个整数数值；通过<code>*a</code>可以访问这个数值。</p>
+<p><code>int** a</code>        a中存储的是一个存储单元的地址；而该存储单元中存储的数据是另外一个存储单元的地址，这个存储单元中存储的是整数数值。</p>
+<p>在C语言里地址叫指针。还有，数组本质上其实也是指针，即：<code>*a</code> 等同于 a[]。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> *b = &amp;a;		<span class="comment">//指针b指向a的地址</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a );		<span class="comment">//a的数据值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, &amp;a);		<span class="comment">//a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, b );		<span class="comment">//指针b的值，即指针b指向的a的地址值</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%d\n"</span>, *b);		<span class="comment">//指针b指向的a的数据值</span></span><br></pre></td></tr></table></figure>
 
+<p><strong>结果为：</strong><br>10<br>6487620<br>6487620<br>10</p>
+<p>参考：<a href="https://blog.csdn.net/qq_21583681/article/details/78572009" target="_blank" rel="noopener">C语言中的*和&amp;符号</a></p>
 <hr>
-<h3 id="方法二：不创造新的字符串，在原有的字符串上面进行替换。"><a href="#方法二：不创造新的字符串，在原有的字符串上面进行替换。" class="headerlink" title="方法二：不创造新的字符串，在原有的字符串上面进行替换。"></a>方法二：不创造新的字符串，在原有的字符串上面进行替换。</h3><ol>
-<li><p>从头到尾扫描字符串，每次遇到空格的时候进行替换。替换时把后面的所有字符都往后移动2个字节。</p>
-</li>
-<li><p>先遍历一遍字符串，计算出字符串中的空格数。再从字符串的后面开始复制和替换，指针p1指向原始字符串的末尾，p2指向替换后的字符串的末尾。</p>
-<p><strong>从后往前替换，节省了字符后移的步骤。</strong></p>
-</li>
-</ol>
+<h3 id="二维数组和指针"><a href="#二维数组和指针" class="headerlink" title="二维数组和指针"></a>二维数组和指针</h3><p><strong>二维数组的各种申明方式</strong></p>
+<table>
+<thead>
+<tr>
+<th>表示形式</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int a[5] [5];</td>
+<td align="left">int类型二维数组</td>
+</tr>
+<tr>
+<td>int ** a;</td>
+<td align="left">指向指针的指针，可用于二维数组</td>
+</tr>
+<tr>
+<td>int * a[5];</td>
+<td align="left">指针数组</td>
+</tr>
+<tr>
+<td>int (*a) [5];</td>
+<td align="left">指向一个具有5个元素的数组的指针</td>
+</tr>
+<tr>
+<td>int * a[5] [5];</td>
+<td align="left">存放指针的二维数组</td>
+</tr>
+<tr>
+<td>int (* a[3]) [4];</td>
+<td align="left">一个3元素数组，每个元素为指向具有4个元素的数组的指针</td>
+</tr>
+</tbody></table>
+<p><strong>二维数组的其他表现形式</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">表示形式</th>
+<th align="left">含义</th>
+<th align="left">地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">a</td>
+<td align="left">二维数组名，指向一维数组a[0]，即0行首地址</td>
+<td align="left">2000</td>
+</tr>
+<tr>
+<td align="left">a+1， &amp;a[1]</td>
+<td align="left">指向一维数组a[1]，即1行首地址</td>
+<td align="left">2016</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">a[0]， *(a+0)， *a</td>
+<td align="left">0行0列元素，a[0] [0]地址</td>
+<td align="left">2000</td>
+</tr>
+<tr>
+<td align="left">a[1]， *(a+1)</td>
+<td align="left">1行0列元素，a[1] [0]地址</td>
+<td align="left">2016</td>
+</tr>
+<tr>
+<td align="left">a[1]+2， *(a+1)+2， &amp;a[1] [2]</td>
+<td align="left">1行2列元素，a[1] [2]地址</td>
+<td align="left">2024</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">* (a[1]+2)， * (*(a+1)+2)， a[1] [2]</td>
+<td align="left">1行2列元素，a[1] [2]的值</td>
+<td align="left">元素值，13</td>
+</tr>
+</tbody></table>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><blockquote>
+<p>数组int a[3] [4] 中的a[2] [1] 用其他形式表示</p>
+</blockquote>
+<p>仔细使用上面的解析方式</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/1601164D5-1.png" alt="把二维数组拆解成一维数组"></p>
+<p>通过上面的图，可以很直观的得出三种a[2] [1] 的其他表达形式</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">*(*(a+<span class="number">2</span>)+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">*(a[<span class="number">2</span>]+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> *p = &amp;a[<span class="number">0</span>] [<span class="number">0</span>];</span><br><span class="line">p[<span class="number">9</span>];	<span class="comment">//p的第10个元素</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>参考：<a href="http://c.biancheng.net/view/2022.html" target="_blank" rel="noopener">C语言二维数组指针（指向二维数组的指针）</a></p>
 ]]></content>
       <categories>
         <category>学习记录</category>
       </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
@@ -708,6 +679,134 @@
       </categories>
       <tags>
         <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【C语言】大小端问题</title>
+    <url>/2020/07/26/C%E8%AF%AD%E8%A8%80-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h2><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中<strong>（低对高，高对低）</strong></p>
+<p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中<strong>（低对低，高对高）</strong></p>
+<blockquote>
+<p>实例：</p>
+<p>A=0x12345678存入地址1000H~1003H中</p>
+<p>小端模式：1000H=78,1001H=56,1002H=34,1003H=12</p>
+<p>大端模式：1000H=12,1001H=34,1002H=56,1003H=78</p>
+</blockquote>
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/b2de9c82d158ccbf4ea6fbf1c413933bb0354137.jpeg" alt="大小端数据储存示意" style="zoom:50%;" />
+
+<h2 id="区分大小端"><a href="#区分大小端" class="headerlink" title="区分大小端"></a>区分大小端</h2><ol>
+<li><h3 id="利用指针来区分大小端"><a href="#利用指针来区分大小端" class="headerlink" title="利用指针来区分大小端"></a>利用指针来区分大小端</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">1</span>;  <span class="comment">//定义为1是为了方便 如果你喜欢你可以随意，</span></span><br><span class="line">	            <span class="comment">//只要你能搞清楚 例如：0x11223344;</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">char</span> *p = (<span class="keyword">char</span> *)&amp;a;<span class="comment">//在这里将整形a的地址转化为char*；</span></span><br><span class="line">	                     <span class="comment">//方便后面取一个字节内容</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span>(*p == <span class="number">1</span>)<span class="comment">//在这里解引用了p的一个字节的内容与1进行比较；</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20160426194551009" alt="利用指针来区分大小端" style="zoom: 67%;" />
+
+<ol start="2">
+<li><h3 id="Linux操作系统的源码中大小端的判断"><a href="#Linux操作系统的源码中大小端的判断" class="headerlink" title="Linux操作系统的源码中大小端的判断"></a>Linux操作系统的源码中大小端的判断</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">union</span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> mylong;</span><br><span class="line">&#125;endian_test = &#123;&#123;<span class="string">'l'</span>,<span class="string">'?'</span>,<span class="string">'?'</span>,<span class="string">'b'</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<p>   这是利用了联合体union的存放顺序是所有成员都从低地址开始存放的特性。由于联合体的各个成员共用内存，并同时只有一个成员获得该块地址的读取使用权。如果结果‘l’为小端模式，结果是‘b’为大端模式。</p>
+<ol start="3">
+<li><h3 id="利用联合体来检测大小端"><a href="#利用联合体来检测大小端" class="headerlink" title="利用联合体来检测大小端"></a>利用联合体来检测大小端</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 利用联合体来检测大小端 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">union</span> t</span><br><span class="line">	&#123;</span><br><span class="line">         <span class="keyword">int</span> i;</span><br><span class="line">         <span class="keyword">char</span> c;</span><br><span class="line">	&#125; t1;</span><br><span class="line">     t1.i = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">if</span>(t1.c == <span class="number">1</span>)</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	 <span class="keyword">else</span></span><br><span class="line">	     <span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Judge_duan();<span class="comment">//在这里我们封装成一个函数，可以有参数和返回值也可以不需要</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="大小端的转换"><a href="#大小端的转换" class="headerlink" title="大小端的转换"></a>大小端的转换</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">endian_convert</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(t); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        result &lt;&lt;= <span class="number">8</span>;</span><br><span class="line">        result |= (t &amp; <span class="number">0xff</span>);</span><br><span class="line">        t &gt;&gt;= <span class="number">8</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>参考：<a href="https://blog.csdn.net/bitboss/article/details/51247869" target="_blank" rel="noopener">关于机器大小端的判定</a></p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【C语言】宏定义</title>
+    <url>/2020/07/28/C%E8%AF%AD%E8%A8%80-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
+<p>宏定义计算问题</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRODUCT (x) (x*x)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> 	<span class="keyword">int</span> a,b = <span class="number">3</span>;</span><br><span class="line"> 	a = PRODUCT(b+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>求a的值：</p>
+</blockquote>
+<p>结果为：<code>a = b+2*b+2=3+2*3+2=11</code></p>
+<h2 id="实例2："><a href="#实例2：" class="headerlink" title="实例2："></a>实例2：</h2><blockquote>
+<p>描述下面XXX这个宏的作用。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>第一个宏：</strong></p>
+<p><code>#define offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</code></p>
+<ul>
+<li><code>(TYPE*)0</code>，将0强制转换为TYPE类型的指针，并且指向了0地址空间。</li>
+<li><code>(TYPE*)0)-&gt;MEMBER</code>，指向结构体中的成员</li>
+<li><code>&amp;((TYPE*)0)-&gt;MEMBER</code>，获取成员在结构体中的位置，因为其实位置为0，所以获取的地址即为实际的偏移地址。</li>
+<li><code>(size_t)&amp;((TYPE*)0)-&gt;MEMBER</code>，将偏移地址强制转换为size_t，即unsigned int。</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(TYPE*)<span class="number">0</span>				=&gt;	p = (TYPE*)<span class="number">0</span></span><br><span class="line">(TYPE*)<span class="number">0</span>)-&gt;MEMBER		=&gt;	p-&gt;MEMBER</span><br><span class="line">&amp;((TYPE*)<span class="number">0</span>)-&gt;MEMBER)	=&gt;	&amp;(p-&gt;MEMBER)	<span class="comment">//成员MEMBER的地址</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>第二个宏：</strong></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>({ })</code>的语法形式是GNU C编译器的语法扩展，与逗号表达式类似，表达式结果为最后一个语句的值。</li>
+<li><code>typeof</code>主要用于宏定义之中，可以使用typeof关键字来引用宏参数的类型。</li>
+<li><code>typeof(((type*)0)-&gt;member)</code>，引用type结构体的member成员的数据类型。</li>
+<li><code>const typeof(((type*)0)-&gt;member) *__mpter=(ptr);</code>，定义一个与type结构体的member成员相同的类型的指针变量<code>__mpter</code>，而且将<code>ptr</code>赋值给它。</li>
+<li><code>offsetof(type,member)</code>，获取member成员在type结构中的偏移量。</li>
+<li><code>(type*)((type*)__mpter - offsetof(type,member));</code>，将<code>__mpter</code>减去偏移量，就得到了这个结构变量的地址了（指针）。</li>
+</ul>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180207165907690" alt="结构变量的地址"></p>
+<p>ptr是指向正被使用的某类型变量指针；</p>
+<p>type是包含ptr指向的变量类型的结构类型；</p>
+<p>member是type结构体中的成员，类型与ptr指向的变量类型一样；</p>
+<p>宏定义的功能是：计算返回包含ptr指向的变量所在的type类型结构变量的指针。</p>
+<p>参考：<a href="https://blog.csdn.net/feiyanaffection/article/details/79282562" target="_blank" rel="noopener">老生常谈的Linux内核中常用的两个宏定义</a></p>
+<h2 id="实例3："><a href="#实例3：" class="headerlink" title="实例3："></a>实例3：</h2><blockquote>
+<p>用C语言字节编写一下四个宏</p>
+<p>ALGN_DOWN(x, a)将数值x按照a的整数倍向下取整，例如ALGN_DOWN(65,3) = 63；</p>
+<p>ALGN_UP(x, a)将数值x按照a的整数倍向上取整，例如ALGN_UP(65,3) = 66；</p>
+<p>ALGN_2N_DOWN(x, a)将数值x按照a的整数倍向下取整，a是2的n次幂，例如ALGN_2N_DOWN(65,4) = 64；</p>
+<p>ALGN_2N_UP(x, a)将数值x按照a的整数倍向上取整，a是2的n次幂，例如ALGN_2N_UP(65,4) = 68。</p>
+</blockquote>
+<p>设条件为：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x; </span><br><span class="line"><span class="keyword">int</span> a = <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>将数值x按照a的整数倍向下取整，a是2的n次幂:</strong></p>
+<p>对齐掩码a_mask = 11111 11111 11111 11111 11111 11110 00，即 ~(a- 1)</p>
+<p>对齐掩码a_mask与a进行”与运算”就可以得到，将数值x按照a的整数倍向下取整，a是2的n次幂。</p>
+<p><code>#ALGN_2N_DOWN(x, a)        (x &amp; ([~(a-1)]) )</code></p>
+<p><strong>将数值x按照a的整数倍向上取整，a是2的n次幂</strong></p>
+<p>如果要求出比x大的是不是需要加上a就可以了？可是如果x本身就是a的倍数，这样加a不就错了吗？</p>
+<p>所以在x基础上加上(a - 1)，然后与a的对齐掩码进行与运算。</p>
+<p><code>#ALGN_2N_UP(x, a)     ((x+a-1) &amp; (~ (a-1)))</code></p>
+<p>实例：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x=<span class="number">0</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">0.</span></span><br><span class="line">x=<span class="number">6</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">8</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">14</span>, a=<span class="number">8</span>,则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">16.</span></span><br><span class="line">注:a应当为<span class="number">2</span>的n次方, 即<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">1024</span>, <span class="number">2048</span>, <span class="number">4096</span> ...</span><br></pre></td></tr></table></figure>
+
+<p>参考：<a href="https://blog.csdn.net/heybeaman/article/details/80491871" target="_blank" rel="noopener">内核宏ALIGN的含义</a></p>
+<h2 id="实例4"><a href="#实例4" class="headerlink" title="实例4"></a>实例4</h2><blockquote>
+<p>用预处理指令#define声明一个常数，用以表示1年中有多少秒（忽略闰年问题）</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SECONDS_PER_YEAR (60 * 60 * 24 * 365)UL</span></span><br></pre></td></tr></table></figure>
+
+<p>一年的秒数为31536000，16位的int型将会溢出，因此要使用长整型符号L</p>
+<h2 id="实例5"><a href="#实例5" class="headerlink" title="实例5"></a>实例5</h2><blockquote>
+<p>写一个“标准”宏MIN，这个宏输入两个参数并返回较小的一个。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(A,B) ((A)&lt;=(B)?(A):(B))</span></span><br></pre></td></tr></table></figure>
+
+<p>容易错的地方：宏中间要小心地把参数用括号括起来。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
@@ -881,89 +980,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【C语言】宏定义</title>
-    <url>/2020/07/28/C%E8%AF%AD%E8%A8%80-%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h2 id="实例1："><a href="#实例1：" class="headerlink" title="实例1："></a>实例1：</h2><blockquote>
-<p>宏定义计算问题</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> PRODUCT (x) (x*x)</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> 	<span class="keyword">int</span> a,b = <span class="number">3</span>;</span><br><span class="line"> 	a = PRODUCT(b+<span class="number">2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>求a的值：</p>
-</blockquote>
-<p>结果为：<code>a = b+2*b+2=3+2*3+2=11</code></p>
-<h2 id="实例2："><a href="#实例2：" class="headerlink" title="实例2："></a>实例2：</h2><blockquote>
-<p>描述下面XXX这个宏的作用。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p><strong>第一个宏：</strong></p>
-<p><code>#define offsetof(TYPE,MEMBER) ((size_t)&amp;((TYPE*)0)-&gt;MEMBER)</code></p>
-<ul>
-<li><code>(TYPE*)0</code>，将0强制转换为TYPE类型的指针，并且指向了0地址空间。</li>
-<li><code>(TYPE*)0)-&gt;MEMBER</code>，指向结构体中的成员</li>
-<li><code>&amp;((TYPE*)0)-&gt;MEMBER</code>，获取成员在结构体中的位置，因为其实位置为0，所以获取的地址即为实际的偏移地址。</li>
-<li><code>(size_t)&amp;((TYPE*)0)-&gt;MEMBER</code>，将偏移地址强制转换为size_t，即unsigned int。</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(TYPE*)<span class="number">0</span>				=&gt;	p = (TYPE*)<span class="number">0</span></span><br><span class="line">(TYPE*)<span class="number">0</span>)-&gt;MEMBER		=&gt;	p-&gt;MEMBER</span><br><span class="line">&amp;((TYPE*)<span class="number">0</span>)-&gt;MEMBER)	=&gt;	&amp;(p-&gt;MEMBER)	<span class="comment">//成员MEMBER的地址</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>第二个宏：</strong></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> XXX(ptr,type,member)(&#123;\</span></span><br><span class="line">	<span class="function"><span class="keyword">const</span> <span class="title">typeof</span><span class="params">(((type*)<span class="number">0</span>)-&gt;member)</span> *__mpter</span>=(ptr);\</span><br><span class="line">	(type*)((type*)__mpter - offsetof(type,member));&#125;)</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><code>({ })</code>的语法形式是GNU C编译器的语法扩展，与逗号表达式类似，表达式结果为最后一个语句的值。</li>
-<li><code>typeof</code>主要用于宏定义之中，可以使用typeof关键字来引用宏参数的类型。</li>
-<li><code>typeof(((type*)0)-&gt;member)</code>，引用type结构体的member成员的数据类型。</li>
-<li><code>const typeof(((type*)0)-&gt;member) *__mpter=(ptr);</code>，定义一个与type结构体的member成员相同的类型的指针变量<code>__mpter</code>，而且将<code>ptr</code>赋值给它。</li>
-<li><code>offsetof(type,member)</code>，获取member成员在type结构中的偏移量。</li>
-<li><code>(type*)((type*)__mpter - offsetof(type,member));</code>，将<code>__mpter</code>减去偏移量，就得到了这个结构变量的地址了（指针）。</li>
-</ul>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180207165907690" alt="结构变量的地址"></p>
-<p>ptr是指向正被使用的某类型变量指针；</p>
-<p>type是包含ptr指向的变量类型的结构类型；</p>
-<p>member是type结构体中的成员，类型与ptr指向的变量类型一样；</p>
-<p>宏定义的功能是：计算返回包含ptr指向的变量所在的type类型结构变量的指针。</p>
-<p>参考：<a href="https://blog.csdn.net/feiyanaffection/article/details/79282562" target="_blank" rel="noopener">老生常谈的Linux内核中常用的两个宏定义</a></p>
-<h2 id="实例3："><a href="#实例3：" class="headerlink" title="实例3："></a>实例3：</h2><blockquote>
-<p>用C语言字节编写一下四个宏</p>
-<p>ALGN_DOWN(x, a)将数值x按照a的整数倍向下取整，例如ALGN_DOWN(65,3) = 63；</p>
-<p>ALGN_UP(x, a)将数值x按照a的整数倍向上取整，例如ALGN_UP(65,3) = 66；</p>
-<p>ALGN_2N_DOWN(x, a)将数值x按照a的整数倍向下取整，a是2的n次幂，例如ALGN_2N_DOWN(65,4) = 64；</p>
-<p>ALGN_2N_UP(x, a)将数值x按照a的整数倍向上取整，a是2的n次幂，例如ALGN_2N_UP(65,4) = 68。</p>
-</blockquote>
-<p>设条件为：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x; </span><br><span class="line"><span class="keyword">int</span> a = <span class="number">8</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>将数值x按照a的整数倍向下取整，a是2的n次幂:</strong></p>
-<p>对齐掩码a_mask = 11111 11111 11111 11111 11111 11110 00，即 ~(a- 1)</p>
-<p>对齐掩码a_mask与a进行”与运算”就可以得到，将数值x按照a的整数倍向下取整，a是2的n次幂。</p>
-<p><code>#ALGN_2N_DOWN(x, a)        (x &amp; ([~(a-1)]) )</code></p>
-<p><strong>将数值x按照a的整数倍向上取整，a是2的n次幂</strong></p>
-<p>如果要求出比x大的是不是需要加上a就可以了？可是如果x本身就是a的倍数，这样加a不就错了吗？</p>
-<p>所以在x基础上加上(a - 1)，然后与a的对齐掩码进行与运算。</p>
-<p><code>#ALGN_2N_UP(x, a)     ((x+a-1) &amp; (~ (a-1)))</code></p>
-<p>实例：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">x=<span class="number">0</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">0.</span></span><br><span class="line">x=<span class="number">6</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">0</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">8</span>, a=<span class="number">8</span>, 则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">8.</span></span><br><span class="line">x=<span class="number">14</span>, a=<span class="number">8</span>,则ALGN_2N_DOWN(x,a)=<span class="number">8</span>, ALGN_2N_UP(x,a)=<span class="number">16.</span></span><br><span class="line">注:a应当为<span class="number">2</span>的n次方, 即<span class="number">2</span>, <span class="number">4</span>, <span class="number">8</span>, <span class="number">16</span>, <span class="number">32</span>, <span class="number">64</span>, <span class="number">128</span>, <span class="number">256</span>, <span class="number">1024</span>, <span class="number">2048</span>, <span class="number">4096</span> ...</span><br></pre></td></tr></table></figure>
-
-<p>参考：<a href="https://blog.csdn.net/heybeaman/article/details/80491871" target="_blank" rel="noopener">内核宏ALIGN的含义</a></p>
-<h2 id="实例4"><a href="#实例4" class="headerlink" title="实例4"></a>实例4</h2><blockquote>
-<p>用预处理指令#define声明一个常数，用以表示1年中有多少秒（忽略闰年问题）</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> SECONDS_PER_YEAR (60 * 60 * 24 * 365)UL</span></span><br></pre></td></tr></table></figure>
-
-<p>一年的秒数为31536000，16位的int型将会溢出，因此要使用长整型符号L</p>
-<h2 id="实例5"><a href="#实例5" class="headerlink" title="实例5"></a>实例5</h2><blockquote>
-<p>写一个“标准”宏MIN，这个宏输入两个参数并返回较小的一个。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(A,B) ((A)&lt;=(B)?(A):(B))</span></span><br></pre></td></tr></table></figure>
-
-<p>容易错的地方：宏中间要小心地把参数用括号括起来。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【C语言】数据存储结构</title>
     <url>/2020/07/31/C%E8%AF%AD%E8%A8%80-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p>可执行程序（没有调用内存，没有运行时），内存结构分为：</p>
@@ -1001,39 +1017,6 @@
 <li><a href="https://blog.csdn.net/weixin_42528287/article/details/85783662" target="_blank" rel="noopener">变量的类型、作用域、存储空间、生命周期</a></li>
 <li><a href="https://blog.csdn.net/u011616739/article/details/61621815" target="_blank" rel="noopener">C语言 内存管理</a></li>
 <li><a href="https://blog.csdn.net/weixin_42060900/article/details/99229518" target="_blank" rel="noopener">【机试题】2019.8.6大疆嵌入式笔试题B卷笔试题目总结</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【C语言】动态分配堆内存</title>
-    <url>/2020/07/31/C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/</url>
-    <content><![CDATA[<h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
-<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>生成了40个字节大小未被初始化的内存空间。</p>
-<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
-<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
-<ul>
-<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
-<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
-</ul>
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.csdn.net/MarcoAsensio/article/details/85937002" target="_blank" rel="noopener">C语言中malloc，calloc，realloc等动态分配内存函数特点详解</a></li>
-<li><a href="https://blog.csdn.net/csdn_kou/article/details/80499565" target="_blank" rel="noopener">C语言malloc和calloc的区别</a></li>
-<li><a href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html" target="_blank" rel="noopener">C语言中malloc()和calloc()函数用法 </a></li>
 </ul>
 ]]></content>
       <categories>
@@ -1086,42 +1069,156 @@
       </tags>
   </entry>
   <entry>
-    <title>【C语言】大小端问题</title>
-    <url>/2020/07/26/C%E8%AF%AD%E8%A8%80-%E5%A4%A7%E5%B0%8F%E7%AB%AF%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="何为大小端问题？"><a href="#何为大小端问题？" class="headerlink" title="何为大小端问题？"></a>何为大小端问题？</h2><p>大端模式（BE big-endian）：数据的低位保存在内存的高地址中，而数据的高位保存在内存的低地址中<strong>（低对高，高对低）</strong></p>
-<p>小端模式（LE little-endian）：数据的低位保存在内存的低地址中，而数据的高位保存在内存的高地址中<strong>（低对低，高对高）</strong></p>
+    <title>【C语言】动态分配堆内存</title>
+    <url>/2020/07/31/C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/</url>
+    <content><![CDATA[<h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
+<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>生成了40个字节大小未被初始化的内存空间。</p>
+<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%p\n"</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
+<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
+<ul>
+<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
+<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
+</ul>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.csdn.net/MarcoAsensio/article/details/85937002" target="_blank" rel="noopener">C语言中malloc，calloc，realloc等动态分配内存函数特点详解</a></li>
+<li><a href="https://blog.csdn.net/csdn_kou/article/details/80499565" target="_blank" rel="noopener">C语言malloc和calloc的区别</a></li>
+<li><a href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html" target="_blank" rel="noopener">C语言中malloc()和calloc()函数用法 </a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【算法】05替换空格</title>
+    <url>/2020/07/29/%E7%AE%97%E6%B3%95-05%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC/</url>
+    <content><![CDATA[<blockquote>
+<p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。 </p>
 <blockquote>
-<p>实例：</p>
-<p>A=0x12345678存入地址1000H~1003H中</p>
-<p>小端模式：1000H=78,1001H=56,1002H=34,1003H=12</p>
-<p>大端模式：1000H=12,1001H=34,1002H=56,1003H=78</p>
+<p>示例 1：</p>
+<p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p>
 </blockquote>
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/b2de9c82d158ccbf4ea6fbf1c413933bb0354137.jpeg" alt="大小端数据储存示意" style="zoom:50%;" />
-
-<h2 id="区分大小端"><a href="#区分大小端" class="headerlink" title="区分大小端"></a>区分大小端</h2><ol>
-<li><h3 id="利用指针来区分大小端"><a href="#利用指针来区分大小端" class="headerlink" title="利用指针来区分大小端"></a>利用指针来区分大小端</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">1</span>;  <span class="comment">//定义为1是为了方便 如果你喜欢你可以随意，</span></span><br><span class="line">	            <span class="comment">//只要你能搞清楚 例如：0x11223344;</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">char</span> *p = (<span class="keyword">char</span> *)&amp;a;<span class="comment">//在这里将整形a的地址转化为char*；</span></span><br><span class="line">	                     <span class="comment">//方便后面取一个字节内容</span></span><br><span class="line"> </span><br><span class="line">	<span class="keyword">if</span>(*p == <span class="number">1</span>)<span class="comment">//在这里解引用了p的一个字节的内容与1进行比较；</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20160426194551009" alt="利用指针来区分大小端" style="zoom: 67%;" />
-
-<ol start="2">
-<li><h3 id="Linux操作系统的源码中大小端的判断"><a href="#Linux操作系统的源码中大小端的判断" class="headerlink" title="Linux操作系统的源码中大小端的判断"></a>Linux操作系统的源码中大小端的判断</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">union</span>&#123;</span><br><span class="line">    <span class="keyword">char</span> c[<span class="number">4</span>];</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> mylong;</span><br><span class="line">&#125;endian_test = &#123;&#123;<span class="string">'l'</span>,<span class="string">'?'</span>,<span class="string">'?'</span>,<span class="string">'b'</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-<p>   这是利用了联合体union的存放顺序是所有成员都从低地址开始存放的特性。由于联合体的各个成员共用内存，并同时只有一个成员获得该块地址的读取使用权。如果结果‘l’为小端模式，结果是‘b’为大端模式。</p>
-<ol start="3">
-<li><h3 id="利用联合体来检测大小端"><a href="#利用联合体来检测大小端" class="headerlink" title="利用联合体来检测大小端"></a>利用联合体来检测大小端</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 利用联合体来检测大小端 */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Judge_duan</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">union</span> t</span><br><span class="line">	&#123;</span><br><span class="line">         <span class="keyword">int</span> i;</span><br><span class="line">         <span class="keyword">char</span> c;</span><br><span class="line">	&#125; t1;</span><br><span class="line">     t1.i = <span class="number">1</span>;</span><br><span class="line">     <span class="keyword">if</span>(t1.c == <span class="number">1</span>)</span><br><span class="line">		 <span class="built_in">printf</span>(<span class="string">"小端\n"</span>);</span><br><span class="line">	 <span class="keyword">else</span></span><br><span class="line">	     <span class="built_in">printf</span>(<span class="string">"大端\n"</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Judge_duan();<span class="comment">//在这里我们封装成一个函数，可以有参数和返回值也可以不需要</span></span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="大小端的转换"><a href="#大小端的转换" class="headerlink" title="大小端的转换"></a>大小端的转换</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">endian_convert</span><span class="params">(<span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> result = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(t); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        result &lt;&lt;= <span class="number">8</span>;</span><br><span class="line">        result |= (t &amp; <span class="number">0xff</span>);</span><br><span class="line">        t &gt;&gt;= <span class="number">8</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>限制：0 &lt;= s 的长度 &lt;= 10000</p>
+</blockquote>
+<h3 id="方法一：创造新的字符串，在新的字符串上面进行替换。"><a href="#方法一：创造新的字符串，在新的字符串上面进行替换。" class="headerlink" title="方法一：创造新的字符串，在新的字符串上面进行替换。"></a>方法一：创造新的字符串，在新的字符串上面进行替换。</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ERROR -1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>* <span class="title">replaceSpace</span><span class="params">(<span class="keyword">char</span>* s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> *A = <span class="built_in">calloc</span>(<span class="built_in">strlen</span>(s)*<span class="number">3</span>+<span class="number">1</span>,<span class="keyword">sizeof</span>(<span class="keyword">char</span>));	<span class="comment">//strlen(s)*3+1  全为空格‘ ’-&gt;‘%20’+‘\0’</span></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;<span class="comment">//两个指针i，k</span></span><br><span class="line">    <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(s == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> ERROR;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(s[i]!=<span class="string">'\0'</span>)</span><br><span class="line">    &#123;        </span><br><span class="line">        <span class="keyword">if</span>(s[i] == <span class="string">' '</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = <span class="string">'%'</span>;	<span class="comment">//k++，替换</span></span><br><span class="line">            A[k++] = <span class="string">'2'</span>;</span><br><span class="line">            A[k++] = <span class="string">'0'</span>;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            A[k++] = s[i];</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> A;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p>参考：<a href="https://blog.csdn.net/bitboss/article/details/51247869" target="_blank" rel="noopener">关于机器大小端的判定</a></p>
+<h3 id="方法二：不创造新的字符串，在原有的字符串上面进行替换。"><a href="#方法二：不创造新的字符串，在原有的字符串上面进行替换。" class="headerlink" title="方法二：不创造新的字符串，在原有的字符串上面进行替换。"></a>方法二：不创造新的字符串，在原有的字符串上面进行替换。</h3><ol>
+<li><p>从头到尾扫描字符串，每次遇到空格的时候进行替换。替换时把后面的所有字符都往后移动2个字节。</p>
+</li>
+<li><p>先遍历一遍字符串，计算出字符串中的空格数。再从字符串的后面开始复制和替换，指针p1指向原始字符串的末尾，p2指向替换后的字符串的末尾。</p>
+<p><strong>从后往前替换，节省了字符后移的步骤。</strong></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【C语言】volatile关键字</title>
+    <url>/2020/08/05/C%E8%AF%AD%E8%A8%80-volatile%E5%85%B3%E9%94%AE%E5%AD%97/</url>
+    <content><![CDATA[<h2 id="volatile是易变，不稳定的意思"><a href="#volatile是易变，不稳定的意思" class="headerlink" title="volatile是易变，不稳定的意思"></a>volatile是易变，不稳定的意思</h2><p>volatile修变量可以被某些未知的因素而改变，未知的因素包括操作系统、硬件或其他线程等。每次使用都从<strong>内存重新装载内容</strong>。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">#示例<span class="number">1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;studio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> a = i;</span><br><span class="line">    <span class="keyword">int</span> b = i;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">"i = %d\n"</span>, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>i的值直接从寄存器中读取，a，b的值相等。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">#示例<span class="number">2</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;studio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">volatile</span> <span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> a = i;</span><br><span class="line">    <span class="keyword">int</span> b = i;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">"i = %d\n"</span>, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>i的值是随时可能发生变化的，所以a，b的值不一定相等。</p>
+<h2 id="volatile的使用："><a href="#volatile的使用：" class="headerlink" title="volatile的使用："></a>volatile的使用：</h2><ol>
+<li>并行设备的硬件寄存器（如：状态寄存器）</li>
+<li>中断服务子程序中会访问到的非自动变量</li>
+<li>多线程应用中被几个任务共享的变量</li>
+</ol>
+<hr>
+<p>C语言编译过程中，volatile关键字和extern关键字分别在哪个阶段起作用？</p>
+<p>volatile：编译阶段</p>
+<p>extern：链接阶段</p>
+<hr>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【C语言】const关键字</title>
+    <url>/2020/08/04/C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/</url>
+    <content><![CDATA[<ul>
+<li>const意味着<strong>常数</strong>。</li>
+<li>const定义的变量，他的值不能被改变，在整个作用域中都保持固定</li>
+<li>同宏定义一样，可以避免意义模糊的数字出现，同样可以很方便的进行参数的调整和修改</li>
+<li>可以保护被修饰的东西，防止意外的修改，增强程序的<strong>健壮性</strong>。</li>
+<li>const是通过编译器在<strong>编译的时候执行检查</strong>来确保实现的。</li>
+</ul>
+<h2 id="const与指针"><a href="#const与指针" class="headerlink" title="const与指针"></a>const与指针</h2><table>
+<thead>
+<tr>
+<th>指针</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>const int a;</code></td>
+<td>a是一个常整型数</td>
+</tr>
+<tr>
+<td><code>int const a;</code></td>
+<td>a是一个常整型数</td>
+</tr>
+<tr>
+<td><code>const int *a;</code></td>
+<td>a是一个指向常整型数的指针（数不可修改，指针可以修改）</td>
+</tr>
+<tr>
+<td><code>int const *a;</code></td>
+<td>a是一个指向整型数的常指针（数可修改，指针不可以修改）</td>
+</tr>
+<tr>
+<td><code>const int *const a;</code></td>
+<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
+</tr>
+<tr>
+<td><code>int const *const a;</code></td>
+<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
+</tr>
+</tbody></table>
+<h2 id="const与函数"><a href="#const与函数" class="headerlink" title="const与函数"></a>const与函数</h2><p>const通常用在函数形参当中，如果形参是一个指针，为了<strong>防止在函数内部修改指针指向的数据</strong>。就可以用const来限制。比如在String的程序中就有很多const修饰形参的情况。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">StringCopy</span> <span class="params">(<span class="keyword">char</span>* strDestination, <span class="keyword">const</span> <span class="keyword">char</span> *strSource)</span></span></span><br></pre></td></tr></table></figure>
+
+<p>const还可以表示该函数返回的一个常量，放在函数的返回值的位置，例如</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="title">GetString</span><span class="params">(<span class="keyword">void</span>)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>在类成员函数的声明和定义之中，const放在函数的形参表之后，函数体之前，表示该函数的this指针是一个常量，不能修饰该对象的数据成员，例如</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getId</span> <span class="params">()</span> <span class="keyword">const</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><p>下面这段程序的运行结果？</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> x = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> *ptr;</span><br><span class="line">    ptr = &amp;x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,x);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>编译出错</strong></p>
+<p>x是常整型数，ptr是指向常整型的指针。<code>ptr = &amp;x;</code>，即<code>ptr = 10;</code>，违反了const的规则；const是通过编译器在编译的时候检查来实现的，所以编译报错。</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/fengxing999/p/10248636.html" target="_blank" rel="noopener">const修饰指针的三种效果</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>学习记录</category>
@@ -1201,34 +1298,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【C语言】volatile关键字</title>
-    <url>/2020/08/05/C%E8%AF%AD%E8%A8%80-volatile%E5%85%B3%E9%94%AE%E5%AD%97/</url>
-    <content><![CDATA[<h2 id="volatile是易变，不稳定的意思"><a href="#volatile是易变，不稳定的意思" class="headerlink" title="volatile是易变，不稳定的意思"></a>volatile是易变，不稳定的意思</h2><p>volatile修变量可以被某些未知的因素而改变，未知的因素包括操作系统、硬件或其他线程等。每次使用都从<strong>内存重新装载内容</strong>。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">#示例<span class="number">1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;studio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> a = i;</span><br><span class="line">    <span class="keyword">int</span> b = i;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">"i = %d\n"</span>, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>i的值直接从寄存器中读取，a，b的值相等。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">#示例<span class="number">2</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;studio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">volatile</span> <span class="keyword">int</span> i = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> a = i;</span><br><span class="line">    <span class="keyword">int</span> b = i;</span><br><span class="line">    <span class="built_in">printf</span> (<span class="string">"i = %d\n"</span>, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>i的值是随时可能发生变化的，所以a，b的值不一定相等。</p>
-<h2 id="volatile的使用："><a href="#volatile的使用：" class="headerlink" title="volatile的使用："></a>volatile的使用：</h2><ol>
-<li>并行设备的硬件寄存器（如：状态寄存器）</li>
-<li>中断服务子程序中会访问到的非自动变量</li>
-<li>多线程应用中被几个任务共享的变量</li>
-</ol>
-<hr>
-<p>C语言编译过程中，volatile关键字和extern关键字分别在哪个阶段起作用？</p>
-<p>volatile：编译阶段</p>
-<p>extern：链接阶段</p>
-<hr>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【嵌入式】Linux目录结构</title>
     <url>/2020/08/07/%E5%B5%8C%E5%85%A5%E5%BC%8F-Linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/20180715222836494" alt="Linux 目录结构"></p>
@@ -1257,65 +1326,73 @@
       </tags>
   </entry>
   <entry>
-    <title>【C语言】const关键字</title>
-    <url>/2020/08/04/C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/</url>
-    <content><![CDATA[<ul>
-<li>const意味着<strong>常数</strong>。</li>
-<li>const定义的变量，他的值不能被改变，在整个作用域中都保持固定</li>
-<li>同宏定义一样，可以避免意义模糊的数字出现，同样可以很方便的进行参数的调整和修改</li>
-<li>可以保护被修饰的东西，防止意外的修改，增强程序的<strong>健壮性</strong>。</li>
-<li>const是通过编译器在<strong>编译的时候执行检查</strong>来确保实现的。</li>
+    <title>【嵌入式】ARM指令和Thumb指令</title>
+    <url>/2020/08/07/%E5%B5%8C%E5%85%A5%E5%BC%8F-ARM%E6%8C%87%E4%BB%A4%E5%92%8CThumb%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<h2 id="ARM-指令和-Thumb-指令"><a href="#ARM-指令和-Thumb-指令" class="headerlink" title="ARM 指令和 Thumb 指令"></a>ARM 指令和 Thumb 指令</h2><p>在 ARM 的体系结构之中，可以工作在 3 中不同的工作状态:</p>
+<ol>
+<li><p><strong>ARM</strong> 状态：arm 处于 <strong>32</strong> 位指令状态</p>
+</li>
+<li><p><strong>Thumb</strong> 状态：arm 处于 <strong>16</strong> 位指令状态</p>
+<p>Thumb-2 状态： 是 ARM7 版本 ARM 处理器所具有的新的状态，新的 Thumb-2 内核技术<strong>兼有 16 位及 32 位指令</strong>，实现了更高的性能，更有效的功耗及更少地占用内存。总的来说，感觉这个状态除了兼有ARM和Thumb的优点外，还在这两种状态上有所提升，优化。</p>
+</li>
+<li><p>调试状态：处理器停机时进入调试状态</p>
+</li>
+</ol>
+<p>ARM 状态和 Thumb 状态可以直接通过某些命令进行切换。</p>
+<h2 id="ARM-状态和-Thumb-状态切换"><a href="#ARM-状态和-Thumb-状态切换" class="headerlink" title="ARM 状态和 Thumb 状态切换"></a>ARM 状态和 Thumb 状态切换</h2><p>从 ARM 到 Thumb：LDR R0,=lable+1 BX R0</p>
+<p>从 Thumb 到 ARM：LDR R0,=lable BX R0</p>
+<p>处理器进行异常处理时，从异常向量地址开始，自动进入 ARM 状态。</p>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><ul>
+<li>ARM 处理器复位后，开始执行代码时总是处于 <strong>ARM</strong> 状态；</li>
+<li>Cortex-M3 只有 Thumb-2 状态和调试状态；</li>
+<li>因为 Thumb-2 具有 16/32 位指令功能，所以有了 Thumb-2 就无需 Thumb 了；</li>
+<li>因为 Thumb-2 具有 32 位指令功能，所以无需在 ARM 状态和 Thumb-2 状态之间切换了。</li>
 </ul>
-<h2 id="const与指针"><a href="#const与指针" class="headerlink" title="const与指针"></a>const与指针</h2><table>
-<thead>
-<tr>
-<th>指针</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><code>const int a;</code></td>
-<td>a是一个常整型数</td>
-</tr>
-<tr>
-<td><code>int const a;</code></td>
-<td>a是一个常整型数</td>
-</tr>
-<tr>
-<td><code>const int *a;</code></td>
-<td>a是一个指向常整型数的指针（数不可修改，指针可以修改）</td>
-</tr>
-<tr>
-<td><code>int const *a;</code></td>
-<td>a是一个指向整型数的常指针（数可修改，指针不可以修改）</td>
-</tr>
-<tr>
-<td><code>const int *const a;</code></td>
-<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
-</tr>
-<tr>
-<td><code>int const *const a;</code></td>
-<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
-</tr>
-</tbody></table>
-<h2 id="const与函数"><a href="#const与函数" class="headerlink" title="const与函数"></a>const与函数</h2><p>const通常用在函数形参当中，如果形参是一个指针，为了<strong>防止在函数内部修改指针指向的数据</strong>。就可以用const来限制。比如在String的程序中就有很多const修饰形参的情况。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">StringCopy</span> <span class="params">(<span class="keyword">char</span>* strDestination, <span class="keyword">const</span> <span class="keyword">char</span> *strSource)</span></span></span><br></pre></td></tr></table></figure>
-
-<p>const还可以表示该函数返回的一个常量，放在函数的返回值的位置，例如</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="title">GetString</span><span class="params">(<span class="keyword">void</span>)</span></span>;</span><br></pre></td></tr></table></figure>
-
-<p>在类成员函数的声明和定义之中，const放在函数的形参表之后，函数体之前，表示该函数的this指针是一个常量，不能修饰该对象的数据成员，例如</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getId</span> <span class="params">()</span> <span class="keyword">const</span></span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><p>下面这段程序的运行结果？</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> x = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> *ptr;</span><br><span class="line">    ptr = &amp;x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,x);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>编译出错</strong></p>
-<p>x是常整型数，ptr是指向常整型的指针。<code>ptr = &amp;x;</code>，即<code>ptr = 10;</code>，违反了const的规则；const是通过编译器在编译的时候检查来实现的，所以编译报错。</p>
 <hr>
 <p>参考：</p>
 <ul>
-<li><a href="https://www.cnblogs.com/fengxing999/p/10248636.html" target="_blank" rel="noopener">const修饰指针的三种效果</a></li>
+<li><a href="https://www.cnblogs.com/yygsj/p/5428500.html" target="_blank" rel="noopener">ARM状态和THUMB状态</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【C语言】位运算</title>
+    <url>/2020/08/10/C%E8%AF%AD%E8%A8%80-%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<p>实例1</p>
+<blockquote>
+<p>在一个多任务嵌入式系统中，有一个CPU可直接寻址的32位寄存器REGn，地址为0x1F000010，编写一个安全的函数，将寄存器REGn的指定位反转（要求保持其他bit的值不变）。</p>
+</blockquote>
+<h2 id="特定位取反用"><a href="#特定位取反用" class="headerlink" title="特定位取反用^="></a><strong>特定位取反用^=</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bit_reverse</span><span class="params">(<span class="keyword">uint32_t</span> nbit)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ((<span class="keyword">volatile</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> *)<span class="number">0x1F000010</span>) ^= (<span class="number">0x01</span> &lt;&lt; nbit);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>实例2</p>
+<blockquote>
+<p>给定一个整型变量a，写两段代码，第一个设置a的bit3，第二个清除a的bit3。</p>
+</blockquote>
+<h2 id="特定位置1用"><a href="#特定位置1用" class="headerlink" title="特定位置1用|="></a><strong>特定位置1用|=</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> BIT3 (0x01 &lt;&lt; 3)</span></span><br><span class="line"><span class="keyword">static</span> a;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setBit3</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	a |= (<span class="number">0x01</span> &lt;&lt; <span class="number">3</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="特定位清零用-amp"><a href="#特定位清零用-amp" class="headerlink" title="特定位清零用&amp;=~"></a><strong>特定位清零用&amp;=~</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> BIT3 (0x01 &lt;&lt; 3)</span></span><br><span class="line"><span class="keyword">static</span> a;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">clearBit3</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	a &amp;= ~(<span class="number">0x01</span> &lt;&lt; <span class="number">3</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="读取第n位的值"><a href="#读取第n位的值" class="headerlink" title="读取第n位的值"></a><strong>读取第n位的值</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(a&gt;&gt;n)&amp;<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://blog.51cto.com/9291927/1784135" target="_blank" rel="noopener">嵌入式linux C语言（一）——位运算的使用</a></li>
+<li><a href="https://blog.csdn.net/hanfeng_1999/article/details/51354905" target="_blank" rel="noopener">2.2.位与位或位异或在操作寄存器时的特殊作用</a></li>
+<li><a href="https://blog.csdn.net/qq_877667836/article/details/82868544" target="_blank" rel="noopener">嵌入式开发中对寄存器的位操作</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -1326,25 +1403,25 @@
       </tags>
   </entry>
   <entry>
-    <title>【嵌入式】内核态和用户态</title>
-    <url>/2020/08/07/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E5%86%85%E6%A0%B8%E6%80%81%E5%92%8C%E7%94%A8%E6%88%B7%E6%80%81/</url>
-    <content><![CDATA[<h2 id="用户空间和内核空间"><a href="#用户空间和内核空间" class="headerlink" title="用户空间和内核空间"></a>用户空间和内核空间</h2><p>用户空间：是用户可以操作和访问的空间，这个空间通常存放我们<strong>用户自己写的数据</strong>等；</p>
-<p>内核空间：是<strong>系统内核</strong>来操作的一块空间，这块空间里面存放系统内核的函数、接口等。</p>
-<h2 id="内核空间与用户空间的通信方式"><a href="#内核空间与用户空间的通信方式" class="headerlink" title="内核空间与用户空间的通信方式"></a>内核空间与用户空间的通信方式</h2><p>Linux 下内核空间与用户空间进行通信的方式主要有 <strong>syscall</strong>(system call) 、<strong>procfs</strong>、<strong>ioctl</strong> 和 <strong>netlink</strong> 等。</p>
-<ul>
-<li><strong>syscall</strong>：一般情况下，<strong>用户进程是不能访问内核的</strong>，它既不能访问内核所在的内存空间，也不能调用内核中的函数。Linux 内核中设置了一组用于实现各种系统功能的子函数，用户可以通过调用他们访问 Linux 内核的数据和函数，这些系统调用接口（SCI）成为系统调用。</li>
-<li><strong>procfs</strong>：是一种<strong>特殊的伪文件系统</strong>，是 Linux 内核信息的抽象文件接口，大量内核中的信息以及可调参数都被作为一个常规文件映射到一个目录树中，这样我们就可以简单直接的通过 echo 或 cat 这样的文件操作命令对系统信息进行查取。</li>
-<li><strong>netlink</strong>：用户态应用使用标准的 socket API 就可以使用 netlink 提供的强大功能。</li>
-<li><strong>ioctl</strong>：函数是<strong>文件结构中的一个属性分量</strong>，就是说如果你的驱动程序提供了对 ioctl 的支持，用户就可以在用户程序中使用 ioctl 函数控制设备的 I/O 通道。</li>
+    <title>【C语言】static关键字、混合三目运算</title>
+    <url>/2020/08/06/C%E8%AF%AD%E8%A8%80-static%E5%85%B3%E9%94%AE%E5%AD%97-%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="static用于声明静态变量"><a href="#static用于声明静态变量" class="headerlink" title="static用于声明静态变量"></a>static用于声明静态变量</h2><ul>
+<li>全局静态变量</li>
+<li>局部静态变量：存放在静态变量区</li>
+<li>修饰静态函数：函数作用域仅限于本文件</li>
 </ul>
+<p>静态函数，在程序员协同工作时，可以防止变量、函数重名</p>
 <hr>
-<p>Linux操作系统一般是通过<strong>软件中断</strong>从用户态切换到内核态。软件中断和中断（硬件中断）不同之处在于，它是通过软件指令触发而并非外设引发的中断，也就是说，又是编程人员开发出的一种异常（该异常为正常的异常）。</p>
+<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
+<p>表达式的结果为c = 1</p>
 ]]></content>
       <categories>
         <category>学习记录</category>
       </categories>
       <tags>
-        <tag>嵌入式</tag>
+        <tag>C语言</tag>
       </tags>
   </entry>
   <entry>
@@ -1450,6 +1527,25 @@
       </tags>
   </entry>
   <entry>
+    <title>【FreeRTOS】什么是 FreeRTOS？</title>
+    <url>/2020/08/11/FreeRTOS-%E4%BB%80%E4%B9%88%E6%98%AFFreeRTOS%EF%BC%9F/</url>
+    <content><![CDATA[<ul>
+<li>Free 是免费的、 自由的、不受约束的意思，</li>
+<li>RTOS 是 Real Time Operating System，即实时操作系统；RTOS 不是指某一个确定的系统，而是指一类系统。比如 UCOS，FreeRTOS，RTX，RT-Thread 等这些都是 RTOS 类操作系统。 </li>
+</ul>
+<p>所以 FreeROTS 是一个免费的 RTOS 类系统。</p>
+<hr>
+<p>RTOS最关键的部分是<strong>实时多任务内核</strong>，实际上，一个处理器核心在某一时刻只能运行一个任务。操作系统中任务调度器的责任就是决定在某一时刻究竟运行哪个任务。任务调度在各个任务之间的切换非常快！造成了同一时刻有多个任务同时运行的错觉。</p>
+<p>RTOS的基本功能包括，<strong>任务管理</strong>、定时器管理、存储器管理、资源管理、事件管理、系统管理、消息管理、队列管理、旗语管理等。</p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>FreeRTOS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【C语言】内存复制函数memcpy</title>
     <url>/2020/08/10/C%E8%AF%AD%E8%A8%80-%E5%86%85%E5%AD%98%E5%A4%8D%E5%88%B6%E5%87%BD%E6%95%B0memcpy/</url>
     <content><![CDATA[<h2 id="内存复制函数"><a href="#内存复制函数" class="headerlink" title="内存复制函数"></a>内存复制函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> * <span class="title">memcpy</span> <span class="params">(<span class="keyword">void</span> * destination, <span class="keyword">const</span> <span class="keyword">void</span> * source, <span class="keyword">size_t</span> num)</span></span>;</span><br></pre></td></tr></table></figure>
@@ -1475,141 +1571,6 @@
       </categories>
       <tags>
         <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【C语言】位运算</title>
-    <url>/2020/08/10/C%E8%AF%AD%E8%A8%80-%E4%BD%8D%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<p>实例1</p>
-<blockquote>
-<p>在一个多任务嵌入式系统中，有一个CPU可直接寻址的32位寄存器REGn，地址为0x1F000010，编写一个安全的函数，将寄存器REGn的指定位反转（要求保持其他bit的值不变）。</p>
-</blockquote>
-<h2 id="特定位取反用"><a href="#特定位取反用" class="headerlink" title="特定位取反用^="></a><strong>特定位取反用^=</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bit_reverse</span><span class="params">(<span class="keyword">uint32_t</span> nbit)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ((<span class="keyword">volatile</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> *)<span class="number">0x1F000010</span>) ^= (<span class="number">0x01</span> &lt;&lt; nbit);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>实例2</p>
-<blockquote>
-<p>给定一个整型变量a，写两段代码，第一个设置a的bit3，第二个清除a的bit3。</p>
-</blockquote>
-<h2 id="特定位置1用"><a href="#特定位置1用" class="headerlink" title="特定位置1用|="></a><strong>特定位置1用|=</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> BIT3 (0x01 &lt;&lt; 3)</span></span><br><span class="line"><span class="keyword">static</span> a;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setBit3</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	a |= (<span class="number">0x01</span> &lt;&lt; <span class="number">3</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="特定位清零用-amp"><a href="#特定位清零用-amp" class="headerlink" title="特定位清零用&amp;=~"></a><strong>特定位清零用&amp;=~</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> BIT3 (0x01 &lt;&lt; 3)</span></span><br><span class="line"><span class="keyword">static</span> a;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">clearBit3</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	a &amp;= ~(<span class="number">0x01</span> &lt;&lt; <span class="number">3</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="读取第n位的值"><a href="#读取第n位的值" class="headerlink" title="读取第n位的值"></a><strong>读取第n位的值</strong></h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line">(a&gt;&gt;n)&amp;<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-
-
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://blog.51cto.com/9291927/1784135" target="_blank" rel="noopener">嵌入式linux C语言（一）——位运算的使用</a></li>
-<li><a href="https://blog.csdn.net/hanfeng_1999/article/details/51354905" target="_blank" rel="noopener">2.2.位与位或位异或在操作寄存器时的特殊作用</a></li>
-<li><a href="https://blog.csdn.net/qq_877667836/article/details/82868544" target="_blank" rel="noopener">嵌入式开发中对寄存器的位操作</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【嵌入式】ARM指令和Thumb指令</title>
-    <url>/2020/08/07/%E5%B5%8C%E5%85%A5%E5%BC%8F-ARM%E6%8C%87%E4%BB%A4%E5%92%8CThumb%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<h2 id="ARM-指令和-Thumb-指令"><a href="#ARM-指令和-Thumb-指令" class="headerlink" title="ARM 指令和 Thumb 指令"></a>ARM 指令和 Thumb 指令</h2><p>在 ARM 的体系结构之中，可以工作在 3 中不同的工作状态:</p>
-<ol>
-<li><p><strong>ARM</strong> 状态：arm 处于 <strong>32</strong> 位指令状态</p>
-</li>
-<li><p><strong>Thumb</strong> 状态：arm 处于 <strong>16</strong> 位指令状态</p>
-<p>Thumb-2 状态： 是 ARM7 版本 ARM 处理器所具有的新的状态，新的 Thumb-2 内核技术<strong>兼有 16 位及 32 位指令</strong>，实现了更高的性能，更有效的功耗及更少地占用内存。总的来说，感觉这个状态除了兼有ARM和Thumb的优点外，还在这两种状态上有所提升，优化。</p>
-</li>
-<li><p>调试状态：处理器停机时进入调试状态</p>
-</li>
-</ol>
-<p>ARM 状态和 Thumb 状态可以直接通过某些命令进行切换。</p>
-<h2 id="ARM-状态和-Thumb-状态切换"><a href="#ARM-状态和-Thumb-状态切换" class="headerlink" title="ARM 状态和 Thumb 状态切换"></a>ARM 状态和 Thumb 状态切换</h2><p>从 ARM 到 Thumb：LDR R0,=lable+1 BX R0</p>
-<p>从 Thumb 到 ARM：LDR R0,=lable BX R0</p>
-<p>处理器进行异常处理时，从异常向量地址开始，自动进入 ARM 状态。</p>
-<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><ul>
-<li>ARM 处理器复位后，开始执行代码时总是处于 <strong>ARM</strong> 状态；</li>
-<li>Cortex-M3 只有 Thumb-2 状态和调试状态；</li>
-<li>因为 Thumb-2 具有 16/32 位指令功能，所以有了 Thumb-2 就无需 Thumb 了；</li>
-<li>因为 Thumb-2 具有 32 位指令功能，所以无需在 ARM 状态和 Thumb-2 状态之间切换了。</li>
-</ul>
-<hr>
-<p>参考：</p>
-<ul>
-<li><a href="https://www.cnblogs.com/yygsj/p/5428500.html" target="_blank" rel="noopener">ARM状态和THUMB状态</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>嵌入式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【FreeRTOS】什么是 FreeRTOS？</title>
-    <url>/2020/08/11/FreeRTOS-%E4%BB%80%E4%B9%88%E6%98%AFFreeRTOS%EF%BC%9F/</url>
-    <content><![CDATA[<ul>
-<li>Free 是免费的、 自由的、不受约束的意思，</li>
-<li>RTOS 是 Real Time Operating System，即实时操作系统；RTOS 不是指某一个确定的系统，而是指一类系统。比如 UCOS，FreeRTOS，RTX，RT-Thread 等这些都是 RTOS 类操作系统。 </li>
-</ul>
-<p>所以 FreeROTS 是一个免费的 RTOS 类系统。</p>
-<hr>
-<p>RTOS最关键的部分是<strong>实时多任务内核</strong>，实际上，一个处理器核心在某一时刻只能运行一个任务。操作系统中任务调度器的责任就是决定在某一时刻究竟运行哪个任务。任务调度在各个任务之间的切换非常快！造成了同一时刻有多个任务同时运行的错觉。</p>
-<p>RTOS的基本功能包括，<strong>任务管理</strong>、定时器管理、存储器管理、资源管理、事件管理、系统管理、消息管理、队列管理、旗语管理等。</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>FreeRTOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【招聘】中兴嵌入式面经</title>
-    <url>/2020/08/13/%E6%8B%9B%E8%81%98-%E4%B8%AD%E5%85%B4%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%9D%A2%E7%BB%8F/</url>
-    <content><![CDATA[<h2 id="面试邀约："><a href="#面试邀约：" class="headerlink" title="面试邀约："></a>面试邀约：</h2><p>之前投了简历，官网还没审核通过，中午就突然打电话过来，邀约在当天晚上7点钟面试。越过笔试，直接面试。有些突然</p>
-<h2 id="面试情况："><a href="#面试情况：" class="headerlink" title="面试情况："></a>面试情况：</h2><p>面试是两位面试官与我微信语音面试，两位面试官都是做大数据的，而且我准备的并不充分，还十分紧张，所以表现得并不好。</p>
-<h2 id="面试内容："><a href="#面试内容：" class="headerlink" title="面试内容："></a>面试内容：</h2><ol>
-<li><p>做一下简单的自我介绍</p>
-</li>
-<li><p>别人对你的评价是什么样的？</p>
-</li>
-<li><p>你觉得自己的缺点是什么？</p>
-</li>
-<li><p>介绍一下自己最满意的一个项目，介绍一下你在项目中的工作？</p>
-</li>
-<li><p>介绍一下TCP/IP协议，讲解一下scoket？</p>
-</li>
-<li><p>会什么编程语言？</p>
-</li>
-<li><p>讲解一下C语言的数据类型？</p>
-</li>
-<li><p>如果你的领导让你在微信公众号发布一篇技术文章，要求文章的阅读量达到两万，你会怎么做？</p>
-</li>
-<li><p>为什么会选择中兴？</p>
-</li>
-<li><p>会不会选择像深圳这样的一线城市？</p>
-</li>
-<li><p>你对我们还有什么问题？</p>
-<p>嵌入式岗位在长沙情况怎么样？</p>
-<p>如果是电子与通信专业的学生可以选择软件开发岗位吗？专业不匹配的情况</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>生活随笔</category>
-      </categories>
-      <tags>
-        <tag>招聘</tag>
       </tags>
   </entry>
   <entry>
@@ -1647,25 +1608,19 @@
       </tags>
   </entry>
   <entry>
-    <title>【嵌入式】中断处理过程</title>
-    <url>/2020/08/13/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E4%B8%AD%E6%96%AD%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<p>中断的定义：</p>
-<p>指 CPU 在正常执行程序的时候，由于内部/外部事件的触发、或由程序预先设定，而引起 CPU <strong>暂时中止当前正在执行的程序</strong>；</p>
-<p>保存被执行程序相关信息到栈中，转而去执行为内部/外部事件、或由程序预先设定的事件的<strong>中断服务子函数</strong>；</p>
-<p>待执行完中断服务子函数后，CPU 再获取被保存在栈中被中断的程序的信息，<strong>继续执行被中断的程序</strong>，这一过程叫做中断。</p>
-<p>中断处理过程中一般分为以下几个<strong>步骤</strong>：</p>
-<p>请求中断  -&gt;  中断响应  -&gt;  保护现场  -&gt;  中断服务  -&gt;  恢复现场  -&gt;  中断返回</p>
-<p>中断的几个概念：</p>
-<p>中断向量：中断服务程序的入口地址。</p>
-<p>中断向量表：把系统中所有的中断类型码机器对应的中断向量按一定的规律存放在一个区域内，这个存储区域就叫做中断向量表。</p>
-<p>中断源：软中断/内中断、外中断/硬件中断、异常等。</p>
-<p>中断嵌套：中断系统中正在执行一个中断服务时，有另一个优先级更高的中断提出中断请求，会暂时中止当前正在执行的级别较低的中断源的服务程序，区处理级别更高的中断源，待处理完毕，在返回到被中止了的中断服务函数继续执行。</p>
-<hr>
-<p>参考：</p>
+    <title>【嵌入式】内核态和用户态</title>
+    <url>/2020/08/07/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E5%86%85%E6%A0%B8%E6%80%81%E5%92%8C%E7%94%A8%E6%88%B7%E6%80%81/</url>
+    <content><![CDATA[<h2 id="用户空间和内核空间"><a href="#用户空间和内核空间" class="headerlink" title="用户空间和内核空间"></a>用户空间和内核空间</h2><p>用户空间：是用户可以操作和访问的空间，这个空间通常存放我们<strong>用户自己写的数据</strong>等；</p>
+<p>内核空间：是<strong>系统内核</strong>来操作的一块空间，这块空间里面存放系统内核的函数、接口等。</p>
+<h2 id="内核空间与用户空间的通信方式"><a href="#内核空间与用户空间的通信方式" class="headerlink" title="内核空间与用户空间的通信方式"></a>内核空间与用户空间的通信方式</h2><p>Linux 下内核空间与用户空间进行通信的方式主要有 <strong>syscall</strong>(system call) 、<strong>procfs</strong>、<strong>ioctl</strong> 和 <strong>netlink</strong> 等。</p>
 <ul>
-<li><a href="https://www.nowcoder.com/questionTerminal/2e85847c06684c2faeaf8728f72e5045?toCommentId=426573" target="_blank" rel="noopener">简述处理器中断处理的过程（中断向量、中断保护现场、中断嵌套、中断返回等）</a></li>
-<li><a href="https://blog.csdn.net/qq_38410730/article/details/80905551?ops_request_misc=%7B%22request%5Fid%22%3A%22159730365019724846417672%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fblog.%22%7D&request_id=159730365019724846417672&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v1~rank_blog_v1-2-80905551.pc_v1_rank_blog_v1&utm_term=2014&spm=1018.2118.3001.4187" target="_blank" rel="noopener">【机试题】2014大疆嵌入式笔试题（附超详细解答，下篇）</a></li>
+<li><strong>syscall</strong>：一般情况下，<strong>用户进程是不能访问内核的</strong>，它既不能访问内核所在的内存空间，也不能调用内核中的函数。Linux 内核中设置了一组用于实现各种系统功能的子函数，用户可以通过调用他们访问 Linux 内核的数据和函数，这些系统调用接口（SCI）成为系统调用。</li>
+<li><strong>procfs</strong>：是一种<strong>特殊的伪文件系统</strong>，是 Linux 内核信息的抽象文件接口，大量内核中的信息以及可调参数都被作为一个常规文件映射到一个目录树中，这样我们就可以简单直接的通过 echo 或 cat 这样的文件操作命令对系统信息进行查取。</li>
+<li><strong>netlink</strong>：用户态应用使用标准的 socket API 就可以使用 netlink 提供的强大功能。</li>
+<li><strong>ioctl</strong>：函数是<strong>文件结构中的一个属性分量</strong>，就是说如果你的驱动程序提供了对 ioctl 的支持，用户就可以在用户程序中使用 ioctl 函数控制设备的 I/O 通道。</li>
 </ul>
+<hr>
+<p>Linux操作系统一般是通过<strong>软件中断</strong>从用户态切换到内核态。软件中断和中断（硬件中断）不同之处在于，它是通过软件指令触发而并非外设引发的中断，也就是说，又是编程人员开发出的一种异常（该异常为正常的异常）。</p>
 ]]></content>
       <categories>
         <category>学习记录</category>
@@ -1706,175 +1661,42 @@
       </tags>
   </entry>
   <entry>
-    <title>【算法】07重建二叉树</title>
-    <url>/2020/08/22/%E7%AE%97%E6%B3%95-07%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
-    <content><![CDATA[<blockquote>
-<p>输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。 </p>
-<p>例如，给出</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">前序遍历 preorder = [<span class="number">3</span>,<span class="number">9</span>,<span class="number">20</span>,<span class="number">15</span>,<span class="number">7</span>]</span><br><span class="line">中序遍历 inorder = [<span class="number">9</span>,<span class="number">3</span>,<span class="number">15</span>,<span class="number">20</span>,<span class="number">7</span>]</span><br></pre></td></tr></table></figure>
-
-
-<p>返回如下的二叉树：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">  <span class="number">3</span></span><br><span class="line"> / \</span><br><span class="line"><span class="number">9</span>  <span class="number">20</span></span><br><span class="line">  /  \</span><br><span class="line"> <span class="number">15</span>   <span class="number">7</span></span><br></pre></td></tr></table></figure>
-
-<p>限制：</p>
-<p>0 &lt;= 节点个数 &lt;= 5000</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<h2 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">struct TreeNode* <span class="title">buildTree</span><span class="params">(<span class="keyword">int</span>* preorder, <span class="keyword">int</span> preorderSize, <span class="keyword">int</span>* inorder, <span class="keyword">int</span> inorderSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(preorder == <span class="literal">NULL</span> || inorder == <span class="literal">NULL</span> || preorderSize &lt;= <span class="number">0</span> || inorderSize &lt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;   </span><br><span class="line"> </span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">TreeNode</span>* <span class="title">root</span> = (<span class="title">struct</span> <span class="title">TreeNode</span>*)<span class="title">malloc</span>(<span class="title">sizeof</span>(<span class="title">struct</span> <span class="title">TreeNode</span>));</span></span><br><span class="line">    root-&gt;val = preorder[<span class="number">0</span>];		<span class="comment">//根节点</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(inorder[i] != preorder[<span class="number">0</span>])<span class="comment">//中序遍历中找出根节点位置</span></span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    root-&gt;left = buildTree(&amp;preorder[<span class="number">1</span>],i,&amp;inorder[<span class="number">0</span>],i);</span><br><span class="line">    root-&gt;right = buildTree(&amp;preorder[i+<span class="number">1</span>],preorderSize-i<span class="number">-1</span>,&amp;inorder[i+<span class="number">1</span>],preorderSize-i<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2020082220352211.jpg" alt="递归顺序"></p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【生活随笔】 勇</title>
-    <url>/2020/08/27/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E5%8B%87/</url>
-    <content><![CDATA[<p>人生来就不是勇敢的，有所畏惧是人类生存的本能。在远古的时代，因为人类有所畏惧，人类才能躲避危险，才能健康生存。<strong>所以勇气并不是人的本性，畏惧和胆怯才是</strong>。</p>
-<p>但是，现代的畏惧和远古时期的畏惧有所不同。我常常会畏惧，畏惧与人交流。心中有想法，但害怕说错话，就干脆不说；不愿意和不熟悉的人聊天；在某些特定的场合，会脸红心跳加速，紧张到说不出话。还会畏惧新的开始。在学习投资技能的时候，感受到失去的痛苦远大过于收获的快乐，不敢再进行下去；接触新的事物，常觉得自己准备的不够好也不够充分，始终不愿开始第一步。生活中总有这样那样的事情，因为胆怯而错过时机，因为胆怯而毫无精进。我十分苦恼，也十分懊悔，想克服胆怯，也想充满勇气的去面对一切大小困难。<strong>或许说谁不希望自己能无所畏惧，一往无前呢？</strong></p>
-<p>但是这样的胆怯，这样的畏惧感要怎么克服呢？我觉得克服胆怯，<strong>需要有充分的支持，不害怕犯错，不害怕失败</strong>。这说起来好像很容易，但做起来一定会是各种困难。其中最重要的一定是，知道自己最低的底线在哪里。就像社会有养老保险，就算无妻无儿，也会有国家的保障，不会老无所养；像攀岩者报名的保险绳，知道就算不小心失足滑倒，也会有生命的保障，才敢放手攀登。有了底线，就敢一次次的勇敢尝试；有了一次一次的尝试，就有熟能生巧的熟练；有了熟能生巧的熟练，才会有旁人看上去的无所畏惧的勇气，才会面对困难时云淡风轻的态度。</p>
-<p>总的来说，我是缺乏勇气的。投资缺乏勇气，那要更多学习投资的知识，积累更多的资金，让投资得更有底气；做最便宜的尝试，就不那么害怕失去了。与人交流缺乏勇气，找到一个可以全盘托出心里话的人，遇到了困难能够指点请教的人。<strong>看来我真的需要找一位女朋友了</strong>；招聘没底气，如果手握着一份offer，心里底气会更大一些吧。毕业没底气，还是早点把MATLAB仿真做出来，早点把小论文写出来，这样心里就更有底一些，就不会这么慌张了。</p>
+    <title>【招聘】中兴嵌入式面经</title>
+    <url>/2020/08/13/%E6%8B%9B%E8%81%98-%E4%B8%AD%E5%85%B4%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%9D%A2%E7%BB%8F/</url>
+    <content><![CDATA[<h2 id="面试邀约："><a href="#面试邀约：" class="headerlink" title="面试邀约："></a>面试邀约：</h2><p>之前投了简历，官网还没审核通过，中午就突然打电话过来，邀约在当天晚上7点钟面试。越过笔试，直接面试。有些突然</p>
+<h2 id="面试情况："><a href="#面试情况：" class="headerlink" title="面试情况："></a>面试情况：</h2><p>面试是两位面试官与我微信语音面试，两位面试官都是做大数据的，而且我准备的并不充分，还十分紧张，所以表现得并不好。</p>
+<h2 id="面试内容："><a href="#面试内容：" class="headerlink" title="面试内容："></a>面试内容：</h2><ol>
+<li><p>做一下简单的自我介绍</p>
+</li>
+<li><p>别人对你的评价是什么样的？</p>
+</li>
+<li><p>你觉得自己的缺点是什么？</p>
+</li>
+<li><p>介绍一下自己最满意的一个项目，介绍一下你在项目中的工作？</p>
+</li>
+<li><p>介绍一下TCP/IP协议，讲解一下scoket？</p>
+</li>
+<li><p>会什么编程语言？</p>
+</li>
+<li><p>讲解一下C语言的数据类型？</p>
+</li>
+<li><p>如果你的领导让你在微信公众号发布一篇技术文章，要求文章的阅读量达到两万，你会怎么做？</p>
+</li>
+<li><p>为什么会选择中兴？</p>
+</li>
+<li><p>会不会选择像深圳这样的一线城市？</p>
+</li>
+<li><p>你对我们还有什么问题？</p>
+<p>嵌入式岗位在长沙情况怎么样？</p>
+<p>如果是电子与通信专业的学生可以选择软件开发岗位吗？专业不匹配的情况</p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>生活随笔</category>
       </categories>
-  </entry>
-  <entry>
-    <title>【C语言】static关键字、混合三目运算</title>
-    <url>/2020/08/06/C%E8%AF%AD%E8%A8%80-static%E5%85%B3%E9%94%AE%E5%AD%97-%E6%B7%B7%E5%90%88%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97/</url>
-    <content><![CDATA[<h2 id="static用于声明静态变量"><a href="#static用于声明静态变量" class="headerlink" title="static用于声明静态变量"></a>static用于声明静态变量</h2><ul>
-<li>全局静态变量</li>
-<li>局部静态变量：存放在静态变量区</li>
-<li>修饰静态函数：函数作用域仅限于本文件</li>
-</ul>
-<p>静态函数，在程序员协同工作时，可以防止变量、函数重名</p>
-<hr>
-<h3 id="有符号和无符号混合三目运算问题"><a href="#有符号和无符号混合三目运算问题" class="headerlink" title="有符号和无符号混合三目运算问题"></a>有符号和无符号混合三目运算问题</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> a = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">-20</span>;</span><br><span class="line">    <span class="keyword">int</span> c;</span><br><span class="line">    (a+b &gt; <span class="number">6</span>) ? (c=<span class="number">1</span>) : (c=<span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当表达式中存在有符号类型和无符号类型时，所有的操作数都自动转换为无符号类型；因此-20变成了一个非常大的正整数。</p>
-<p>表达式的结果为c = 1</p>
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
       <tags>
-        <tag>C语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【算法】10.1斐波那契数列</title>
-    <url>/2020/08/29/%E7%AE%97%E6%B3%95-10-1%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</url>
-    <content><![CDATA[<blockquote>
-<p>写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">F(0) &#x3D; 0,   F(1) &#x3D; 1</span><br><span class="line">F(N) &#x3D; F(N - 1) + F(N - 2), 其中 N &gt; 1.</span><br></pre></td></tr></table></figure>
-
-
-<p>斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。</p>
-<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
-<p>示例 1： </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 2</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
-
-<p>示例 2：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 5</span><br><span class="line">输出：5</span><br></pre></td></tr></table></figure>
-
-
-<p>提示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 &lt;&#x3D; n &lt;&#x3D; 100</span><br></pre></td></tr></table></figure>
-
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<h2 id="递归法："><a href="#递归法：" class="headerlink" title="递归法："></a>递归法：</h2><p>整个结果都是由多个<code>F(N) = F(N - 1) + F(N - 2)</code>组成，所以可以使用递归方法来实现。</p>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200829161929506.png" alt="斐波那契数列"></p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n &lt; <span class="number">2</span>)</span><br><span class="line">		<span class="keyword">return</span> n == <span class="number">0</span>? <span class="number">0</span>: <span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> fib(n<span class="number">-1</span>) + fib(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>递归法<strong>代码极其简洁</strong>，但是<strong>时间复杂度巨高</strong>。使用递归法 Leetcode 无法测试通过。</p>
-<h2 id="循环法"><a href="#循环法" class="headerlink" title="循环法"></a>循环法</h2><p>使用<strong>快慢指针</strong>，循环实现斐波那契数列。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> f0 = <span class="number">0</span>, f1 = <span class="number">1</span>, f2 = f0 + f1;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(n == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;n<span class="number">-1</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        f2 = (f0 + f1) % a;</span><br><span class="line">        f0 = f1;</span><br><span class="line">        f1 = f2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【生活随笔】脚踏实地</title>
-    <url>/2020/09/04/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E8%A1%8C%E6%9C%89%E4%B8%8D%E5%BE%97%EF%BC%8C%E5%8F%8D%E6%B1%82%E8%AF%B8%E5%B7%B1/</url>
-    <content><![CDATA[<p>参加了华为的笔试，最终的结果，三道编程题一个结果都没有出来。很可能这次华为的笔试就这样挂了，也代表去华为工作的这一条路可能就这样断了。</p>
-<p>面对这可能的结果，心里是懊悔又痛苦，仿佛回到了2016年考研那段时间。</p>
-<p>招聘找工作遇到这样的困境；毕业论文一筹莫展，进度几乎为零；延毕也似乎板上钉钉。真的感觉自己的研究生生活有点失败了。</p>
-<p>我一定是有什么地方做错了！</p>
-<p>是从什么时候开始呢？是什么选择让我陷入如此的困境呢？</p>
-<p>是从选择导师、选择方向的时候？还是去深圳实习的时候？</p>
-<p>是决定不给给刘强发周报开始？还是因为没有去面对一次次的小困难而导致现在的大困境吗？</p>
-<p>是有什么不好的习惯、错误的想法让我一步步沦落成现在这样吗？</p>
-<p>我真的……</p>
-<hr>
-<p>行有不得，反求诸己；确实是我<strong>眼高手低，自以为是</strong>了。</p>
-<p>从拿到湖大研究生的通知书起就开始飘飘然了，不断的被别人表扬，被别人夸奖，认为自己做到了身边许多人所做不到的事情。却不想湖大也是卧虎藏龙，研究生也有很多挑战。</p>
-<p>到云智航实习做出一点成就，就感觉自己硬件也还不错，去挑战从未接触过的射频与微波专业。但是硬件基础是真的薄弱，在研究学习上面遇到了一个个难以解决的问题，却没有去直面面对，选择了逃避和拖延。</p>
-<p>在常州无线电给刘老师做事情，程序问题很快就能解决。感觉自己做嵌入式真的很不错。开始瞧不起自己选择的专业。</p>
-<p>当接触的事情越来越多，想做的事情也越来越多，甚至规划好了5年、10年后的生活。却唯独没有做好眼前的事。甚至觉得有些眼前的事情是阻碍，或者不屑于去做。</p>
-<p>慢慢的遇到困难的时候，就总是觉得这是别人的问题，是别人在为难我。就更不愿意接触，交流心声了。自己越来越像一个孤岛，飘离在大海之上，与身边的人渐渐远离。</p>
-<p>都说“<strong>脚踏实地，仰望星空</strong>”，现在我只仰望星空，没有脚踏实地，走着走着就掉坑里了。</p>
-<p><strong>亡羊补牢，为时不晚。现在是要从坑里爬出来了。</strong></p>
-]]></content>
-      <categories>
-        <category>生活随笔</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>【算法】10.2青蛙跳台阶问题</title>
-    <url>/2020/08/29/%E7%AE%97%E6%B3%95-10-2%E9%9D%92%E8%9B%99%E8%B7%B3%E5%8F%B0%E9%98%B6%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<blockquote>
-<p>一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p>
-<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
-<p>示例 1：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 2</span><br><span class="line">输出：2</span><br></pre></td></tr></table></figure>
-
-<p>示例 2：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 7</span><br><span class="line">输出：21</span><br></pre></td></tr></table></figure>
-
-<p>示例 3：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 0</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
-
-<p>提示：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 &lt;&#x3D; n &lt;&#x3D; 100</span><br></pre></td></tr></table></figure>
-
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-</blockquote>
-<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200829165408735.png" alt="青蛙跳台阶，最后一跳"></p>
-<p>设跳上 n 级台阶有 f(n) 种跳法。在所有跳法中，青蛙的最后一步只有两种情况： 跳上 1 级或 2 级台阶。</p>
-<ul>
-<li>当为 1 级台阶： 剩 n-1个台阶，此情况共有 f(n-1)种跳法；</li>
-<li>当为 2 级台阶： 剩 n-2 个台阶，此情况共有 f(n-2) 种跳法。</li>
-</ul>
-<p>f(n) 为以上两种情况之和，即 f(n)=f(n-1)+f(n-2) ，本题就转变为<strong>斐波那契数列</strong>了。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numWays</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> f0 = <span class="number">1</span>, f1 = <span class="number">1</span>, f2 = f0 + f1;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(n &lt; <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;n<span class="number">-1</span>; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        f2 = (f0 + f1) % a;</span><br><span class="line">        f0 = f1;</span><br><span class="line">        f1 = f2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-]]></content>
-      <categories>
-        <category>学习记录</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
+        <tag>招聘</tag>
       </tags>
   </entry>
   <entry>
@@ -1958,6 +1780,196 @@
       <tags>
         <tag>招聘</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>【嵌入式】中断处理过程</title>
+    <url>/2020/08/13/%E5%B5%8C%E5%85%A5%E5%BC%8F-%E4%B8%AD%E6%96%AD%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<p>中断的定义：</p>
+<p>指 CPU 在正常执行程序的时候，由于内部/外部事件的触发、或由程序预先设定，而引起 CPU <strong>暂时中止当前正在执行的程序</strong>；</p>
+<p>保存被执行程序相关信息到栈中，转而去执行为内部/外部事件、或由程序预先设定的事件的<strong>中断服务子函数</strong>；</p>
+<p>待执行完中断服务子函数后，CPU 再获取被保存在栈中被中断的程序的信息，<strong>继续执行被中断的程序</strong>，这一过程叫做中断。</p>
+<p>中断处理过程中一般分为以下几个<strong>步骤</strong>：</p>
+<p>请求中断  -&gt;  中断响应  -&gt;  保护现场  -&gt;  中断服务  -&gt;  恢复现场  -&gt;  中断返回</p>
+<p>中断的几个概念：</p>
+<p>中断向量：中断服务程序的入口地址。</p>
+<p>中断向量表：把系统中所有的中断类型码机器对应的中断向量按一定的规律存放在一个区域内，这个存储区域就叫做中断向量表。</p>
+<p>中断源：软中断/内中断、外中断/硬件中断、异常等。</p>
+<p>中断嵌套：中断系统中正在执行一个中断服务时，有另一个优先级更高的中断提出中断请求，会暂时中止当前正在执行的级别较低的中断源的服务程序，区处理级别更高的中断源，待处理完毕，在返回到被中止了的中断服务函数继续执行。</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.nowcoder.com/questionTerminal/2e85847c06684c2faeaf8728f72e5045?toCommentId=426573" target="_blank" rel="noopener">简述处理器中断处理的过程（中断向量、中断保护现场、中断嵌套、中断返回等）</a></li>
+<li><a href="https://blog.csdn.net/qq_38410730/article/details/80905551?ops_request_misc=%7B%22request%5Fid%22%3A%22159730365019724846417672%22%2C%22scm%22%3A%2220140713.130102334.pc%5Fblog.%22%7D&request_id=159730365019724846417672&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_v1~rank_blog_v1-2-80905551.pc_v1_rank_blog_v1&utm_term=2014&spm=1018.2118.3001.4187" target="_blank" rel="noopener">【机试题】2014大疆嵌入式笔试题（附超详细解答，下篇）</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【算法】07重建二叉树</title>
+    <url>/2020/08/22/%E7%AE%97%E6%B3%95-07%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91/</url>
+    <content><![CDATA[<blockquote>
+<p>输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。 </p>
+<p>例如，给出</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">前序遍历 preorder = [<span class="number">3</span>,<span class="number">9</span>,<span class="number">20</span>,<span class="number">15</span>,<span class="number">7</span>]</span><br><span class="line">中序遍历 inorder = [<span class="number">9</span>,<span class="number">3</span>,<span class="number">15</span>,<span class="number">20</span>,<span class="number">7</span>]</span><br></pre></td></tr></table></figure>
+
+
+<p>返回如下的二叉树：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">  <span class="number">3</span></span><br><span class="line"> / \</span><br><span class="line"><span class="number">9</span>  <span class="number">20</span></span><br><span class="line">  /  \</span><br><span class="line"> <span class="number">15</span>   <span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<p>限制：</p>
+<p>0 &lt;= 节点个数 &lt;= 5000</p>
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<h2 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">struct TreeNode* <span class="title">buildTree</span><span class="params">(<span class="keyword">int</span>* preorder, <span class="keyword">int</span> preorderSize, <span class="keyword">int</span>* inorder, <span class="keyword">int</span> inorderSize)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(preorder == <span class="literal">NULL</span> || inorder == <span class="literal">NULL</span> || preorderSize &lt;= <span class="number">0</span> || inorderSize &lt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;   </span><br><span class="line"> </span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">TreeNode</span>* <span class="title">root</span> = (<span class="title">struct</span> <span class="title">TreeNode</span>*)<span class="title">malloc</span>(<span class="title">sizeof</span>(<span class="title">struct</span> <span class="title">TreeNode</span>));</span></span><br><span class="line">    root-&gt;val = preorder[<span class="number">0</span>];		<span class="comment">//根节点</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(inorder[i] != preorder[<span class="number">0</span>])<span class="comment">//中序遍历中找出根节点位置</span></span><br><span class="line">    &#123;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    root-&gt;left = buildTree(&amp;preorder[<span class="number">1</span>],i,&amp;inorder[<span class="number">0</span>],i);</span><br><span class="line">    root-&gt;right = buildTree(&amp;preorder[i+<span class="number">1</span>],preorderSize-i<span class="number">-1</span>,&amp;inorder[i+<span class="number">1</span>],preorderSize-i<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2020082220352211.jpg" alt="递归顺序"></p>
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【算法】10.1斐波那契数列</title>
+    <url>/2020/08/29/%E7%AE%97%E6%B3%95-10-1%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</url>
+    <content><![CDATA[<blockquote>
+<p>写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">F(0) &#x3D; 0,   F(1) &#x3D; 1</span><br><span class="line">F(N) &#x3D; F(N - 1) + F(N - 2), 其中 N &gt; 1.</span><br></pre></td></tr></table></figure>
+
+
+<p>斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。</p>
+<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
+<p>示例 1： </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 2</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
+
+<p>示例 2：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 5</span><br><span class="line">输出：5</span><br></pre></td></tr></table></figure>
+
+
+<p>提示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 &lt;&#x3D; n &lt;&#x3D; 100</span><br></pre></td></tr></table></figure>
+
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<h2 id="递归法："><a href="#递归法：" class="headerlink" title="递归法："></a>递归法：</h2><p>整个结果都是由多个<code>F(N) = F(N - 1) + F(N - 2)</code>组成，所以可以使用递归方法来实现。</p>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200829161929506.png" alt="斐波那契数列"></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n &lt; <span class="number">2</span>)</span><br><span class="line">		<span class="keyword">return</span> n == <span class="number">0</span>? <span class="number">0</span>: <span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> fib(n<span class="number">-1</span>) + fib(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>递归法<strong>代码极其简洁</strong>，但是<strong>时间复杂度巨高</strong>。使用递归法 Leetcode 无法测试通过。</p>
+<h2 id="循环法"><a href="#循环法" class="headerlink" title="循环法"></a>循环法</h2><p>使用<strong>快慢指针</strong>，循环实现斐波那契数列。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fib</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span> f0 = <span class="number">0</span>, f1 = <span class="number">1</span>, f2 = f0 + f1;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(n == <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;n<span class="number">-1</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        f2 = (f0 + f1) % a;</span><br><span class="line">        f0 = f1;</span><br><span class="line">        f1 = f2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【生活随笔】 勇</title>
+    <url>/2020/08/27/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E5%8B%87/</url>
+    <content><![CDATA[<p>人生来就不是勇敢的，有所畏惧是人类生存的本能。在远古的时代，因为人类有所畏惧，人类才能躲避危险，才能健康生存。<strong>所以勇气并不是人的本性，畏惧和胆怯才是</strong>。</p>
+<p>但是，现代的畏惧和远古时期的畏惧有所不同。我常常会畏惧，畏惧与人交流。心中有想法，但害怕说错话，就干脆不说；不愿意和不熟悉的人聊天；在某些特定的场合，会脸红心跳加速，紧张到说不出话。还会畏惧新的开始。在学习投资技能的时候，感受到失去的痛苦远大过于收获的快乐，不敢再进行下去；接触新的事物，常觉得自己准备的不够好也不够充分，始终不愿开始第一步。生活中总有这样那样的事情，因为胆怯而错过时机，因为胆怯而毫无精进。我十分苦恼，也十分懊悔，想克服胆怯，也想充满勇气的去面对一切大小困难。<strong>或许说谁不希望自己能无所畏惧，一往无前呢？</strong></p>
+<p>但是这样的胆怯，这样的畏惧感要怎么克服呢？我觉得克服胆怯，<strong>需要有充分的支持，不害怕犯错，不害怕失败</strong>。这说起来好像很容易，但做起来一定会是各种困难。其中最重要的一定是，知道自己最低的底线在哪里。就像社会有养老保险，就算无妻无儿，也会有国家的保障，不会老无所养；像攀岩者报名的保险绳，知道就算不小心失足滑倒，也会有生命的保障，才敢放手攀登。有了底线，就敢一次次的勇敢尝试；有了一次一次的尝试，就有熟能生巧的熟练；有了熟能生巧的熟练，才会有旁人看上去的无所畏惧的勇气，才会面对困难时云淡风轻的态度。</p>
+<p>总的来说，我是缺乏勇气的。投资缺乏勇气，那要更多学习投资的知识，积累更多的资金，让投资得更有底气；做最便宜的尝试，就不那么害怕失去了。与人交流缺乏勇气，找到一个可以全盘托出心里话的人，遇到了困难能够指点请教的人。<strong>看来我真的需要找一位女朋友了</strong>；招聘没底气，如果手握着一份offer，心里底气会更大一些吧。毕业没底气，还是早点把MATLAB仿真做出来，早点把小论文写出来，这样心里就更有底一些，就不会这么慌张了。</p>
+]]></content>
+      <categories>
+        <category>生活随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>【生活随笔】两幅面孔</title>
+    <url>/2020/09/09/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E4%B8%A4%E5%B9%85%E9%9D%A2%E5%AD%94/</url>
+    <content><![CDATA[<p>两幅面孔</p>
+<p>学习、工作要谦逊，虚心低调</p>
+<p>与人交流要有自信，有的放矢</p>
+<p>从一而终的态度不能完全适用于全部的生活</p>
+]]></content>
+      <categories>
+        <category>生活随笔</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>【算法】10.2青蛙跳台阶问题</title>
+    <url>/2020/08/29/%E7%AE%97%E6%B3%95-10-2%E9%9D%92%E8%9B%99%E8%B7%B3%E5%8F%B0%E9%98%B6%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<blockquote>
+<p>一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。</p>
+<p>答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。</p>
+<p>示例 1：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 2</span><br><span class="line">输出：2</span><br></pre></td></tr></table></figure>
+
+<p>示例 2：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 7</span><br><span class="line">输出：21</span><br></pre></td></tr></table></figure>
+
+<p>示例 3：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">输入：n &#x3D; 0</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
+
+<p>提示：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">0 &lt;&#x3D; n &lt;&#x3D; 100</span><br></pre></td></tr></table></figure>
+
+<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof" target="_blank" rel="noopener">https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
+</blockquote>
+<p><img src="https://jacksbuilding.oss-cn-beijing.aliyuncs.com/img/image-20200829165408735.png" alt="青蛙跳台阶，最后一跳"></p>
+<p>设跳上 n 级台阶有 f(n) 种跳法。在所有跳法中，青蛙的最后一步只有两种情况： 跳上 1 级或 2 级台阶。</p>
+<ul>
+<li>当为 1 级台阶： 剩 n-1个台阶，此情况共有 f(n-1)种跳法；</li>
+<li>当为 2 级台阶： 剩 n-2 个台阶，此情况共有 f(n-2) 种跳法。</li>
+</ul>
+<p>f(n) 为以上两种情况之和，即 f(n)=f(n-1)+f(n-2) ，本题就转变为<strong>斐波那契数列</strong>了。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">numWays</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> f0 = <span class="number">1</span>, f1 = <span class="number">1</span>, f2 = f0 + f1;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(n &lt; <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i&lt;n<span class="number">-1</span>; ++i)</span><br><span class="line">    &#123;</span><br><span class="line">        f2 = (f0 + f1) % a;</span><br><span class="line">        f0 = f1;</span><br><span class="line">        f1 = f2;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <categories>
+        <category>学习记录</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【生活随笔】脚踏实地</title>
+    <url>/2020/09/04/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E8%84%9A%E8%B8%8F%E5%AE%9E%E5%9C%B0/</url>
+    <content><![CDATA[<p>参加了华为的笔试，最终的结果，三道编程题一个结果都没有出来。很可能这次华为的笔试就这样挂了，也代表去华为工作的这一条路可能就这样断了。</p>
+<p>面对这可能的结果，心里是懊悔又痛苦，，但又不敢表露，仿佛回到了2016年考研那段时间。</p>
+<p>招聘找工作遇到这样的困境；毕业论文又一筹莫展，进度几乎为零；延毕也似乎板上钉钉。真的感觉自己的研究生生活有点失败了。</p>
+<p>我一定是有什么地方做错了！</p>
+<p>是从什么时候开始呢？是什么选择让我陷入如此的困境呢？</p>
+<p>是从选择导师、选择方向的时候？还是去深圳实习的时候？</p>
+<p>是决定不给给刘强发周报开始？还是因为没有去面对一次次的小困难而导致现在的大困境吗？</p>
+<p>是有什么不好的习惯、错误的想法让我一步步沦落成现在这样吗？</p>
+<p>我真的……</p>
+<hr>
+<p>行有不得，反求诸己；确实是我<strong>眼高手低，自以为是</strong>了。</p>
+<p>从拿到湖大研究生的通知书起就开始飘飘然了，不断的被别人表扬，被别人夸奖，认为自己做到了身边许多人所做不到的事情。却不想湖大也是卧虎藏龙，研究生也有很多挑战。</p>
+<p>到云智航实习做出一点成就，就感觉自己硬件也还不错，去挑战从未接触过的射频与微波专业。但是硬件基础是真的薄弱，在研究学习上面遇到了一个个难以解决的问题，却没有去直面面对，选择了逃避和拖延。</p>
+<p>在常州无线电给刘老师做事情，程序问题很快就能解决。感觉自己做嵌入式真的很不错。开始瞧不起自己选择的专业。</p>
+<p>当接触的事情越来越多，想做的事情也越来越多，甚至规划好了5年、10年后的生活。却唯独没有做好眼前的事。甚至觉得有些眼前的事情是阻碍，或者不屑于去做。</p>
+<p>慢慢的遇到困难的时候，就总是觉得这是别人的问题，是别人在为难我。就更不愿意接触，交流心声了。自己越来越像一个孤岛，飘离在大海之上，与身边的人渐渐远离。</p>
+<p>都说“<strong>脚踏实地，仰望星空</strong>”，现在我只仰望星空，没有脚踏实地，走着走着就掉坑里了。</p>
+<p><strong>亡羊补牢，为时不晚。现在是要从坑里爬出来了。</strong></p>
+]]></content>
+      <categories>
+        <category>生活随笔</category>
+      </categories>
   </entry>
   <entry>
     <title>【算法】06从尾到头打印链表</title>
