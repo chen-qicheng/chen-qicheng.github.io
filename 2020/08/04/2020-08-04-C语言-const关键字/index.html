@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>【C语言】const关键字 | Jack&#39;s Building</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="const意味着常数。 const定义的变量，他的值不能被改变，在整个作用域中都保持固定 同宏定义一样，可以避免意义模糊的数字出现，同样可以很方便的进行参数的调整和修改 可以保护被修饰的东西，防止意外的修改，增强程序的健壮性。 const是通过编译器在编译的时候执行检查来确保实现的。  const与指针   指针 含义    const int a; a是一个常整型数   int const a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【C语言】const关键字">
+<meta property="og:url" content="http://jacksbuilding.cn/2020/08/04/2020-08-04-C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
+<meta property="og:site_name" content="Jack&#39;s Building">
+<meta property="og:description" content="const意味着常数。 const定义的变量，他的值不能被改变，在整个作用域中都保持固定 同宏定义一样，可以避免意义模糊的数字出现，同样可以很方便的进行参数的调整和修改 可以保护被修饰的东西，防止意外的修改，增强程序的健壮性。 const是通过编译器在编译的时候执行检查来确保实现的。  const与指针   指针 含义    const int a; a是一个常整型数   int const a">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-04T02:21:50.000Z">
+<meta property="article:modified_time" content="2020-08-12T06:52:16.000Z">
+<meta property="article:author" content="JackChen">
+<meta property="article:tag" content="C语言">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Jack's Building" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Jack&#39;s Building</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">赤子之心，乘风破浪。</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://JacksBuilding.cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2020-08-04-C语言-const关键字" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/08/04/2020-08-04-C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/" class="article-date">
+  <time class="dt-published" datetime="2020-08-04T02:21:50.000Z" itemprop="datePublished">2020-08-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      【C语言】const关键字
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>const意味着<strong>常数</strong>。</li>
+<li>const定义的变量，他的值不能被改变，在整个作用域中都保持固定</li>
+<li>同宏定义一样，可以避免意义模糊的数字出现，同样可以很方便的进行参数的调整和修改</li>
+<li>可以保护被修饰的东西，防止意外的修改，增强程序的<strong>健壮性</strong>。</li>
+<li>const是通过编译器在<strong>编译的时候执行检查</strong>来确保实现的。</li>
+</ul>
+<h2 id="const与指针"><a href="#const与指针" class="headerlink" title="const与指针"></a>const与指针</h2><table>
+<thead>
+<tr>
+<th>指针</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>const int a;</code></td>
+<td>a是一个常整型数</td>
+</tr>
+<tr>
+<td><code>int const a;</code></td>
+<td>a是一个常整型数</td>
+</tr>
+<tr>
+<td><code>const int *a;</code></td>
+<td>a是一个指向常整型数的指针（数不可修改，指针可以修改）</td>
+</tr>
+<tr>
+<td><code>int const *a;</code></td>
+<td>a是一个指向整型数的常指针（数可修改，指针不可以修改）</td>
+</tr>
+<tr>
+<td><code>const int *const a;</code></td>
+<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
+</tr>
+<tr>
+<td><code>int const *const a;</code></td>
+<td>a是一个指向常整型数的常指针（数不可修改，指针不可以修改）</td>
+</tr>
+</tbody></table>
+<h2 id="const与函数"><a href="#const与函数" class="headerlink" title="const与函数"></a>const与函数</h2><p>const通常用在函数形参当中，如果形参是一个指针，为了<strong>防止在函数内部修改指针指向的数据</strong>。就可以用const来限制。比如在String的程序中就有很多const修饰形参的情况。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">StringCopy</span> <span class="params">(<span class="keyword">char</span>* strDestination, <span class="keyword">const</span> <span class="keyword">char</span> *strSource)</span></span></span><br></pre></td></tr></table></figure>
+
+<p>const还可以表示该函数返回的一个常量，放在函数的返回值的位置，例如</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">const</span> <span class="keyword">char</span> * <span class="title">GetString</span><span class="params">(<span class="keyword">void</span>)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>在类成员函数的声明和定义之中，const放在函数的形参表之后，函数体之前，表示该函数的this指针是一个常量，不能修饰该对象的数据成员，例如</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">getId</span> <span class="params">()</span> <span class="keyword">const</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><p>下面这段程序的运行结果？</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> x = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">const</span> <span class="keyword">int</span> *ptr;</span><br><span class="line">    ptr = &amp;x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,x);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>编译出错</strong></p>
+<p>x是常整型数，ptr是指向常整型的指针。<code>ptr = &amp;x;</code>，即<code>ptr = 10;</code>，违反了const的规则；const是通过编译器在编译的时候检查来实现的，所以编译报错。</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/fengxing999/p/10248636.html">const修饰指针的三种效果</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jacksbuilding.cn/2020/08/04/2020-08-04-C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/" data-id="ckt5fh0gy001344si5yv7d3fd" data-title="【C语言】const关键字" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/04/2020-08-04-C%E8%AF%AD%E8%A8%80-%E6%BA%90%E7%A0%81%E5%88%B0%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E8%BF%87%E7%A8%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          【C语言】源码到可执行文件过程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/31/2020-07-31-C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">【C语言】动态分配堆内存</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E6%89%A9%E5%B1%95/">知识扩展</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FreeRTOS/" rel="tag">FreeRTOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GetRich/" rel="tag">GetRich</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matlab/" rel="tag">Matlab</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="tag">嵌入式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%9B%E8%81%98/" rel="tag">招聘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" rel="tag">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 20px;">C语言</a> <a href="/tags/FreeRTOS/" style="font-size: 10px;">FreeRTOS</a> <a href="/tags/GetRich/" style="font-size: 12px;">GetRich</a> <a href="/tags/Matlab/" style="font-size: 10px;">Matlab</a> <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" style="font-size: 18px;">嵌入式</a> <a href="/tags/%E6%8B%9B%E8%81%98/" style="font-size: 12px;">招聘</a> <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 14px;">物联网</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 16px;">算法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/20/2020-09-20-GetRich-%E5%87%8F%E5%B0%91%E5%BC%80%E6%94%AF/">【GetRich】减少开支</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/18/2020-09-18-%E6%BC%94%E8%AE%B2%E5%80%BE%E5%90%AC-20-09-17%E4%B8%BB%E5%B8%AD%E6%B9%96%E5%A4%A7%E6%BC%94%E8%AE%B2/">【演讲倾听】20/09/17主席湖大演讲</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/10/2020-09-10-%E7%AE%97%E6%B3%95-12-%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/">【算法】12.矩阵中的路径</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/09/2020-09-09-%E7%AE%97%E6%B3%95-11-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97/">【算法】11.旋转数组的最小数字</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/09/2020-09-09-%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E4%B8%A4%E5%B9%85%E9%9D%A2%E5%AD%94/">【生活随笔】两幅面孔</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 JackChen<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

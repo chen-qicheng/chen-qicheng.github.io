@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>【C语言】动态分配堆内存 | Jack&#39;s Building</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="动态分配堆内存在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。 malloc函数开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。 12345678910#incl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【C语言】动态分配堆内存">
+<meta property="og:url" content="http://jacksbuilding.cn/2020/07/31/2020-07-31-C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/index.html">
+<meta property="og:site_name" content="Jack&#39;s Building">
+<meta property="og:description" content="动态分配堆内存在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。 malloc函数开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。 12345678910#incl">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-31T07:14:44.000Z">
+<meta property="article:modified_time" content="2020-08-12T06:56:24.000Z">
+<meta property="article:author" content="JackChen">
+<meta property="article:tag" content="C语言">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Jack's Building" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Jack&#39;s Building</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">赤子之心，乘风破浪。</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://JacksBuilding.cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2020-07-31-C语言-动态分配堆内存" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/07/31/2020-07-31-C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/" class="article-date">
+  <time class="dt-published" datetime="2020-07-31T07:14:44.000Z" itemprop="datePublished">2020-07-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      【C语言】动态分配堆内存
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="动态分配堆内存"><a href="#动态分配堆内存" class="headerlink" title="动态分配堆内存"></a>动态分配堆内存</h2><p>在C语言中，内存分为四块存储区域，栈，堆，静态存储区，代码区。堆内存是一种在需要时申请，在不需要时释放的内存块，都是由程序员来完成的，今天我们来探讨一下动态分配堆内存的库函数，这些库函数包含在头文件&lt;stdlib.h&gt;中。</p>
+<h2 id="malloc函数"><a href="#malloc函数" class="headerlink" title="malloc函数"></a>malloc函数</h2><p>开辟规定大小的堆内存空间，申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * <span class="number">10</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>生成了40个字节大小未被初始化的内存空间。</p>
+<h2 id="calloc函数"><a href="#calloc函数" class="headerlink" title="calloc函数"></a>calloc函数</h2><p>在内存的动态存储区中分配n个长度为size的连续空间，函数返回一个指向分配起始地址的指针；如果分配不成功，返回NULL。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> *p1;</span><br><span class="line">    p1 = (<span class="keyword">int</span> *)<span class="built_in">calloc</span>(<span class="number">10</span>, <span class="keyword">sizeof</span>(<span class="keyword">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%p\n&quot;</span>,p1);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>代码用calloc函数随机分配40个字节的存储空间，calloc函数开辟的40个字节的堆内存被初始化为0。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>写程序的时候多用<strong>malloc</strong>而少用calloc，因为calloc虽然对内存进行了初始化（全部初始化为0），但多了对内存的写零操作，效率会降低。</p>
+<h2 id="realloc函数"><a href="#realloc函数" class="headerlink" title="realloc函数"></a>realloc函数</h2><p>重新分配内存大小。</p>
+<ul>
+<li>如果当前指针有足够的连续空间，则<strong>扩大</strong>mem_address指向的地址，并且将mem_address返回，</li>
+<li>如果当前指针没有足够的连续空间，则按照newsize指定的大小分配空间，将原有数据从头到尾拷贝到新分配的内存区域，而后释放原来mem_address所指内存区域（注意：原来指针是自动释放，不需要使用free），同时返回新分配的内存区域的首地址。即<strong>重新分配存储器块的地址</strong>。</li>
+</ul>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/MarcoAsensio/article/details/85937002">C语言中malloc，calloc，realloc等动态分配内存函数特点详解</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/csdn_kou/article/details/80499565">C语言malloc和calloc的区别</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/stevenwuzheng/p/5484986.html">C语言中malloc()和calloc()函数用法 </a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jacksbuilding.cn/2020/07/31/2020-07-31-C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%A0%86%E5%86%85%E5%AD%98/" data-id="ckt5fh0gx001044si6ny91rh8" data-title="【C语言】动态分配堆内存" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/08/04/2020-08-04-C%E8%AF%AD%E8%A8%80-const%E5%85%B3%E9%94%AE%E5%AD%97/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          【C语言】const关键字
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/07/31/2020-07-31-C%E8%AF%AD%E8%A8%80-%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">【C语言】作用域和生命周期</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E6%89%A9%E5%B1%95/">知识扩展</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FreeRTOS/" rel="tag">FreeRTOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GetRich/" rel="tag">GetRich</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matlab/" rel="tag">Matlab</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="tag">嵌入式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8B%9B%E8%81%98/" rel="tag">招聘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" rel="tag">物联网</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 20px;">C语言</a> <a href="/tags/FreeRTOS/" style="font-size: 10px;">FreeRTOS</a> <a href="/tags/GetRich/" style="font-size: 12px;">GetRich</a> <a href="/tags/Matlab/" style="font-size: 10px;">Matlab</a> <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" style="font-size: 18px;">嵌入式</a> <a href="/tags/%E6%8B%9B%E8%81%98/" style="font-size: 12px;">招聘</a> <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 14px;">物联网</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 16px;">算法</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/09/20/2020-09-20-GetRich-%E5%87%8F%E5%B0%91%E5%BC%80%E6%94%AF/">【GetRich】减少开支</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/18/2020-09-18-%E6%BC%94%E8%AE%B2%E5%80%BE%E5%90%AC-20-09-17%E4%B8%BB%E5%B8%AD%E6%B9%96%E5%A4%A7%E6%BC%94%E8%AE%B2/">【演讲倾听】20/09/17主席湖大演讲</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/10/2020-09-10-%E7%AE%97%E6%B3%95-12-%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/">【算法】12.矩阵中的路径</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/09/2020-09-09-%E7%AE%97%E6%B3%95-11-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97/">【算法】11.旋转数组的最小数字</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/09/2020-09-09-%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E4%B8%A4%E5%B9%85%E9%9D%A2%E5%AD%94/">【生活随笔】两幅面孔</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 JackChen<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
