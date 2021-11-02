@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>【Matlab】常用绘图命令 | Jack's Building</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">【Matlab】常用绘图命令</h1><a id="logo" href="/.">Jack's Building</a><p class="description">赤子之心，乘风破浪。</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">【Matlab】常用绘图命令</h1><div class="post-meta">2020-06-11<span> | </span><span class="category"><a href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><a class="disqus-comment-count" href="/2020/06/11/Matlab-%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/#vcomment"><span class="valine-comment-count" data-xid="/2020/06/11/Matlab-%E7%BB%98%E5%9B%BE%E5%91%BD%E4%BB%A4/"></span><span> 条评论</span></a><div class="post-content"><p>对Matlab的基本绘图命令进行介绍。</p>
+<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">figure(1);#绘图界面1
+
+subplot(2,1,1);#画面被分为两个小图，小图1
+
+plot(x,y);#画图
+#plot(x,y,&#39;-k&#39;);#画黑色实线
+#plot(t,x,t,y);#同时画两条线
+#plot(t,y(t,length(t)));
+
+subplot(2,1,2);
+
+stem(t_n,f);#绘制茎状图
+
+title(&#39;x&amp;y&#39;);#设置标题
+
+xlabel(&#39;t&#39;);#坐标系命名
+ylabel(&#39;y&#39;);
+
+legend(&#39;x line&#39;,&#39;y line&#39;);#给线添加名称
+
+text(x_position,y_position,[&#39;N&#x3D;&#39;,num2str(N)]);#任意位置添加文字
+
+grid on;#打开网格
+
+axis([1.1*min(x) 1.1*max(x) 1.1*min(y) 1.1*max(y)]);#设置坐标系长度
+#axis(&#39;square&#39;);#将坐标系设置为方形
+#axis(&#39;off&#39;);#关闭坐标系<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">hold on;#已经画的线保持，不被清除，再画线时在原图上添加
+
+hold off;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">get(gcf,&#39;doubleBuffer&#39;,&#39;on&#39;);
+
+drawnow;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab">yyaxis left#同一张图，左右使用不同y轴坐标系
+
+yyaxis right<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">线型</th>
+<th align="center">- 实线</th>
+<th align="center">. 点线</th>
+<th align="center">-. 虚点线</th>
+<th align="center">– 波折线</th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">点型</td>
+<td align="center">. 圆点</td>
+<td align="center">+ 加号</td>
+<td align="center">* 星号</td>
+<td align="center">x x星号</td>
+<td align="center">o 小圆</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">颜色</td>
+<td align="center">y 黄色</td>
+<td align="center">r 红色</td>
+<td align="center">g 绿色</td>
+<td align="center">b 蓝色</td>
+<td align="center">w 白色</td>
+<td align="center">k 黑色</td>
+<td align="center">m 紫色</td>
+<td align="center">c 青色</td>
+</tr>
+</tbody></table>
+<hr>
+</div><div class="tags"><a href="/tags/Matlab/"><i class="fa fa-tag"></i>Matlab</a></div><div class="post-nav"><a class="pre" href="/2020/06/15/%E7%89%A9%E8%81%94%E7%BD%91-01%E7%89%A9%E8%81%94%E7%BD%91%E4%B9%8B%E5%88%9D%E8%A7%81/">【物联网】01物联网之初见</a><a class="next" href="/2020/03/19/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E7%96%AB%E6%83%85%E6%9C%9F%E9%97%B4%E6%84%9F%E6%82%9F/">【生活随笔】疫情期间感悟</a></div><div id="vcomment"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script><script>var notify = 'false' == 'true' ? true : false;
+var verify = 'false' == 'true' ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'XjSiIVSsgAVihgbEz5ICwLGz-gzGzoHsz',
+  appKey:'G94lTTxDNLvxidBoDUxGrvLC',
+  placeholder:'撰写评论',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10'
+})
+</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">学习记录</a><span class="category-list-count">32</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/">生活随笔</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86%E6%89%A9%E5%B1%95/">知识扩展</a><span class="category-list-count">5</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 15px;">物联网</a> <a href="/tags/Matlab/" style="font-size: 15px;">Matlab</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 15px;">算法</a> <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 15px;">C语言</a> <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" style="font-size: 15px;">嵌入式</a> <a href="/tags/FreeRTOS/" style="font-size: 15px;">FreeRTOS</a> <a href="/tags/GetRich/" style="font-size: 15px;">GetRich</a> <a href="/tags/%E6%8B%9B%E8%81%98/" style="font-size: 15px;">招聘</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/11/02/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E5%8D%A7%E8%99%8E%E8%97%8F%E9%BE%99/">【生活随笔】卧虎藏龙</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/20/GetRich-%E5%87%8F%E5%B0%91%E5%BC%80%E6%94%AF/">【GetRich】减少开支</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/18/%E6%BC%94%E8%AE%B2%E5%80%BE%E5%90%AC-20-09-17%E4%B8%BB%E5%B8%AD%E6%B9%96%E5%A4%A7%E6%BC%94%E8%AE%B2/">【演讲倾听】20/09/17主席湖大演讲</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/10/%E7%AE%97%E6%B3%95-12-%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/">【算法】12.矩阵中的路径</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/09/%E7%AE%97%E6%B3%95-11-%E6%97%8B%E8%BD%AC%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%B0%8F%E6%95%B0%E5%AD%97/">【算法】11.旋转数组的最小数字</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/09/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E4%B8%A4%E5%B9%85%E9%9D%A2%E5%AD%94/">【生活随笔】两幅面孔</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/04/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E8%84%9A%E8%B8%8F%E5%AE%9E%E5%9C%B0/">【生活随笔】脚踏实地</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/29/%E7%AE%97%E6%B3%95-10-2%E9%9D%92%E8%9B%99%E8%B7%B3%E5%8F%B0%E9%98%B6%E9%97%AE%E9%A2%98/">【算法】10.2青蛙跳台阶问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/29/%E7%AE%97%E6%B3%95-10-1%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">【算法】10.1斐波那契数列</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/08/27/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94-%E5%8B%87/">【生活随笔】 勇</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">Jack's Building.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" color="100,99,98" opacity="0.4" zIndex="-1" count="50" src="//cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.min.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
